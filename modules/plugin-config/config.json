@@ -1,0 +1,45 @@
+{
+  "plugin-webapi": {
+    "apiKey": "RGAPI-723ce056-2b76-43d0-9121-67f72ae8335c",
+    "server": "EUW1"
+  },
+  "module-league-champselect-ui": {
+    "backend": "ws://localhost:8999"
+  },
+  "module-league-static": {
+    "last-downloaded-version": "14.6.1"
+  },
+  "module-league-state": {
+    "recordChampselect": false
+  },
+  "plugin-database": {
+    "user": "root",
+    "password": "12345",
+    "clusterUrl": "localhost",
+    "port": 27017
+  },
+  "module-league-in-game": {
+    "items": [],
+    "level": [],
+    "events": [],
+    "killfeed": false,
+    "showNicknames": false
+  },
+  "auth": {
+    "enabled": false,
+    "secreteKey": "",
+    "super-api-key": ""
+  },
+  "module-twitch": {
+    "appId": "",
+    "broadcastId": "",
+    "broadcastLogin": "",
+    "token": "",
+    "automation": false,
+    "length": 240
+  },
+  "module-vmix": {
+    "ip": "127.0.0.1",
+    "port": 8088
+  }
+}

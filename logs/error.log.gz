@@ -1,0 +1,35 @@
+2024-03-24T22:24:43.453Z [error] lpte-svc: Request timed out after 5000ms. Request meta={"namespace":"module-league-in-game","type":"request","version":1,"reply":"request-a12cf7cb","channelType":"REQUEST"}
+2024-03-24T22:25:17.958Z [error] lpte-svc: Request timed out after 5000ms. Request meta={"namespace":"module-league-in-game","type":"request","version":1,"reply":"request-924f0d57","channelType":"REQUEST"}
+2024-03-25T17:14:05.053Z [error] module-league-end-of-game: Uncaught error in module-league-end-of-game:  Cannot find module 'C:\Stream SGN\Odyn-new\lol-prod-toolki\modules\module-league-end-of-game\dist\plugin.js'
+Require stack:
+- C:\Stream SGN\Odyn-new\lol-prod-toolki\dist\core\modules\Module.js
+- C:\Stream SGN\Odyn-new\lol-prod-toolki\dist\core\modules\ModuleService.js
+- C:\Stream SGN\Odyn-new\lol-prod-toolki\dist\core\web\controller\modules.js
+- C:\Stream SGN\Odyn-new\lol-prod-toolki\dist\core\web\controller\index.js
+- C:\Stream SGN\Odyn-new\lol-prod-toolki\dist\core\web\server.js
+- C:\Stream SGN\Odyn-new\lol-prod-toolki\dist\core\app.js
+2024-03-25T18:55:13.188Z [error] plugin-webapi: Failed to get spectator game information for summoner=undefined, encryptedId=5UOItF7VObqX_ZU1Ufpmh6AkVY91fwEstO4ouDsfWLWWfZk, after retries.
+2024-03-25T18:55:13.204Z [error] module-league-state: Loading livegame failed for summoner=undefined
+2024-03-25T19:27:31.447Z [error] plugin-webapi: Failed to get spectator game information for summoner=undefined, encryptedId=5UOItF7VObqX_ZU1Ufpmh6AkVY91fwEstO4ouDsfWLWWfZk, after retries.
+2024-03-25T19:27:31.463Z [error] module-league-state: Loading livegame failed for summoner=undefined
+2024-03-25T21:49:19.554Z [error] plugin-webapi: Failed to get spectator game information for summoner=undefined, encryptedId=5UOItF7VObqX_ZU1Ufpmh6AkVY91fwEstO4ouDsfWLWWfZk, after retries.
+2024-03-25T21:49:19.571Z [error] module-league-state: Loading livegame failed for summoner=undefined
+2024-03-26T20:51:00.579Z [error] lpte-svc: Uncaught error in handler:  Cannot read properties of undefined (reading 'length')
+2024-03-26T20:51:05.156Z [error] lpte-svc: Uncaught error in handler:  Cannot read properties of undefined (reading 'length')
+2024-03-26T21:51:15.667Z [error] lpte-svc: Uncaught error in handler:  Cannot read properties of undefined (reading 'length')
+2024-03-26T21:51:36.839Z [error] lpte-svc: Uncaught error in handler:  Cannot read properties of undefined (reading 'length')
+2024-03-26T21:51:42.267Z [error] lpte-svc: Uncaught error in handler:  Cannot read properties of undefined (reading 'length')
+2024-03-26T22:02:58.654Z [error] lpte-svc: Uncaught error in handler:  Cannot read properties of undefined (reading 'length')
+2024-03-26T22:03:03.717Z [error] lpte-svc: Uncaught error in handler:  Cannot read properties of undefined (reading 'length')
+2024-03-27T22:20:16.507Z [error] plugin-webapi: Failed to get spectator game information for summoner=undefined, encryptedId=5UOItF7VObqX_ZU1Ufpmh6AkVY91fwEstO4ouDsfWLWWfZk, after retries.
+2024-03-27T22:20:16.524Z [error] module-league-state: Loading livegame failed for summoner=undefined
+2024-03-27T22:23:01.685Z [error] plugin-webapi: Failed to get spectator game information for summoner=undefined, encryptedId=5UOItF7VObqX_ZU1Ufpmh6AkVY91fwEstO4ouDsfWLWWfZk, after retries.
+2024-03-27T22:23:01.701Z [error] module-league-state: Loading livegame failed for summoner=undefined
+2024-03-28T18:44:06.186Z [error] plugin-webapi: Failed to get spectator game information for summoner=undefined, encryptedId=5UOItF7VObqX_ZU1Ufpmh6AkVY91fwEstO4ouDsfWLWWfZk, after retries.
+2024-03-28T18:44:06.203Z [error] module-league-state: Loading livegame failed for summoner=undefined
+2024-03-28T18:58:06.742Z [error] plugin-webapi: Failed to get spectator game information for summoner=undefined, encryptedId=5UOItF7VObqX_ZU1Ufpmh6AkVY91fwEstO4ouDsfWLWWfZk, after retries.
+2024-03-28T18:58:06.758Z [error] module-league-state: Loading livegame failed for summoner=undefined
+2024-03-30T11:04:27.120Z [error] plugin-webapi: Failed to get spectator game information for summoner=undefined, encryptedId=5UOItF7VObqX_ZU1Ufpmh6AkVY91fwEstO4ouDsfWLWWfZk, after retries.
+2024-03-30T11:04:27.123Z [error] module-league-state: Loading livegame failed for summoner=undefined
+2024-03-30T15:39:53.509Z [error] plugin-webapi: Failed to get spectator game information for summoner=Seminol, encryptedId=JSFjaTuAia18jvFC4Uzy7ZJwfeUrbR8C37qfUCWGLCqd3p8, after retries.
+2024-03-30T15:39:53.511Z [error] module-league-state: Loading livegame failed for summoner=Seminol

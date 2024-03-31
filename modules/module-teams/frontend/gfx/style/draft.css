@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.module-teams-talk-gfx {
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 40px;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 81.2,
+    "YTLC" 500;
+  position: absolute;
+}
+
+.bg-image {
+  z-index: 0;
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
+}
+
+.point-container {
+  position: absolute;
+}
+
+.container {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+  position: absolute;
+}
+
+.blue {
+  color: white;
+}
+
+.red {
+  color: white;
+}
+
+.team {
+  display: none;
+  align-items: center;
+  position: absolute;
+  top: 12px;
+  filter: drop-shadow(4px 4px 3px rgba(0,0,0,0.5));
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 40px;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 81.2,
+    "YTLC" 500;
+
+
+}
+
+#blue-team {
+  left: 0;
+}
+
+#red-team {
+  flex-direction: row-reverse;
+  right: 0;
+}
+
+
+.tag,
+.score {
+  font-size: 60px;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.tag {
+  display: none;
+}
+
+.score {
+  display: flex;
+  color: white;
+}
+.red-score {
+  display: flex;
+}
+
+.tag.outline {
+  -webkit-text-stroke-width: 3px;
+}
+
+.outline {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: inherit;
+}
+
+.logo {
+  height: 100px;
+  max-width: 100px;
+}
+#red-logo {
+  margin-inline-end: 50px;
+  margin-left: 25px;
+}
+#blue-logo {
+  margin-inline-start: 50px;
+  margin-right: 25px;
+}
+
+.name {
+  line-height: 1;
+  text-transform: uppercase;
+  font-family: 'Futura', 'Nunito-Sans';
+  font-style: bold;
+  font-size: 35px;
+  width: 330px;
+  max-height: 100px;
+  min-height: 50px;
+  color: white;
+  word-wrap: break-word;
+  
+}
+
+#blue-name {
+  margin-right: 80px;
+  text-align: left;
+}
+
+#red-name {
+  margin-left: 80px;
+  text-align: right;
+}
+
+.has-scores #blue-tag {
+  margin-right: 40px;
+}
+.has-scores #red-tag {
+  margin-left: 40px;
+}

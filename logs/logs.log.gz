@@ -1,0 +1,789 @@
+2024-03-24T17:33:10.919Z [info] main:  _          _       _____           _ _    _ _   
+2024-03-24T17:33:10.921Z [info] main: | |    ___ | |     |_   _|__   ___ | | | _(_) |_ 
+2024-03-24T17:33:10.921Z [info] main: | |   / _ \| |       | |/ _ \ / _ \| | |/ / | __|
+2024-03-24T17:33:10.921Z [info] main: | |__| (_) | |___    | | (_) | (_) | |   <| | |_ 
+2024-03-24T17:33:10.921Z [info] main: |_____\___/|_____|   |_|\___/ \___/|_|_|\_\_|\__|
+2024-03-24T17:33:10.922Z [info] main: 
+2024-03-24T17:33:11.296Z [info] lpte-svc: Initialized event bus.
+2024-03-24T17:33:11.296Z [info] module-svc: Initializing module service.
+2024-03-24T17:33:11.590Z [info] module-svc: Initialized 5 module(s). Now loading plugins.
+2024-03-24T17:33:11.963Z [info] main: LoL Toolkit started up successfully.
+2024-03-24T17:33:11.591Z [info] module-svc: Loaded 5 plugin(s).
+2024-03-24T17:33:11.964Z [info] module-svc: Plugin status changed: plugin=plugin-prod-clock, old=UNAVAILABLE, new=RUNNING
+2024-03-24T17:33:11.964Z [info] module-svc: Plugin status changed: plugin=plugin-database, old=UNAVAILABLE, new=RUNNING
+2024-03-24T17:33:11.964Z [info] module-svc: Plugin status changed: plugin=plugin-config, old=UNAVAILABLE, new=RUNNING
+2024-03-24T17:33:11.968Z [info] module-svc: Plugin status changed: plugin=plugin-theming, old=UNAVAILABLE, new=RUNNING
+2024-03-24T17:33:11.969Z [info] module-svc: Plugin status changed: plugin=plugin-webapi, old=UNAVAILABLE, new=RUNNING
+2024-03-24T17:33:12.005Z [info] server: Listening for requests on http://localhost:3003
+2024-03-24T17:33:33.679Z [info] module-svc: module-league-static was successfully installed
+2024-03-24T17:33:33.738Z [info] module-league-static: Start downloading additional files...
+2024-03-24T17:33:33.917Z [info] module-league-static: Finished downloading additional files
+2024-03-24T17:33:33.917Z [info] module-league-static: start downloading dragontail.tgz
+2024-03-24T17:33:34.694Z [info] module-svc: module-league-state was successfully installed
+2024-03-24T17:33:34.701Z [info] module-svc: Plugin status changed: plugin=module-league-state, old=UNAVAILABLE, new=RUNNING
+2024-03-24T17:33:42.996Z [info] module-svc: module-league-champselect-ui was successfully installed
+2024-03-24T17:33:42.998Z [info] module-svc: Plugin status changed: plugin=module-league-champselect-ui, old=UNAVAILABLE, new=RUNNING
+2024-03-24T17:33:51.484Z [info] module-league-static: 
+ finish downloading dragontail.tgz
+2024-03-24T17:33:51.485Z [info] module-league-static: Unpacking dragontail.tgz...
+2024-03-24T17:34:22.690Z [info] module-svc: module-vmix was successfully installed
+2024-03-24T17:34:22.693Z [info] module-svc: Plugin status changed: plugin=module-vmix, old=UNAVAILABLE, new=RUNNING
+2024-03-24T17:34:26.233Z [info] module-svc: Dependency module-teams is not installed, therefore will be installed now
+2024-03-24T17:34:28.638Z [info] module-svc: module-teams was successfully installed
+2024-03-24T17:34:28.665Z [info] module-svc: module-twitch was successfully installed
+2024-03-24T17:34:28.677Z [info] module-svc: Plugin status changed: plugin=module-teams, old=UNAVAILABLE, new=RUNNING
+2024-03-24T17:34:28.677Z [info] module-svc: Plugin status changed: plugin=module-twitch, old=UNAVAILABLE, new=RUNNING
+2024-03-24T17:34:31.866Z [info] module-svc: module-league-end-of-game was successfully installed
+2024-03-24T17:34:31.867Z [info] module-svc: Plugin status changed: plugin=module-league-end-of-game, old=UNAVAILABLE, new=RUNNING
+2024-03-24T17:34:34.754Z [info] module-league-static: Finished unpacking dragontail.tgz
+2024-03-24T17:34:34.879Z [info] module-league-static: Moving files to frontend...
+2024-03-24T17:34:36.628Z [info] module-league-static: Deleting versioned folder...
+2024-03-24T17:34:36.628Z [info] module-league-static: Finished moving files to frontend
+2024-03-24T17:34:37.474Z [info] module-league-static: Finished deleting versioned folder
+2024-03-24T17:34:37.481Z [info] module-svc: Plugin status changed: plugin=module-league-static, old=UNAVAILABLE, new=RUNNING
+2024-03-24T17:34:37.483Z [info] plugin-config: config for module-league-static saved!
+2024-03-24T17:34:45.271Z [info] module-svc: module-league-runes was successfully installed
+2024-03-24T17:34:45.272Z [info] module-svc: Plugin status changed: plugin=module-league-runes, old=UNAVAILABLE, new=RUNNING
+2024-03-24T17:34:54.044Z [info] module-svc: module-league-prm was successfully installed
+2024-03-24T17:34:54.045Z [info] module-svc: Plugin status changed: plugin=module-league-prm, old=UNAVAILABLE, new=RUNNING
+2024-03-24T17:34:58.684Z [info] module-svc: module-caster was successfully installed
+2024-03-24T17:34:58.698Z [info] module-svc: Plugin status changed: plugin=module-caster, old=UNAVAILABLE, new=RUNNING
+2024-03-24T22:19:23.758Z [info] main:  _          _       _____           _ _    _ _   
+2024-03-24T22:19:23.760Z [info] main: | |    ___ | |     |_   _|__   ___ | | | _(_) |_ 
+2024-03-24T22:19:23.761Z [info] main: | |   / _ \| |       | |/ _ \ / _ \| | |/ / | __|
+2024-03-24T22:19:23.761Z [info] main: | |__| (_) | |___    | | (_) | (_) | |   <| | |_ 
+2024-03-24T22:19:23.761Z [info] main: |_____\___/|_____|   |_|\___/ \___/|_|_|\_\_|\__|
+2024-03-24T22:19:23.762Z [info] main: 
+2024-03-24T22:19:24.108Z [info] lpte-svc: Initialized event bus.
+2024-03-24T22:19:24.108Z [info] module-svc: Initializing module service.
+2024-03-24T22:19:25.634Z [info] module-svc: Initialized 15 module(s). Now loading plugins.
+2024-03-24T22:19:26.443Z [info] main: LoL Toolkit started up successfully.
+2024-03-24T22:19:25.635Z [info] module-svc: Loaded 15 plugin(s).
+2024-03-24T22:19:26.444Z [info] module-svc: Plugin status changed: plugin=plugin-prod-clock, old=UNAVAILABLE, new=RUNNING
+2024-03-24T22:19:26.445Z [info] module-svc: Plugin status changed: plugin=plugin-database, old=UNAVAILABLE, new=RUNNING
+2024-03-24T22:19:26.445Z [info] module-svc: Plugin status changed: plugin=plugin-config, old=UNAVAILABLE, new=RUNNING
+2024-03-24T22:19:26.446Z [info] module-svc: Plugin status changed: plugin=module-league-runes, old=UNAVAILABLE, new=RUNNING
+2024-03-24T22:19:26.446Z [info] module-svc: Plugin status changed: plugin=module-league-prm, old=UNAVAILABLE, new=RUNNING
+2024-03-24T22:19:26.447Z [info] module-svc: Plugin status changed: plugin=module-league-end-of-game, old=UNAVAILABLE, new=RUNNING
+2024-03-24T22:19:26.447Z [info] module-svc: Plugin status changed: plugin=module-league-champselect-ui, old=UNAVAILABLE, new=RUNNING
+2024-03-24T22:19:26.451Z [info] module-svc: Plugin status changed: plugin=module-caster, old=UNAVAILABLE, new=RUNNING
+2024-03-24T22:19:26.457Z [info] module-svc: Plugin status changed: plugin=plugin-theming, old=UNAVAILABLE, new=RUNNING
+2024-03-24T22:19:26.460Z [info] module-svc: Plugin status changed: plugin=plugin-webapi, old=UNAVAILABLE, new=RUNNING
+2024-03-24T22:19:26.460Z [info] module-svc: Plugin status changed: plugin=module-vmix, old=UNAVAILABLE, new=RUNNING
+2024-03-24T22:19:26.460Z [info] module-svc: Plugin status changed: plugin=module-twitch, old=UNAVAILABLE, new=RUNNING
+2024-03-24T22:19:26.460Z [info] module-svc: Plugin status changed: plugin=module-league-state, old=UNAVAILABLE, new=RUNNING
+2024-03-24T22:19:26.468Z [info] module-svc: Plugin status changed: plugin=module-teams, old=UNAVAILABLE, new=RUNNING
+2024-03-24T22:19:26.780Z [info] module-svc: Plugin status changed: plugin=module-league-static, old=UNAVAILABLE, new=RUNNING
+2024-03-24T22:19:26.786Z [info] server: Listening for requests on http://localhost:3003
+2024-03-24T22:23:25.029Z [info] module-league-state: Flow: champselect - active
+2024-03-24T22:23:42.494Z [info] module-league-state: Flow: champselect - inactive
+2024-03-24T22:24:24.787Z [info] module-svc: module-league-in-game was successfully installed
+2024-03-24T22:24:24.810Z [info] module-svc: Plugin status changed: plugin=module-league-in-game, old=UNAVAILABLE, new=RUNNING
+2024-03-24T22:24:38.448Z [warn] lpte-svc: Request was sent, but no handler was executed. This will result in a timeout. Meta={"namespace":"module-league-in-game","type":"request","version":1,"reply":"request-a12cf7cb","channelType":"REQUEST"}
+2024-03-24T22:24:43.452Z [warn] lpte-svc: Awaiting event timed out. namespace=reply, type=request-a12cf7cb, timeout=5000
+2024-03-24T22:24:43.453Z [error] lpte-svc: Request timed out after 5000ms. Request meta={"namespace":"module-league-in-game","type":"request","version":1,"reply":"request-a12cf7cb","channelType":"REQUEST"}
+2024-03-24T22:25:12.959Z [warn] lpte-svc: Request was sent, but no handler was executed. This will result in a timeout. Meta={"namespace":"module-league-in-game","type":"request","version":1,"reply":"request-924f0d57","channelType":"REQUEST"}
+2024-03-24T22:25:17.957Z [warn] lpte-svc: Awaiting event timed out. namespace=reply, type=request-924f0d57, timeout=5000
+2024-03-24T22:25:17.958Z [error] lpte-svc: Request timed out after 5000ms. Request meta={"namespace":"module-league-in-game","type":"request","version":1,"reply":"request-924f0d57","channelType":"REQUEST"}
+2024-03-24T22:38:45.086Z [info] plugin-webapi: Fetching match data for matchid=EUW1_6870661845
+2024-03-24T22:38:45.451Z [info] plugin-webapi: Fetched match for matchId=EUW1_6870661845, gameId=6870661845
+2024-03-25T17:14:02.554Z [info] main:  _          _       _____           _ _    _ _   
+2024-03-25T17:14:02.556Z [info] main: | |    ___ | |     |_   _|__   ___ | | | _(_) |_ 
+2024-03-25T17:14:02.556Z [info] main: | |   / _ \| |       | |/ _ \ / _ \| | |/ / | __|
+2024-03-25T17:14:02.556Z [info] main: | |__| (_) | |___    | | (_) | (_) | |   <| | |_ 
+2024-03-25T17:14:02.556Z [info] main: |_____\___/|_____|   |_|\___/ \___/|_|_|\_\_|\__|
+2024-03-25T17:14:02.557Z [info] main: 
+2024-03-25T17:14:02.929Z [info] lpte-svc: Initialized event bus.
+2024-03-25T17:14:02.929Z [info] module-svc: Initializing module service.
+2024-03-25T17:14:04.314Z [info] module-svc: Initialized 16 module(s). Now loading plugins.
+2024-03-25T17:14:05.059Z [info] main: LoL Toolkit started up successfully.
+2024-03-25T17:14:04.315Z [info] module-svc: Loaded 16 plugin(s).
+2024-03-25T17:14:05.060Z [info] module-svc: Plugin status changed: plugin=plugin-prod-clock, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:14:05.060Z [info] module-svc: Plugin status changed: plugin=plugin-database, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:14:05.060Z [info] module-svc: Plugin status changed: plugin=plugin-config, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:14:05.062Z [info] module-svc: Plugin status changed: plugin=module-league-runes, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:14:05.062Z [info] module-svc: Plugin status changed: plugin=module-league-prm, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:14:05.062Z [info] module-svc: Plugin status changed: plugin=module-league-champselect-ui, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:14:05.063Z [info] module-svc: Plugin status changed: plugin=module-caster, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:14:05.073Z [info] module-svc: Plugin status changed: plugin=plugin-theming, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:14:05.053Z [error] module-league-end-of-game: Uncaught error in module-league-end-of-game:  Cannot find module 'C:\Stream SGN\Odyn-new\lol-prod-toolki\modules\module-league-end-of-game\dist\plugin.js'
+Require stack:
+- C:\Stream SGN\Odyn-new\lol-prod-toolki\dist\core\modules\Module.js
+- C:\Stream SGN\Odyn-new\lol-prod-toolki\dist\core\modules\ModuleService.js
+- C:\Stream SGN\Odyn-new\lol-prod-toolki\dist\core\web\controller\modules.js
+- C:\Stream SGN\Odyn-new\lol-prod-toolki\dist\core\web\controller\index.js
+- C:\Stream SGN\Odyn-new\lol-prod-toolki\dist\core\web\server.js
+- C:\Stream SGN\Odyn-new\lol-prod-toolki\dist\core\app.js
+2024-03-25T17:14:05.074Z [info] module-svc: Plugin status changed: plugin=plugin-webapi, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:14:05.075Z [info] module-svc: Plugin status changed: plugin=module-vmix, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:14:05.075Z [info] module-svc: Plugin status changed: plugin=module-twitch, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:14:05.075Z [info] module-svc: Plugin status changed: plugin=module-league-state, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:14:05.075Z [info] module-svc: Plugin status changed: plugin=module-league-in-game, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:14:05.090Z [info] module-svc: Plugin status changed: plugin=module-teams, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:14:05.338Z [info] module-svc: Plugin status changed: plugin=module-league-static, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:14:05.344Z [info] server: Listening for requests on http://localhost:3003
+2024-03-25T17:18:16.216Z [info] main:  _          _       _____           _ _    _ _   
+2024-03-25T17:18:16.219Z [info] main: | |    ___ | |     |_   _|__   ___ | | | _(_) |_ 
+2024-03-25T17:18:16.219Z [info] main: | |   / _ \| |       | |/ _ \ / _ \| | |/ / | __|
+2024-03-25T17:18:16.220Z [info] main: | |__| (_) | |___    | | (_) | (_) | |   <| | |_ 
+2024-03-25T17:18:16.220Z [info] main: |_____\___/|_____|   |_|\___/ \___/|_|_|\_\_|\__|
+2024-03-25T17:18:16.221Z [info] main: 
+2024-03-25T17:18:16.386Z [info] lpte-svc: Initialized event bus.
+2024-03-25T17:18:16.386Z [info] module-svc: Initializing module service.
+2024-03-25T17:18:16.739Z [info] module-svc: Initialized 15 module(s). Now loading plugins.
+2024-03-25T17:18:17.486Z [info] main: LoL Toolkit started up successfully.
+2024-03-25T17:18:16.739Z [info] module-svc: Loaded 15 plugin(s).
+2024-03-25T17:18:17.487Z [info] module-svc: Plugin status changed: plugin=plugin-prod-clock, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:18:17.488Z [info] module-svc: Plugin status changed: plugin=plugin-database, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:18:17.488Z [info] module-svc: Plugin status changed: plugin=plugin-config, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:18:17.489Z [info] module-svc: Plugin status changed: plugin=module-league-runes, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:18:17.490Z [info] module-svc: Plugin status changed: plugin=module-league-prm, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:18:17.490Z [info] module-svc: Plugin status changed: plugin=module-league-champselect-ui, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:18:17.490Z [info] module-svc: Plugin status changed: plugin=module-caster, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:18:17.501Z [info] module-svc: Plugin status changed: plugin=plugin-theming, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:18:17.503Z [info] module-svc: Plugin status changed: plugin=plugin-webapi, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:18:17.503Z [info] module-svc: Plugin status changed: plugin=module-vmix, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:18:17.503Z [info] module-svc: Plugin status changed: plugin=module-twitch, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:18:17.504Z [info] module-svc: Plugin status changed: plugin=module-league-state, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:18:17.504Z [info] module-svc: Plugin status changed: plugin=module-league-in-game, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:18:17.519Z [info] module-svc: Plugin status changed: plugin=module-teams, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:18:17.820Z [info] module-svc: Plugin status changed: plugin=module-league-static, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:18:17.827Z [info] server: Listening for requests on http://localhost:3003
+2024-03-25T17:18:29.767Z [info] module-svc: module-league-end-of-game was successfully installed
+2024-03-25T17:18:29.768Z [info] module-svc: Plugin status changed: plugin=module-league-end-of-game, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:19:18.987Z [info] plugin-webapi: Fetching match data for matchid=EUW1_6871486142
+2024-03-25T17:19:19.854Z [info] plugin-webapi: Fetched match for matchId=EUW1_6871486142, gameId=6871486142
+2024-03-25T17:45:02.783Z [info] main:  _          _       _____           _ _    _ _   
+2024-03-25T17:45:02.785Z [info] main: | |    ___ | |     |_   _|__   ___ | | | _(_) |_ 
+2024-03-25T17:45:02.785Z [info] main: | |   / _ \| |       | |/ _ \ / _ \| | |/ / | __|
+2024-03-25T17:45:02.785Z [info] main: | |__| (_) | |___    | | (_) | (_) | |   <| | |_ 
+2024-03-25T17:45:02.785Z [info] main: |_____\___/|_____|   |_|\___/ \___/|_|_|\_\_|\__|
+2024-03-25T17:45:02.786Z [info] main: 
+2024-03-25T17:45:03.233Z [info] lpte-svc: Initialized event bus.
+2024-03-25T17:45:03.234Z [info] module-svc: Initializing module service.
+2024-03-25T17:45:04.638Z [info] module-svc: Initialized 16 module(s). Now loading plugins.
+2024-03-25T17:45:05.256Z [info] main: LoL Toolkit started up successfully.
+2024-03-25T17:45:04.639Z [info] module-svc: Loaded 16 plugin(s).
+2024-03-25T17:45:05.257Z [info] module-svc: Plugin status changed: plugin=plugin-prod-clock, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:45:05.258Z [info] module-svc: Plugin status changed: plugin=plugin-database, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:45:05.258Z [info] module-svc: Plugin status changed: plugin=plugin-config, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:45:05.259Z [info] module-svc: Plugin status changed: plugin=module-league-runes, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:45:05.259Z [info] module-svc: Plugin status changed: plugin=module-league-prm, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:45:05.260Z [info] module-svc: Plugin status changed: plugin=module-league-end-of-game, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:45:05.260Z [info] module-svc: Plugin status changed: plugin=module-league-champselect-ui, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:45:05.261Z [info] module-svc: Plugin status changed: plugin=module-caster, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:45:05.271Z [info] module-svc: Plugin status changed: plugin=plugin-theming, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:45:05.273Z [info] module-svc: Plugin status changed: plugin=plugin-webapi, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:45:05.273Z [info] module-svc: Plugin status changed: plugin=module-vmix, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:45:05.273Z [info] module-svc: Plugin status changed: plugin=module-twitch, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:45:05.274Z [info] module-svc: Plugin status changed: plugin=module-league-state, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:45:05.274Z [info] module-svc: Plugin status changed: plugin=module-league-in-game, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:45:05.278Z [info] module-svc: Plugin status changed: plugin=module-teams, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:45:05.528Z [info] module-svc: Plugin status changed: plugin=module-league-static, old=UNAVAILABLE, new=RUNNING
+2024-03-25T17:45:05.534Z [info] server: Listening for requests on http://localhost:3003
+2024-03-25T17:45:09.406Z [info] plugin-webapi: Fetching match data for matchid=EUW1_6871486142
+2024-03-25T17:45:09.835Z [info] plugin-webapi: Fetched match for matchId=EUW1_6871486142, gameId=6871486142
+2024-03-25T18:55:10.901Z [info] module-league-state: Flow: champselect - active
+2024-03-25T18:55:10.914Z [info] module-league-state: Flow: champselect - game started (spectator delay)
+2024-03-25T18:55:10.977Z [info] plugin-webapi: Fetching livegame data for summoner=undefined
+2024-03-25T18:55:11.179Z [warn] plugin-webapi: Failed to get spectator game information for summoner=undefined, encryptedId=5UOItF7VObqX_ZU1Ufpmh6AkVY91fwEstO4ouDsfWLWWfZk. Maybe this summoner is not ingame currently? Retrying. error=GenericError: Request failed with status code 404
+2024-03-25T18:55:13.189Z [error] plugin-webapi: Failed to get spectator game information for summoner=undefined, encryptedId=5UOItF7VObqX_ZU1Ufpmh6AkVY91fwEstO4ouDsfWLWWfZk, after retries.
+2024-03-25T18:55:13.204Z [error] module-league-state: Loading livegame failed for summoner=undefined
+2024-03-25T19:08:55.872Z [info] module-league-state: Flow: champselect - inactive
+2024-03-25T19:08:59.364Z [info] plugin-webapi: Fetching match data for matchid=EUW1_6871647257
+2024-03-25T19:08:59.687Z [info] plugin-webapi: Fetched match for matchId=EUW1_6871647257, gameId=6871647257
+2024-03-25T19:27:29.162Z [info] module-league-state: Flow: champselect - active
+2024-03-25T19:27:29.164Z [info] module-league-state: Flow: champselect - reset summoners to not show
+2024-03-25T19:27:29.174Z [info] module-league-state: Flow: champselect - game started (spectator delay)
+2024-03-25T19:27:29.237Z [info] plugin-webapi: Fetching livegame data for summoner=undefined
+2024-03-25T19:27:29.443Z [warn] plugin-webapi: Failed to get spectator game information for summoner=undefined, encryptedId=5UOItF7VObqX_ZU1Ufpmh6AkVY91fwEstO4ouDsfWLWWfZk. Maybe this summoner is not ingame currently? Retrying. error=GenericError: Request failed with status code 404
+2024-03-25T19:27:31.447Z [error] plugin-webapi: Failed to get spectator game information for summoner=undefined, encryptedId=5UOItF7VObqX_ZU1Ufpmh6AkVY91fwEstO4ouDsfWLWWfZk, after retries.
+2024-03-25T19:27:31.463Z [error] module-league-state: Loading livegame failed for summoner=undefined
+2024-03-25T20:01:05.346Z [info] module-league-state: Flow: champselect - inactive
+2024-03-25T20:23:40.712Z [info] plugin-webapi: Fetching match data for matchid=EUW1_6871764332
+2024-03-25T20:23:41.155Z [info] plugin-webapi: Fetched match for matchId=EUW1_6871764332, gameId=6871764332
+2024-03-25T21:42:07.133Z [info] plugin-webapi: Fetching match data for matchid=EUW1_6871912248
+2024-03-25T21:42:07.528Z [info] plugin-webapi: Fetched match for matchId=EUW1_6871912248, gameId=6871912248
+2024-03-25T21:44:08.879Z [info] plugin-webapi: Fetching match data for matchid=EUW1_6871912248
+2024-03-25T21:44:09.231Z [info] plugin-webapi: Fetched match for matchId=EUW1_6871912248, gameId=6871912248
+2024-03-25T21:49:17.234Z [info] module-league-state: Flow: champselect - active
+2024-03-25T21:49:17.237Z [info] module-league-state: Flow: champselect - reset summoners to not show
+2024-03-25T21:49:17.249Z [info] module-league-state: Flow: champselect - game started (spectator delay)
+2024-03-25T21:49:17.296Z [info] plugin-webapi: Fetching livegame data for summoner=undefined
+2024-03-25T21:49:17.548Z [warn] plugin-webapi: Failed to get spectator game information for summoner=undefined, encryptedId=5UOItF7VObqX_ZU1Ufpmh6AkVY91fwEstO4ouDsfWLWWfZk. Maybe this summoner is not ingame currently? Retrying. error=GenericError: Request failed with status code 404
+2024-03-25T21:49:19.554Z [error] plugin-webapi: Failed to get spectator game information for summoner=undefined, encryptedId=5UOItF7VObqX_ZU1Ufpmh6AkVY91fwEstO4ouDsfWLWWfZk, after retries.
+2024-03-25T21:49:19.571Z [error] module-league-state: Loading livegame failed for summoner=undefined
+2024-03-25T21:50:32.864Z [info] module-league-state: Flow: champselect - inactive
+2024-03-26T20:05:12.501Z [info] main:  _          _       _____           _ _    _ _   
+2024-03-26T20:05:12.503Z [info] main: | |    ___ | |     |_   _|__   ___ | | | _(_) |_ 
+2024-03-26T20:05:12.503Z [info] main: | |   / _ \| |       | |/ _ \ / _ \| | |/ / | __|
+2024-03-26T20:05:12.503Z [info] main: | |__| (_) | |___    | | (_) | (_) | |   <| | |_ 
+2024-03-26T20:05:12.504Z [info] main: |_____\___/|_____|   |_|\___/ \___/|_|_|\_\_|\__|
+2024-03-26T20:05:12.504Z [info] main: 
+2024-03-26T20:05:12.904Z [info] lpte-svc: Initialized event bus.
+2024-03-26T20:05:12.905Z [info] module-svc: Initializing module service.
+2024-03-26T20:05:14.357Z [info] module-svc: Initialized 16 module(s). Now loading plugins.
+2024-03-26T20:05:15.008Z [info] main: LoL Toolkit started up successfully.
+2024-03-26T20:05:14.358Z [info] module-svc: Loaded 16 plugin(s).
+2024-03-26T20:05:15.009Z [info] module-svc: Plugin status changed: plugin=plugin-prod-clock, old=UNAVAILABLE, new=RUNNING
+2024-03-26T20:05:15.009Z [info] module-svc: Plugin status changed: plugin=plugin-database, old=UNAVAILABLE, new=RUNNING
+2024-03-26T20:05:15.009Z [info] module-svc: Plugin status changed: plugin=plugin-config, old=UNAVAILABLE, new=RUNNING
+2024-03-26T20:05:15.011Z [info] module-svc: Plugin status changed: plugin=module-league-runes, old=UNAVAILABLE, new=RUNNING
+2024-03-26T20:05:15.011Z [info] module-svc: Plugin status changed: plugin=module-league-prm, old=UNAVAILABLE, new=RUNNING
+2024-03-26T20:05:15.011Z [info] module-svc: Plugin status changed: plugin=module-league-end-of-game, old=UNAVAILABLE, new=RUNNING
+2024-03-26T20:05:15.011Z [info] module-svc: Plugin status changed: plugin=module-league-champselect-ui, old=UNAVAILABLE, new=RUNNING
+2024-03-26T20:05:15.015Z [info] module-svc: Plugin status changed: plugin=module-caster, old=UNAVAILABLE, new=RUNNING
+2024-03-26T20:05:15.022Z [info] module-svc: Plugin status changed: plugin=plugin-theming, old=UNAVAILABLE, new=RUNNING
+2024-03-26T20:05:15.023Z [info] module-svc: Plugin status changed: plugin=plugin-webapi, old=UNAVAILABLE, new=RUNNING
+2024-03-26T20:05:15.023Z [info] module-svc: Plugin status changed: plugin=module-vmix, old=UNAVAILABLE, new=RUNNING
+2024-03-26T20:05:15.024Z [info] module-svc: Plugin status changed: plugin=module-twitch, old=UNAVAILABLE, new=RUNNING
+2024-03-26T20:05:15.024Z [info] module-svc: Plugin status changed: plugin=module-league-state, old=UNAVAILABLE, new=RUNNING
+2024-03-26T20:05:15.024Z [info] module-svc: Plugin status changed: plugin=module-league-in-game, old=UNAVAILABLE, new=RUNNING
+2024-03-26T20:05:15.032Z [info] module-svc: Plugin status changed: plugin=module-teams, old=UNAVAILABLE, new=RUNNING
+2024-03-26T20:05:15.237Z [info] module-svc: Plugin status changed: plugin=module-league-static, old=UNAVAILABLE, new=RUNNING
+2024-03-26T20:05:15.268Z [info] server: Listening for requests on http://localhost:3003
+2024-03-26T20:09:24.980Z [info] module-league-state: Flow: lobby - active
+2024-03-26T20:09:27.581Z [info] module-league-state: Flow: champselect - active
+2024-03-26T20:09:32.985Z [info] module-league-state: Flow: lobby - inactive
+2024-03-26T20:09:32.986Z [info] module-league-state: Flow: champselect - inactive
+2024-03-26T20:51:00.579Z [error] lpte-svc: Uncaught error in handler:  Cannot read properties of undefined (reading 'length')
+2024-03-26T20:51:05.156Z [error] lpte-svc: Uncaught error in handler:  Cannot read properties of undefined (reading 'length')
+2024-03-26T20:53:07.638Z [info] main:  _          _       _____           _ _    _ _   
+2024-03-26T20:53:07.640Z [info] main: | |    ___ | |     |_   _|__   ___ | | | _(_) |_ 
+2024-03-26T20:53:07.640Z [info] main: | |   / _ \| |       | |/ _ \ / _ \| | |/ / | __|
+2024-03-26T20:53:07.641Z [info] main: | |__| (_) | |___    | | (_) | (_) | |   <| | |_ 
+2024-03-26T20:53:07.641Z [info] main: |_____\___/|_____|   |_|\___/ \___/|_|_|\_\_|\__|
+2024-03-26T20:53:07.641Z [info] main: 
+2024-03-26T20:53:08.052Z [info] lpte-svc: Initialized event bus.
+2024-03-26T20:53:08.053Z [info] module-svc: Initializing module service.
+2024-03-26T20:53:09.590Z [info] module-svc: Initialized 16 module(s). Now loading plugins.
+2024-03-26T20:53:10.247Z [info] main: LoL Toolkit started up successfully.
+2024-03-26T20:53:09.591Z [info] module-svc: Loaded 16 plugin(s).
+2024-03-26T20:53:10.248Z [info] module-svc: Plugin status changed: plugin=plugin-prod-clock, old=UNAVAILABLE, new=RUNNING
+2024-03-26T20:53:10.248Z [info] module-svc: Plugin status changed: plugin=plugin-database, old=UNAVAILABLE, new=RUNNING
+2024-03-26T20:53:10.249Z [info] module-svc: Plugin status changed: plugin=plugin-config, old=UNAVAILABLE, new=RUNNING
+2024-03-26T20:53:10.250Z [info] module-svc: Plugin status changed: plugin=module-league-runes, old=UNAVAILABLE, new=RUNNING
+2024-03-26T20:53:10.250Z [info] module-svc: Plugin status changed: plugin=module-league-prm, old=UNAVAILABLE, new=RUNNING
+2024-03-26T20:53:10.251Z [info] module-svc: Plugin status changed: plugin=module-league-end-of-game, old=UNAVAILABLE, new=RUNNING
+2024-03-26T20:53:10.251Z [info] module-svc: Plugin status changed: plugin=module-league-champselect-ui, old=UNAVAILABLE, new=RUNNING
+2024-03-26T20:53:10.255Z [info] module-svc: Plugin status changed: plugin=module-caster, old=UNAVAILABLE, new=RUNNING
+2024-03-26T20:53:10.262Z [info] module-svc: Plugin status changed: plugin=plugin-theming, old=UNAVAILABLE, new=RUNNING
+2024-03-26T20:53:10.264Z [info] module-svc: Plugin status changed: plugin=plugin-webapi, old=UNAVAILABLE, new=RUNNING
+2024-03-26T20:53:10.264Z [info] module-svc: Plugin status changed: plugin=module-vmix, old=UNAVAILABLE, new=RUNNING
+2024-03-26T20:53:10.264Z [info] module-svc: Plugin status changed: plugin=module-twitch, old=UNAVAILABLE, new=RUNNING
+2024-03-26T20:53:10.265Z [info] module-svc: Plugin status changed: plugin=module-league-state, old=UNAVAILABLE, new=RUNNING
+2024-03-26T20:53:10.265Z [info] module-svc: Plugin status changed: plugin=module-league-in-game, old=UNAVAILABLE, new=RUNNING
+2024-03-26T20:53:10.272Z [info] module-svc: Plugin status changed: plugin=module-teams, old=UNAVAILABLE, new=RUNNING
+2024-03-26T20:53:10.484Z [info] module-svc: Plugin status changed: plugin=module-league-static, old=UNAVAILABLE, new=RUNNING
+2024-03-26T20:53:10.520Z [info] server: Listening for requests on http://localhost:3003
+2024-03-26T21:48:11.468Z [info] main:  _          _       _____           _ _    _ _   
+2024-03-26T21:48:11.470Z [info] main: | |    ___ | |     |_   _|__   ___ | | | _(_) |_ 
+2024-03-26T21:48:11.470Z [info] main: | |   / _ \| |       | |/ _ \ / _ \| | |/ / | __|
+2024-03-26T21:48:11.471Z [info] main: | |__| (_) | |___    | | (_) | (_) | |   <| | |_ 
+2024-03-26T21:48:11.471Z [info] main: |_____\___/|_____|   |_|\___/ \___/|_|_|\_\_|\__|
+2024-03-26T21:48:11.471Z [info] main: 
+2024-03-26T21:48:11.860Z [info] lpte-svc: Initialized event bus.
+2024-03-26T21:48:11.860Z [info] module-svc: Initializing module service.
+2024-03-26T21:48:13.506Z [info] module-svc: Initialized 16 module(s). Now loading plugins.
+2024-03-26T21:48:14.310Z [info] main: LoL Toolkit started up successfully.
+2024-03-26T21:48:13.506Z [info] module-svc: Loaded 16 plugin(s).
+2024-03-26T21:48:14.311Z [info] module-svc: Plugin status changed: plugin=plugin-prod-clock, old=UNAVAILABLE, new=RUNNING
+2024-03-26T21:48:14.311Z [info] module-svc: Plugin status changed: plugin=plugin-database, old=UNAVAILABLE, new=RUNNING
+2024-03-26T21:48:14.311Z [info] module-svc: Plugin status changed: plugin=plugin-config, old=UNAVAILABLE, new=RUNNING
+2024-03-26T21:48:14.312Z [info] module-svc: Plugin status changed: plugin=module-league-runes, old=UNAVAILABLE, new=RUNNING
+2024-03-26T21:48:14.313Z [info] module-svc: Plugin status changed: plugin=module-league-prm, old=UNAVAILABLE, new=RUNNING
+2024-03-26T21:48:14.313Z [info] module-svc: Plugin status changed: plugin=module-league-end-of-game, old=UNAVAILABLE, new=RUNNING
+2024-03-26T21:48:14.313Z [info] module-svc: Plugin status changed: plugin=module-league-champselect-ui, old=UNAVAILABLE, new=RUNNING
+2024-03-26T21:48:14.317Z [info] module-svc: Plugin status changed: plugin=module-caster, old=UNAVAILABLE, new=RUNNING
+2024-03-26T21:48:14.324Z [info] module-svc: Plugin status changed: plugin=plugin-theming, old=UNAVAILABLE, new=RUNNING
+2024-03-26T21:48:14.326Z [info] module-svc: Plugin status changed: plugin=plugin-webapi, old=UNAVAILABLE, new=RUNNING
+2024-03-26T21:48:14.326Z [info] module-svc: Plugin status changed: plugin=module-vmix, old=UNAVAILABLE, new=RUNNING
+2024-03-26T21:48:14.326Z [info] module-svc: Plugin status changed: plugin=module-twitch, old=UNAVAILABLE, new=RUNNING
+2024-03-26T21:48:14.327Z [info] module-svc: Plugin status changed: plugin=module-league-state, old=UNAVAILABLE, new=RUNNING
+2024-03-26T21:48:14.327Z [info] module-svc: Plugin status changed: plugin=module-league-in-game, old=UNAVAILABLE, new=RUNNING
+2024-03-26T21:48:14.340Z [info] module-svc: Plugin status changed: plugin=module-teams, old=UNAVAILABLE, new=RUNNING
+2024-03-26T21:48:14.612Z [info] module-svc: Plugin status changed: plugin=module-league-static, old=UNAVAILABLE, new=RUNNING
+2024-03-26T21:48:14.619Z [info] server: Listening for requests on http://localhost:3003
+2024-03-26T21:51:15.667Z [error] lpte-svc: Uncaught error in handler:  Cannot read properties of undefined (reading 'length')
+2024-03-26T21:51:36.839Z [error] lpte-svc: Uncaught error in handler:  Cannot read properties of undefined (reading 'length')
+2024-03-26T21:51:42.267Z [error] lpte-svc: Uncaught error in handler:  Cannot read properties of undefined (reading 'length')
+2024-03-26T21:52:07.616Z [info] main:  _          _       _____           _ _    _ _   
+2024-03-26T21:52:07.618Z [info] main: | |    ___ | |     |_   _|__   ___ | | | _(_) |_ 
+2024-03-26T21:52:07.618Z [info] main: | |   / _ \| |       | |/ _ \ / _ \| | |/ / | __|
+2024-03-26T21:52:07.618Z [info] main: | |__| (_) | |___    | | (_) | (_) | |   <| | |_ 
+2024-03-26T21:52:07.619Z [info] main: |_____\___/|_____|   |_|\___/ \___/|_|_|\_\_|\__|
+2024-03-26T21:52:07.619Z [info] main: 
+2024-03-26T21:52:08.039Z [info] lpte-svc: Initialized event bus.
+2024-03-26T21:52:08.039Z [info] module-svc: Initializing module service.
+2024-03-26T21:52:09.510Z [info] module-svc: Initialized 16 module(s). Now loading plugins.
+2024-03-26T21:52:10.139Z [info] main: LoL Toolkit started up successfully.
+2024-03-26T21:52:09.511Z [info] module-svc: Loaded 16 plugin(s).
+2024-03-26T21:52:10.141Z [info] module-svc: Plugin status changed: plugin=plugin-prod-clock, old=UNAVAILABLE, new=RUNNING
+2024-03-26T21:52:10.141Z [info] module-svc: Plugin status changed: plugin=plugin-database, old=UNAVAILABLE, new=RUNNING
+2024-03-26T21:52:10.141Z [info] module-svc: Plugin status changed: plugin=plugin-config, old=UNAVAILABLE, new=RUNNING
+2024-03-26T21:52:10.142Z [info] module-svc: Plugin status changed: plugin=module-league-runes, old=UNAVAILABLE, new=RUNNING
+2024-03-26T21:52:10.142Z [info] module-svc: Plugin status changed: plugin=module-league-prm, old=UNAVAILABLE, new=RUNNING
+2024-03-26T21:52:10.143Z [info] module-svc: Plugin status changed: plugin=module-league-end-of-game, old=UNAVAILABLE, new=RUNNING
+2024-03-26T21:52:10.143Z [info] module-svc: Plugin status changed: plugin=module-league-champselect-ui, old=UNAVAILABLE, new=RUNNING
+2024-03-26T21:52:10.146Z [info] module-svc: Plugin status changed: plugin=module-caster, old=UNAVAILABLE, new=RUNNING
+2024-03-26T21:52:10.153Z [info] module-svc: Plugin status changed: plugin=plugin-theming, old=UNAVAILABLE, new=RUNNING
+2024-03-26T21:52:10.155Z [info] module-svc: Plugin status changed: plugin=plugin-webapi, old=UNAVAILABLE, new=RUNNING
+2024-03-26T21:52:10.155Z [info] module-svc: Plugin status changed: plugin=module-vmix, old=UNAVAILABLE, new=RUNNING
+2024-03-26T21:52:10.155Z [info] module-svc: Plugin status changed: plugin=module-twitch, old=UNAVAILABLE, new=RUNNING
+2024-03-26T21:52:10.156Z [info] module-svc: Plugin status changed: plugin=module-league-state, old=UNAVAILABLE, new=RUNNING
+2024-03-26T21:52:10.156Z [info] module-svc: Plugin status changed: plugin=module-league-in-game, old=UNAVAILABLE, new=RUNNING
+2024-03-26T21:52:10.159Z [info] module-svc: Plugin status changed: plugin=module-teams, old=UNAVAILABLE, new=RUNNING
+2024-03-26T21:52:10.393Z [info] module-svc: Plugin status changed: plugin=module-league-static, old=UNAVAILABLE, new=RUNNING
+2024-03-26T21:52:10.441Z [info] server: Listening for requests on http://localhost:3003
+2024-03-26T21:52:23.477Z [info] module-league-state: Flow: lobby - active
+2024-03-26T21:52:39.588Z [info] module-league-state: Flow: champselect - active
+2024-03-26T21:54:31.161Z [info] module-league-state: Flow: lobby - inactive
+2024-03-26T21:54:31.175Z [info] module-league-state: Flow: champselect - inactive
+2024-03-26T21:59:53.010Z [info] module-league-state: Flow: lobby - active
+2024-03-26T22:00:04.000Z [info] module-league-state: Flow: champselect - active
+2024-03-26T22:00:10.671Z [info] module-league-state: Flow: lobby - inactive
+2024-03-26T22:00:10.685Z [info] module-league-state: Flow: champselect - inactive
+2024-03-26T22:02:30.050Z [info] module-league-state: Flow: lobby - active
+2024-03-26T22:02:32.067Z [info] module-league-state: Flow: champselect - active
+2024-03-26T22:02:36.797Z [info] module-league-state: Flow: lobby - inactive
+2024-03-26T22:02:36.797Z [info] module-league-state: Flow: champselect - inactive
+2024-03-26T22:02:58.654Z [error] lpte-svc: Uncaught error in handler:  Cannot read properties of undefined (reading 'length')
+2024-03-26T22:03:03.717Z [error] lpte-svc: Uncaught error in handler:  Cannot read properties of undefined (reading 'length')
+2024-03-26T22:03:16.799Z [info] main:  _          _       _____           _ _    _ _   
+2024-03-26T22:03:16.801Z [info] main: | |    ___ | |     |_   _|__   ___ | | | _(_) |_ 
+2024-03-26T22:03:16.801Z [info] main: | |   / _ \| |       | |/ _ \ / _ \| | |/ / | __|
+2024-03-26T22:03:16.801Z [info] main: | |__| (_) | |___    | | (_) | (_) | |   <| | |_ 
+2024-03-26T22:03:16.802Z [info] main: |_____\___/|_____|   |_|\___/ \___/|_|_|\_\_|\__|
+2024-03-26T22:03:16.802Z [info] main: 
+2024-03-26T22:03:17.163Z [info] lpte-svc: Initialized event bus.
+2024-03-26T22:03:17.163Z [info] module-svc: Initializing module service.
+2024-03-26T22:03:18.779Z [info] module-svc: Initialized 16 module(s). Now loading plugins.
+2024-03-26T22:03:19.391Z [info] main: LoL Toolkit started up successfully.
+2024-03-26T22:03:18.780Z [info] module-svc: Loaded 16 plugin(s).
+2024-03-26T22:03:19.392Z [info] module-svc: Plugin status changed: plugin=plugin-prod-clock, old=UNAVAILABLE, new=RUNNING
+2024-03-26T22:03:19.392Z [info] module-svc: Plugin status changed: plugin=plugin-database, old=UNAVAILABLE, new=RUNNING
+2024-03-26T22:03:19.393Z [info] module-svc: Plugin status changed: plugin=plugin-config, old=UNAVAILABLE, new=RUNNING
+2024-03-26T22:03:19.394Z [info] module-svc: Plugin status changed: plugin=module-league-runes, old=UNAVAILABLE, new=RUNNING
+2024-03-26T22:03:19.394Z [info] module-svc: Plugin status changed: plugin=module-league-prm, old=UNAVAILABLE, new=RUNNING
+2024-03-26T22:03:19.395Z [info] module-svc: Plugin status changed: plugin=module-league-end-of-game, old=UNAVAILABLE, new=RUNNING
+2024-03-26T22:03:19.395Z [info] module-svc: Plugin status changed: plugin=module-league-champselect-ui, old=UNAVAILABLE, new=RUNNING
+2024-03-26T22:03:19.395Z [info] module-svc: Plugin status changed: plugin=module-caster, old=UNAVAILABLE, new=RUNNING
+2024-03-26T22:03:19.405Z [info] module-svc: Plugin status changed: plugin=plugin-theming, old=UNAVAILABLE, new=RUNNING
+2024-03-26T22:03:19.406Z [info] module-svc: Plugin status changed: plugin=plugin-webapi, old=UNAVAILABLE, new=RUNNING
+2024-03-26T22:03:19.406Z [info] module-svc: Plugin status changed: plugin=module-vmix, old=UNAVAILABLE, new=RUNNING
+2024-03-26T22:03:19.407Z [info] module-svc: Plugin status changed: plugin=module-twitch, old=UNAVAILABLE, new=RUNNING
+2024-03-26T22:03:19.407Z [info] module-svc: Plugin status changed: plugin=module-league-state, old=UNAVAILABLE, new=RUNNING
+2024-03-26T22:03:19.407Z [info] module-svc: Plugin status changed: plugin=module-league-in-game, old=UNAVAILABLE, new=RUNNING
+2024-03-26T22:03:19.423Z [info] module-svc: Plugin status changed: plugin=module-teams, old=UNAVAILABLE, new=RUNNING
+2024-03-26T22:03:19.632Z [info] module-svc: Plugin status changed: plugin=module-league-static, old=UNAVAILABLE, new=RUNNING
+2024-03-26T22:03:19.680Z [info] server: Listening for requests on http://localhost:3003
+2024-03-26T22:03:51.177Z [info] plugin-config: config for module-league-state saved!
+2024-03-26T22:03:58.809Z [info] module-league-state: Flow: lobby - active
+2024-03-26T22:04:12.565Z [info] module-league-state: Flow: champselect - active
+2024-03-26T22:04:14.491Z [info] plugin-config: config for module-league-state saved!
+2024-03-26T22:04:45.796Z [info] module-league-state: Flow: lobby - inactive
+2024-03-26T22:04:45.797Z [info] module-league-state: Flow: champselect - inactive
+2024-03-26T22:04:57.197Z [info] plugin-config: config for module-league-state saved!
+2024-03-26T22:07:24.496Z [info] module-league-state: Flow: lobby - active
+2024-03-26T22:07:26.828Z [info] module-league-state: Flow: champselect - active
+2024-03-26T22:07:52.633Z [info] module-league-state: Flow: lobby - inactive
+2024-03-26T22:07:52.633Z [info] module-league-state: Flow: champselect - inactive
+2024-03-26T22:09:16.757Z [info] module-league-state: Flow: lobby - active
+2024-03-26T22:09:19.278Z [info] module-league-state: Flow: champselect - active
+2024-03-26T22:09:44.012Z [info] module-league-state: Flow: lobby - inactive
+2024-03-26T22:09:44.012Z [info] module-league-state: Flow: champselect - inactive
+2024-03-26T22:11:02.211Z [info] module-league-state: Flow: lobby - active
+2024-03-26T22:11:06.008Z [info] module-league-state: Flow: champselect - active
+2024-03-26T22:11:10.822Z [info] module-league-state: Flow: lobby - inactive
+2024-03-26T22:11:10.822Z [info] module-league-state: Flow: champselect - inactive
+2024-03-26T22:11:20.892Z [info] module-league-state: Flow: lobby - active
+2024-03-26T22:11:24.612Z [info] module-league-state: Flow: champselect - active
+2024-03-26T22:11:58.208Z [info] module-league-state: Flow: lobby - inactive
+2024-03-26T22:11:58.209Z [info] module-league-state: Flow: champselect - inactive
+2024-03-26T22:12:19.931Z [info] module-league-state: Flow: lobby - active
+2024-03-26T22:12:24.548Z [info] module-league-state: Flow: champselect - active
+2024-03-26T22:12:40.812Z [info] module-league-state: Flow: lobby - inactive
+2024-03-26T22:12:40.812Z [info] module-league-state: Flow: champselect - inactive
+2024-03-26T22:12:59.905Z [info] module-league-state: Flow: lobby - active
+2024-03-26T22:13:07.118Z [info] module-league-state: Flow: champselect - active
+2024-03-26T22:13:24.561Z [info] module-league-state: Flow: lobby - inactive
+2024-03-26T22:13:24.561Z [info] module-league-state: Flow: champselect - inactive
+2024-03-26T22:14:05.663Z [info] module-league-state: Flow: lobby - active
+2024-03-26T22:14:10.767Z [info] module-league-state: Flow: champselect - active
+2024-03-26T22:14:30.179Z [info] module-league-state: Flow: lobby - inactive
+2024-03-26T22:14:30.179Z [info] module-league-state: Flow: champselect - inactive
+2024-03-26T22:16:25.215Z [info] module-league-state: Flow: lobby - active
+2024-03-26T22:16:30.208Z [info] module-league-state: Flow: champselect - active
+2024-03-26T22:16:48.733Z [info] module-league-state: Flow: lobby - inactive
+2024-03-26T22:16:48.734Z [info] module-league-state: Flow: champselect - inactive
+2024-03-26T22:21:26.936Z [info] module-league-state: Flow: lobby - active
+2024-03-26T22:21:32.248Z [info] module-league-state: Flow: champselect - active
+2024-03-26T22:21:39.025Z [info] module-league-state: Flow: lobby - inactive
+2024-03-26T22:21:39.039Z [info] module-league-state: Flow: champselect - inactive
+2024-03-26T22:22:30.632Z [info] module-league-state: Flow: lobby - active
+2024-03-26T22:22:35.608Z [info] module-league-state: Flow: champselect - active
+2024-03-26T22:22:42.923Z [info] module-league-state: Flow: lobby - inactive
+2024-03-26T22:22:42.923Z [info] module-league-state: Flow: champselect - inactive
+2024-03-26T22:27:35.064Z [info] module-league-state: Flow: lobby - active
+2024-03-26T22:27:41.124Z [info] module-league-state: Flow: champselect - active
+2024-03-26T22:27:46.893Z [info] module-league-state: Flow: lobby - inactive
+2024-03-26T22:27:46.894Z [info] module-league-state: Flow: champselect - inactive
+2024-03-26T22:27:51.150Z [info] module-league-state: Flow: lobby - active
+2024-03-26T22:27:56.887Z [info] module-league-state: Flow: champselect - active
+2024-03-26T22:28:16.361Z [info] module-league-state: Flow: lobby - inactive
+2024-03-26T22:28:16.362Z [info] module-league-state: Flow: champselect - inactive
+2024-03-26T22:29:25.200Z [info] module-league-state: Flow: lobby - active
+2024-03-26T22:29:32.232Z [info] module-league-state: Flow: champselect - active
+2024-03-26T22:29:50.173Z [info] module-league-state: Flow: lobby - inactive
+2024-03-26T22:29:50.173Z [info] module-league-state: Flow: champselect - inactive
+2024-03-26T22:30:57.259Z [info] module-league-state: Flow: lobby - active
+2024-03-26T22:31:02.999Z [info] module-league-state: Flow: champselect - active
+2024-03-26T22:31:22.835Z [info] module-league-state: Flow: lobby - inactive
+2024-03-26T22:31:22.835Z [info] module-league-state: Flow: champselect - inactive
+2024-03-26T23:22:58.373Z [info] main:  _          _       _____           _ _    _ _   
+2024-03-26T23:22:58.375Z [info] main: | |    ___ | |     |_   _|__   ___ | | | _(_) |_ 
+2024-03-26T23:22:58.375Z [info] main: | |   / _ \| |       | |/ _ \ / _ \| | |/ / | __|
+2024-03-26T23:22:58.376Z [info] main: | |__| (_) | |___    | | (_) | (_) | |   <| | |_ 
+2024-03-26T23:22:58.376Z [info] main: |_____\___/|_____|   |_|\___/ \___/|_|_|\_\_|\__|
+2024-03-26T23:22:58.376Z [info] main: 
+2024-03-26T23:22:58.766Z [info] lpte-svc: Initialized event bus.
+2024-03-26T23:22:58.766Z [info] module-svc: Initializing module service.
+2024-03-26T23:23:00.380Z [info] module-svc: Initialized 16 module(s). Now loading plugins.
+2024-03-26T23:23:01.014Z [info] main: LoL Toolkit started up successfully.
+2024-03-26T23:23:00.381Z [info] module-svc: Loaded 16 plugin(s).
+2024-03-26T23:23:01.016Z [info] module-svc: Plugin status changed: plugin=plugin-prod-clock, old=UNAVAILABLE, new=RUNNING
+2024-03-26T23:23:01.016Z [info] module-svc: Plugin status changed: plugin=plugin-database, old=UNAVAILABLE, new=RUNNING
+2024-03-26T23:23:01.016Z [info] module-svc: Plugin status changed: plugin=plugin-config, old=UNAVAILABLE, new=RUNNING
+2024-03-26T23:23:01.017Z [info] module-svc: Plugin status changed: plugin=module-league-runes, old=UNAVAILABLE, new=RUNNING
+2024-03-26T23:23:01.018Z [info] module-svc: Plugin status changed: plugin=module-league-prm, old=UNAVAILABLE, new=RUNNING
+2024-03-26T23:23:01.018Z [info] module-svc: Plugin status changed: plugin=module-league-end-of-game, old=UNAVAILABLE, new=RUNNING
+2024-03-26T23:23:01.018Z [info] module-svc: Plugin status changed: plugin=module-league-champselect-ui, old=UNAVAILABLE, new=RUNNING
+2024-03-26T23:23:01.018Z [info] module-svc: Plugin status changed: plugin=module-caster, old=UNAVAILABLE, new=RUNNING
+2024-03-26T23:23:01.028Z [info] module-svc: Plugin status changed: plugin=plugin-theming, old=UNAVAILABLE, new=RUNNING
+2024-03-26T23:23:01.030Z [info] module-svc: Plugin status changed: plugin=plugin-webapi, old=UNAVAILABLE, new=RUNNING
+2024-03-26T23:23:01.030Z [info] module-svc: Plugin status changed: plugin=module-vmix, old=UNAVAILABLE, new=RUNNING
+2024-03-26T23:23:01.030Z [info] module-svc: Plugin status changed: plugin=module-twitch, old=UNAVAILABLE, new=RUNNING
+2024-03-26T23:23:01.031Z [info] module-svc: Plugin status changed: plugin=module-league-state, old=UNAVAILABLE, new=RUNNING
+2024-03-26T23:23:01.031Z [info] module-svc: Plugin status changed: plugin=module-league-in-game, old=UNAVAILABLE, new=RUNNING
+2024-03-26T23:23:01.037Z [info] module-svc: Plugin status changed: plugin=module-teams, old=UNAVAILABLE, new=RUNNING
+2024-03-26T23:23:01.293Z [info] module-svc: Plugin status changed: plugin=module-league-static, old=UNAVAILABLE, new=RUNNING
+2024-03-26T23:23:01.299Z [info] server: Listening for requests on http://localhost:3003
+2024-03-26T23:29:56.385Z [info] plugin-webapi: Fetching match data for matchid=EUW1_6873506254
+2024-03-26T23:29:56.734Z [info] plugin-webapi: Fetched match for matchId=EUW1_6873506254, gameId=6873506254
+2024-03-27T18:32:46.685Z [info] main:  _          _       _____           _ _    _ _   
+2024-03-27T18:32:46.687Z [info] main: | |    ___ | |     |_   _|__   ___ | | | _(_) |_ 
+2024-03-27T18:32:46.688Z [info] main: | |   / _ \| |       | |/ _ \ / _ \| | |/ / | __|
+2024-03-27T18:32:46.688Z [info] main: | |__| (_) | |___    | | (_) | (_) | |   <| | |_ 
+2024-03-27T18:32:46.688Z [info] main: |_____\___/|_____|   |_|\___/ \___/|_|_|\_\_|\__|
+2024-03-27T18:32:46.689Z [info] main: 
+2024-03-27T18:32:47.098Z [info] lpte-svc: Initialized event bus.
+2024-03-27T18:32:47.098Z [info] module-svc: Initializing module service.
+2024-03-27T18:32:48.532Z [info] module-svc: Initialized 16 module(s). Now loading plugins.
+2024-03-27T18:32:49.191Z [info] main: LoL Toolkit started up successfully.
+2024-03-27T18:32:48.533Z [info] module-svc: Loaded 16 plugin(s).
+2024-03-27T18:32:49.192Z [info] module-svc: Plugin status changed: plugin=plugin-prod-clock, old=UNAVAILABLE, new=RUNNING
+2024-03-27T18:32:49.192Z [info] module-svc: Plugin status changed: plugin=plugin-database, old=UNAVAILABLE, new=RUNNING
+2024-03-27T18:32:49.192Z [info] module-svc: Plugin status changed: plugin=plugin-config, old=UNAVAILABLE, new=RUNNING
+2024-03-27T18:32:49.194Z [info] module-svc: Plugin status changed: plugin=module-league-runes, old=UNAVAILABLE, new=RUNNING
+2024-03-27T18:32:49.194Z [info] module-svc: Plugin status changed: plugin=module-league-prm, old=UNAVAILABLE, new=RUNNING
+2024-03-27T18:32:49.194Z [info] module-svc: Plugin status changed: plugin=module-league-end-of-game, old=UNAVAILABLE, new=RUNNING
+2024-03-27T18:32:49.195Z [info] module-svc: Plugin status changed: plugin=module-league-champselect-ui, old=UNAVAILABLE, new=RUNNING
+2024-03-27T18:32:49.195Z [info] module-svc: Plugin status changed: plugin=module-caster, old=UNAVAILABLE, new=RUNNING
+2024-03-27T18:32:49.206Z [info] module-svc: Plugin status changed: plugin=plugin-theming, old=UNAVAILABLE, new=RUNNING
+2024-03-27T18:32:49.208Z [info] module-svc: Plugin status changed: plugin=plugin-webapi, old=UNAVAILABLE, new=RUNNING
+2024-03-27T18:32:49.209Z [info] module-svc: Plugin status changed: plugin=module-vmix, old=UNAVAILABLE, new=RUNNING
+2024-03-27T18:32:49.209Z [info] module-svc: Plugin status changed: plugin=module-twitch, old=UNAVAILABLE, new=RUNNING
+2024-03-27T18:32:49.209Z [info] module-svc: Plugin status changed: plugin=module-league-state, old=UNAVAILABLE, new=RUNNING
+2024-03-27T18:32:49.210Z [info] module-svc: Plugin status changed: plugin=module-league-in-game, old=UNAVAILABLE, new=RUNNING
+2024-03-27T18:32:49.222Z [info] module-svc: Plugin status changed: plugin=module-teams, old=UNAVAILABLE, new=RUNNING
+2024-03-27T18:32:49.492Z [info] module-svc: Plugin status changed: plugin=module-league-static, old=UNAVAILABLE, new=RUNNING
+2024-03-27T18:32:49.499Z [info] server: Listening for requests on http://localhost:3003
+2024-03-27T18:35:43.573Z [info] module-league-state: Flow: lobby - active
+2024-03-27T18:35:48.776Z [info] module-league-state: Flow: champselect - active
+2024-03-27T18:36:24.038Z [info] module-league-state: Flow: lobby - inactive
+2024-03-27T18:36:24.038Z [info] module-league-state: Flow: champselect - inactive
+2024-03-27T18:37:52.685Z [info] module-league-state: Flow: lobby - active
+2024-03-27T18:37:56.456Z [info] module-league-state: Flow: champselect - active
+2024-03-27T18:38:22.463Z [info] module-league-state: Flow: lobby - inactive
+2024-03-27T18:38:22.464Z [info] module-league-state: Flow: champselect - inactive
+2024-03-27T18:39:50.261Z [info] module-league-state: Flow: lobby - active
+2024-03-27T18:39:52.532Z [info] module-league-state: Flow: champselect - active
+2024-03-27T18:40:20.275Z [info] module-league-state: Flow: lobby - inactive
+2024-03-27T18:40:20.276Z [info] module-league-state: Flow: champselect - inactive
+2024-03-27T18:42:46.276Z [info] module-league-state: Flow: lobby - active
+2024-03-27T18:42:55.753Z [info] module-league-state: Flow: champselect - active
+2024-03-27T18:43:12.936Z [info] module-league-state: Flow: lobby - inactive
+2024-03-27T18:43:12.936Z [info] module-league-state: Flow: champselect - inactive
+2024-03-27T18:43:50.057Z [info] module-league-state: Flow: lobby - active
+2024-03-27T18:43:55.105Z [info] module-league-state: Flow: champselect - active
+2024-03-27T18:45:28.972Z [info] module-league-state: Flow: lobby - inactive
+2024-03-27T18:45:28.973Z [info] module-league-state: Flow: champselect - inactive
+2024-03-27T18:45:56.001Z [info] module-league-state: Flow: lobby - active
+2024-03-27T18:45:58.577Z [info] module-league-state: Flow: champselect - active
+2024-03-27T18:46:28.162Z [info] module-league-state: Flow: lobby - inactive
+2024-03-27T18:46:28.163Z [info] module-league-state: Flow: champselect - inactive
+2024-03-27T18:50:17.074Z [info] module-league-state: Flow: lobby - active
+2024-03-27T18:50:32.415Z [info] module-league-state: Flow: champselect - active
+2024-03-27T18:52:07.590Z [info] module-league-state: Flow: lobby - inactive
+2024-03-27T18:52:07.601Z [info] module-league-state: Flow: champselect - inactive
+2024-03-27T18:52:11.583Z [info] module-league-state: Flow: lobby - active
+2024-03-27T18:52:25.315Z [info] module-league-state: Flow: champselect - active
+2024-03-27T18:54:10.689Z [info] module-league-state: Flow: lobby - inactive
+2024-03-27T18:54:10.690Z [info] module-league-state: Flow: champselect - inactive
+2024-03-27T18:54:15.696Z [info] module-league-state: Flow: lobby - active
+2024-03-27T18:55:58.839Z [info] module-league-state: Flow: champselect - active
+2024-03-27T18:56:32.782Z [info] module-league-state: Flow: champselect - inactive
+2024-03-27T18:57:08.921Z [info] module-league-state: Flow: champselect - active
+2024-03-27T18:57:42.133Z [info] module-league-state: Flow: champselect - inactive
+2024-03-27T18:58:42.252Z [info] module-league-state: Flow: champselect - active
+2024-03-27T18:59:30.921Z [info] module-league-state: Flow: champselect - inactive
+2024-03-27T18:59:40.107Z [info] module-league-state: Flow: champselect - active
+2024-03-27T19:00:00.618Z [info] module-league-state: Flow: champselect - inactive
+2024-03-27T19:15:34.697Z [info] module-league-state: Flow: champselect - active
+2024-03-27T19:15:40.971Z [info] module-league-state: Flow: champselect - inactive
+2024-03-27T20:48:06.475Z [info] main:  _          _       _____           _ _    _ _   
+2024-03-27T20:48:06.477Z [info] main: | |    ___ | |     |_   _|__   ___ | | | _(_) |_ 
+2024-03-27T20:48:06.478Z [info] main: | |   / _ \| |       | |/ _ \ / _ \| | |/ / | __|
+2024-03-27T20:48:06.478Z [info] main: | |__| (_) | |___    | | (_) | (_) | |   <| | |_ 
+2024-03-27T20:48:06.478Z [info] main: |_____\___/|_____|   |_|\___/ \___/|_|_|\_\_|\__|
+2024-03-27T20:48:06.479Z [info] main: 
+2024-03-27T20:48:06.830Z [info] lpte-svc: Initialized event bus.
+2024-03-27T20:48:06.831Z [info] module-svc: Initializing module service.
+2024-03-27T20:48:08.527Z [info] module-svc: Initialized 16 module(s). Now loading plugins.
+2024-03-27T20:48:09.292Z [info] main: LoL Toolkit started up successfully.
+2024-03-27T20:48:08.528Z [info] module-svc: Loaded 16 plugin(s).
+2024-03-27T20:48:09.294Z [info] module-svc: Plugin status changed: plugin=plugin-prod-clock, old=UNAVAILABLE, new=RUNNING
+2024-03-27T20:48:09.294Z [info] module-svc: Plugin status changed: plugin=plugin-database, old=UNAVAILABLE, new=RUNNING
+2024-03-27T20:48:09.294Z [info] module-svc: Plugin status changed: plugin=plugin-config, old=UNAVAILABLE, new=RUNNING
+2024-03-27T20:48:09.296Z [info] module-svc: Plugin status changed: plugin=module-league-runes, old=UNAVAILABLE, new=RUNNING
+2024-03-27T20:48:09.296Z [info] module-svc: Plugin status changed: plugin=module-league-prm, old=UNAVAILABLE, new=RUNNING
+2024-03-27T20:48:09.297Z [info] module-svc: Plugin status changed: plugin=module-league-end-of-game, old=UNAVAILABLE, new=RUNNING
+2024-03-27T20:48:09.297Z [info] module-svc: Plugin status changed: plugin=module-league-champselect-ui, old=UNAVAILABLE, new=RUNNING
+2024-03-27T20:48:09.297Z [info] module-svc: Plugin status changed: plugin=module-caster, old=UNAVAILABLE, new=RUNNING
+2024-03-27T20:48:09.310Z [info] module-svc: Plugin status changed: plugin=plugin-theming, old=UNAVAILABLE, new=RUNNING
+2024-03-27T20:48:09.313Z [info] module-svc: Plugin status changed: plugin=plugin-webapi, old=UNAVAILABLE, new=RUNNING
+2024-03-27T20:48:09.313Z [info] module-svc: Plugin status changed: plugin=module-vmix, old=UNAVAILABLE, new=RUNNING
+2024-03-27T20:48:09.314Z [info] module-svc: Plugin status changed: plugin=module-twitch, old=UNAVAILABLE, new=RUNNING
+2024-03-27T20:48:09.314Z [info] module-svc: Plugin status changed: plugin=module-league-state, old=UNAVAILABLE, new=RUNNING
+2024-03-27T20:48:09.314Z [info] module-svc: Plugin status changed: plugin=module-league-in-game, old=UNAVAILABLE, new=RUNNING
+2024-03-27T20:48:09.324Z [info] module-svc: Plugin status changed: plugin=module-teams, old=UNAVAILABLE, new=RUNNING
+2024-03-27T20:48:09.621Z [info] module-svc: Plugin status changed: plugin=module-league-static, old=UNAVAILABLE, new=RUNNING
+2024-03-27T20:48:09.627Z [info] server: Listening for requests on http://localhost:3003
+2024-03-27T20:51:07.209Z [info] module-league-state: Flow: champselect - active
+2024-03-27T20:51:40.509Z [info] module-league-state: Flow: champselect - inactive
+2024-03-27T20:53:54.568Z [info] module-league-state: Flow: champselect - active
+2024-03-27T20:54:12.327Z [info] module-league-state: Flow: champselect - inactive
+2024-03-27T21:43:24.617Z [info] module-league-state: Flow: champselect - active
+2024-03-27T21:43:56.387Z [info] module-league-state: Flow: champselect - inactive
+2024-03-27T21:44:57.343Z [info] module-league-state: Flow: champselect - active
+2024-03-27T21:45:22.876Z [info] module-league-state: Flow: champselect - inactive
+2024-03-27T22:20:14.258Z [info] module-league-state: Flow: champselect - active
+2024-03-27T22:20:14.263Z [info] module-league-state: Flow: champselect - game started (spectator delay)
+2024-03-27T22:20:14.286Z [info] plugin-webapi: Fetching livegame data for summoner=undefined
+2024-03-27T22:20:14.498Z [warn] plugin-webapi: Failed to get spectator game information for summoner=undefined, encryptedId=5UOItF7VObqX_ZU1Ufpmh6AkVY91fwEstO4ouDsfWLWWfZk. Maybe this summoner is not ingame currently? Retrying. error=GenericError: Request failed with status code 404
+2024-03-27T22:20:16.507Z [error] plugin-webapi: Failed to get spectator game information for summoner=undefined, encryptedId=5UOItF7VObqX_ZU1Ufpmh6AkVY91fwEstO4ouDsfWLWWfZk, after retries.
+2024-03-27T22:20:16.524Z [error] module-league-state: Loading livegame failed for summoner=undefined
+2024-03-27T22:22:34.518Z [info] module-league-state: Flow: champselect - inactive
+2024-03-27T22:22:59.452Z [info] module-league-state: Flow: champselect - active
+2024-03-27T22:22:59.454Z [info] module-league-state: Flow: champselect - reset summoners to not show
+2024-03-27T22:22:59.455Z [info] module-league-state: Flow: champselect - game started (spectator delay)
+2024-03-27T22:22:59.495Z [info] plugin-webapi: Fetching livegame data for summoner=undefined
+2024-03-27T22:22:59.685Z [warn] plugin-webapi: Failed to get spectator game information for summoner=undefined, encryptedId=5UOItF7VObqX_ZU1Ufpmh6AkVY91fwEstO4ouDsfWLWWfZk. Maybe this summoner is not ingame currently? Retrying. error=GenericError: Request failed with status code 404
+2024-03-27T22:23:01.685Z [error] plugin-webapi: Failed to get spectator game information for summoner=undefined, encryptedId=5UOItF7VObqX_ZU1Ufpmh6AkVY91fwEstO4ouDsfWLWWfZk, after retries.
+2024-03-27T22:23:01.701Z [error] module-league-state: Loading livegame failed for summoner=undefined
+2024-03-27T22:23:42.246Z [info] module-league-state: Flow: champselect - inactive
+2024-03-27T22:26:07.813Z [info] plugin-webapi: Fetching match data for matchid=EUW1_6874763631
+2024-03-27T22:26:08.099Z [info] plugin-webapi: Fetched match for matchId=EUW1_6874763631, gameId=6874763631
+2024-03-28T16:30:39.300Z [info] main:  _          _       _____           _ _    _ _   
+2024-03-28T16:30:39.304Z [info] main: | |    ___ | |     |_   _|__   ___ | | | _(_) |_ 
+2024-03-28T16:30:39.305Z [info] main: | |   / _ \| |       | |/ _ \ / _ \| | |/ / | __|
+2024-03-28T16:30:39.305Z [info] main: | |__| (_) | |___    | | (_) | (_) | |   <| | |_ 
+2024-03-28T16:30:39.305Z [info] main: |_____\___/|_____|   |_|\___/ \___/|_|_|\_\_|\__|
+2024-03-28T16:30:39.305Z [info] main: 
+2024-03-28T16:30:39.754Z [info] lpte-svc: Initialized event bus.
+2024-03-28T16:30:39.755Z [info] module-svc: Initializing module service.
+2024-03-28T16:30:41.465Z [info] module-svc: Initialized 16 module(s). Now loading plugins.
+2024-03-28T16:30:42.179Z [info] main: LoL Toolkit started up successfully.
+2024-03-28T16:30:41.466Z [info] module-svc: Loaded 16 plugin(s).
+2024-03-28T16:30:42.180Z [info] module-svc: Plugin status changed: plugin=plugin-prod-clock, old=UNAVAILABLE, new=RUNNING
+2024-03-28T16:30:42.180Z [info] module-svc: Plugin status changed: plugin=plugin-database, old=UNAVAILABLE, new=RUNNING
+2024-03-28T16:30:42.180Z [info] module-svc: Plugin status changed: plugin=plugin-config, old=UNAVAILABLE, new=RUNNING
+2024-03-28T16:30:42.182Z [info] module-svc: Plugin status changed: plugin=module-league-runes, old=UNAVAILABLE, new=RUNNING
+2024-03-28T16:30:42.182Z [info] module-svc: Plugin status changed: plugin=module-league-prm, old=UNAVAILABLE, new=RUNNING
+2024-03-28T16:30:42.182Z [info] module-svc: Plugin status changed: plugin=module-league-end-of-game, old=UNAVAILABLE, new=RUNNING
+2024-03-28T16:30:42.183Z [info] module-svc: Plugin status changed: plugin=module-league-champselect-ui, old=UNAVAILABLE, new=RUNNING
+2024-03-28T16:30:42.183Z [info] module-svc: Plugin status changed: plugin=module-caster, old=UNAVAILABLE, new=RUNNING
+2024-03-28T16:30:42.194Z [info] module-svc: Plugin status changed: plugin=plugin-theming, old=UNAVAILABLE, new=RUNNING
+2024-03-28T16:30:42.196Z [info] module-svc: Plugin status changed: plugin=plugin-webapi, old=UNAVAILABLE, new=RUNNING
+2024-03-28T16:30:42.196Z [info] module-svc: Plugin status changed: plugin=module-vmix, old=UNAVAILABLE, new=RUNNING
+2024-03-28T16:30:42.196Z [info] module-svc: Plugin status changed: plugin=module-twitch, old=UNAVAILABLE, new=RUNNING
+2024-03-28T16:30:42.197Z [info] module-svc: Plugin status changed: plugin=module-league-state, old=UNAVAILABLE, new=RUNNING
+2024-03-28T16:30:42.197Z [info] module-svc: Plugin status changed: plugin=module-league-in-game, old=UNAVAILABLE, new=RUNNING
+2024-03-28T16:30:42.210Z [info] module-svc: Plugin status changed: plugin=module-teams, old=UNAVAILABLE, new=RUNNING
+2024-03-28T16:30:42.469Z [info] module-svc: Plugin status changed: plugin=module-league-static, old=UNAVAILABLE, new=RUNNING
+2024-03-28T16:30:42.475Z [info] server: Listening for requests on http://localhost:3003
+2024-03-28T18:19:45.324Z [info] module-league-state: Flow: champselect - active
+2024-03-28T18:19:59.328Z [info] module-league-state: Flow: champselect - inactive
+2024-03-28T18:20:06.624Z [info] module-league-state: Flow: champselect - active
+2024-03-28T18:20:39.784Z [info] module-league-state: Flow: champselect - inactive
+2024-03-28T18:21:10.303Z [info] module-league-state: Flow: champselect - active
+2024-03-28T18:22:15.708Z [info] module-league-state: Flow: champselect - inactive
+2024-03-28T18:24:19.506Z [info] module-league-state: Flow: champselect - active
+2024-03-28T18:24:28.500Z [info] module-league-state: Flow: champselect - inactive
+2024-03-28T18:27:35.712Z [info] module-league-state: Flow: champselect - active
+2024-03-28T18:27:41.392Z [info] module-league-state: Flow: champselect - inactive
+2024-03-28T18:43:54.665Z [info] plugin-webapi: Fetching match data for matchid=EUW1_6875733273
+2024-03-28T18:43:54.974Z [info] plugin-webapi: Fetched match for matchId=EUW1_6875733273, gameId=6875733273
+2024-03-28T18:44:03.959Z [info] module-league-state: Flow: champselect - active
+2024-03-28T18:44:03.963Z [info] module-league-state: Flow: champselect - game started (spectator delay)
+2024-03-28T18:44:04.010Z [info] plugin-webapi: Fetching livegame data for summoner=undefined
+2024-03-28T18:44:04.177Z [warn] plugin-webapi: Failed to get spectator game information for summoner=undefined, encryptedId=5UOItF7VObqX_ZU1Ufpmh6AkVY91fwEstO4ouDsfWLWWfZk. Maybe this summoner is not ingame currently? Retrying. error=GenericError: Request failed with status code 404
+2024-03-28T18:44:06.186Z [error] plugin-webapi: Failed to get spectator game information for summoner=undefined, encryptedId=5UOItF7VObqX_ZU1Ufpmh6AkVY91fwEstO4ouDsfWLWWfZk, after retries.
+2024-03-28T18:44:06.203Z [error] module-league-state: Loading livegame failed for summoner=undefined
+2024-03-28T18:51:49.941Z [info] module-league-state: Flow: champselect - inactive
+2024-03-28T18:54:56.999Z [info] plugin-webapi: Fetching match data for matchid=EUW1_6875731923
+2024-03-28T18:54:57.418Z [info] plugin-webapi: Fetched match for matchId=EUW1_6875731923, gameId=6875731923
+2024-03-28T18:58:04.492Z [info] module-league-state: Flow: champselect - active
+2024-03-28T18:58:04.495Z [info] module-league-state: Flow: champselect - reset summoners to not show
+2024-03-28T18:58:04.511Z [info] module-league-state: Flow: champselect - game started (spectator delay)
+2024-03-28T18:58:04.542Z [info] plugin-webapi: Fetching livegame data for summoner=undefined
+2024-03-28T18:58:04.734Z [warn] plugin-webapi: Failed to get spectator game information for summoner=undefined, encryptedId=5UOItF7VObqX_ZU1Ufpmh6AkVY91fwEstO4ouDsfWLWWfZk. Maybe this summoner is not ingame currently? Retrying. error=GenericError: Request failed with status code 404
+2024-03-28T18:58:06.742Z [error] plugin-webapi: Failed to get spectator game information for summoner=undefined, encryptedId=5UOItF7VObqX_ZU1Ufpmh6AkVY91fwEstO4ouDsfWLWWfZk, after retries.
+2024-03-28T18:58:06.758Z [error] module-league-state: Loading livegame failed for summoner=undefined
+2024-03-28T19:06:25.418Z [info] module-league-state: Flow: champselect - inactive
+2024-03-30T09:21:02.627Z [info] main:  _          _       _____           _ _    _ _   
+2024-03-30T09:21:02.630Z [info] main: | |    ___ | |     |_   _|__   ___ | | | _(_) |_ 
+2024-03-30T09:21:02.630Z [info] main: | |   / _ \| |       | |/ _ \ / _ \| | |/ / | __|
+2024-03-30T09:21:02.630Z [info] main: | |__| (_) | |___    | | (_) | (_) | |   <| | |_ 
+2024-03-30T09:21:02.631Z [info] main: |_____\___/|_____|   |_|\___/ \___/|_|_|\_\_|\__|
+2024-03-30T09:21:02.631Z [info] main: 
+2024-03-30T09:21:02.980Z [info] lpte-svc: Initialized event bus.
+2024-03-30T09:21:02.981Z [info] module-svc: Initializing module service.
+2024-03-30T09:21:04.213Z [info] module-svc: Initialized 16 module(s). Now loading plugins.
+2024-03-30T09:21:05.264Z [info] main: LoL Toolkit started up successfully.
+2024-03-30T09:21:04.214Z [info] module-svc: Loaded 16 plugin(s).
+2024-03-30T09:21:05.265Z [info] module-svc: Plugin status changed: plugin=plugin-prod-clock, old=UNAVAILABLE, new=RUNNING
+2024-03-30T09:21:05.266Z [info] module-svc: Plugin status changed: plugin=plugin-database, old=UNAVAILABLE, new=RUNNING
+2024-03-30T09:21:05.266Z [info] module-svc: Plugin status changed: plugin=plugin-config, old=UNAVAILABLE, new=RUNNING
+2024-03-30T09:21:05.267Z [info] module-svc: Plugin status changed: plugin=module-league-runes, old=UNAVAILABLE, new=RUNNING
+2024-03-30T09:21:05.267Z [info] module-svc: Plugin status changed: plugin=module-league-prm, old=UNAVAILABLE, new=RUNNING
+2024-03-30T09:21:05.268Z [info] module-svc: Plugin status changed: plugin=module-league-end-of-game, old=UNAVAILABLE, new=RUNNING
+2024-03-30T09:21:05.268Z [info] module-svc: Plugin status changed: plugin=module-league-champselect-ui, old=UNAVAILABLE, new=RUNNING
+2024-03-30T09:21:05.268Z [info] module-svc: Plugin status changed: plugin=module-caster, old=UNAVAILABLE, new=RUNNING
+2024-03-30T09:21:05.280Z [info] module-svc: Plugin status changed: plugin=plugin-theming, old=UNAVAILABLE, new=RUNNING
+2024-03-30T09:21:05.282Z [info] module-svc: Plugin status changed: plugin=plugin-webapi, old=UNAVAILABLE, new=RUNNING
+2024-03-30T09:21:05.283Z [info] module-svc: Plugin status changed: plugin=module-vmix, old=UNAVAILABLE, new=RUNNING
+2024-03-30T09:21:05.283Z [info] module-svc: Plugin status changed: plugin=module-twitch, old=UNAVAILABLE, new=RUNNING
+2024-03-30T09:21:05.283Z [info] module-svc: Plugin status changed: plugin=module-league-state, old=UNAVAILABLE, new=RUNNING
+2024-03-30T09:21:05.284Z [info] module-svc: Plugin status changed: plugin=module-league-in-game, old=UNAVAILABLE, new=RUNNING
+2024-03-30T09:21:05.290Z [info] module-svc: Plugin status changed: plugin=module-teams, old=UNAVAILABLE, new=RUNNING
+2024-03-30T09:21:05.575Z [info] module-svc: Plugin status changed: plugin=module-league-static, old=UNAVAILABLE, new=RUNNING
+2024-03-30T09:21:05.583Z [info] server: Listening for requests on http://localhost:3003
+2024-03-30T09:31:15.617Z [info] module-league-state: Flow: lobby - active
+2024-03-30T09:39:36.147Z [info] module-league-state: Flow: lobby - inactive
+2024-03-30T09:47:30.484Z [info] module-league-state: Flow: lobby - active
+2024-03-30T10:55:46.993Z [info] main:  _          _       _____           _ _    _ _   
+2024-03-30T10:55:46.995Z [info] main: | |    ___ | |     |_   _|__   ___ | | | _(_) |_ 
+2024-03-30T10:55:46.995Z [info] main: | |   / _ \| |       | |/ _ \ / _ \| | |/ / | __|
+2024-03-30T10:55:46.996Z [info] main: | |__| (_) | |___    | | (_) | (_) | |   <| | |_ 
+2024-03-30T10:55:46.996Z [info] main: |_____\___/|_____|   |_|\___/ \___/|_|_|\_\_|\__|
+2024-03-30T10:55:46.996Z [info] main: 
+2024-03-30T10:55:47.315Z [info] lpte-svc: Initialized event bus.
+2024-03-30T10:55:47.315Z [info] module-svc: Initializing module service.
+2024-03-30T10:55:48.605Z [info] module-svc: Initialized 16 module(s). Now loading plugins.
+2024-03-30T10:55:49.330Z [info] main: LoL Toolkit started up successfully.
+2024-03-30T10:55:48.606Z [info] module-svc: Loaded 16 plugin(s).
+2024-03-30T10:55:49.331Z [info] module-svc: Plugin status changed: plugin=plugin-prod-clock, old=UNAVAILABLE, new=RUNNING
+2024-03-30T10:55:49.332Z [info] module-svc: Plugin status changed: plugin=plugin-database, old=UNAVAILABLE, new=RUNNING
+2024-03-30T10:55:49.332Z [info] module-svc: Plugin status changed: plugin=plugin-config, old=UNAVAILABLE, new=RUNNING
+2024-03-30T10:55:49.333Z [info] module-svc: Plugin status changed: plugin=module-league-runes, old=UNAVAILABLE, new=RUNNING
+2024-03-30T10:55:49.333Z [info] module-svc: Plugin status changed: plugin=module-league-prm, old=UNAVAILABLE, new=RUNNING
+2024-03-30T10:55:49.334Z [info] module-svc: Plugin status changed: plugin=module-league-end-of-game, old=UNAVAILABLE, new=RUNNING
+2024-03-30T10:55:49.334Z [info] module-svc: Plugin status changed: plugin=module-league-champselect-ui, old=UNAVAILABLE, new=RUNNING
+2024-03-30T10:55:49.334Z [info] module-svc: Plugin status changed: plugin=module-caster, old=UNAVAILABLE, new=RUNNING
+2024-03-30T10:55:49.344Z [info] module-svc: Plugin status changed: plugin=plugin-theming, old=UNAVAILABLE, new=RUNNING
+2024-03-30T10:55:49.345Z [info] module-svc: Plugin status changed: plugin=plugin-webapi, old=UNAVAILABLE, new=RUNNING
+2024-03-30T10:55:49.345Z [info] module-svc: Plugin status changed: plugin=module-vmix, old=UNAVAILABLE, new=RUNNING
+2024-03-30T10:55:49.346Z [info] module-svc: Plugin status changed: plugin=module-twitch, old=UNAVAILABLE, new=RUNNING
+2024-03-30T10:55:49.346Z [info] module-svc: Plugin status changed: plugin=module-league-state, old=UNAVAILABLE, new=RUNNING
+2024-03-30T10:55:49.346Z [info] module-svc: Plugin status changed: plugin=module-league-in-game, old=UNAVAILABLE, new=RUNNING
+2024-03-30T10:55:49.351Z [info] module-svc: Plugin status changed: plugin=module-teams, old=UNAVAILABLE, new=RUNNING
+2024-03-30T10:55:49.586Z [info] module-svc: Plugin status changed: plugin=module-league-static, old=UNAVAILABLE, new=RUNNING
+2024-03-30T10:55:49.597Z [info] server: Listening for requests on http://localhost:3003
+2024-03-30T10:56:11.356Z [info] module-league-state: Flow: champselect - active
+2024-03-30T10:56:58.076Z [info] module-league-state: Flow: champselect - inactive
+2024-03-30T11:04:09.733Z [info] module-league-state: Flow: champselect - active
+2024-03-30T11:04:24.883Z [info] module-league-state: Flow: champselect - game started (spectator delay)
+2024-03-30T11:04:24.889Z [info] plugin-webapi: Fetching livegame data for summoner=undefined
+2024-03-30T11:04:25.119Z [warn] plugin-webapi: Failed to get spectator game information for summoner=undefined, encryptedId=5UOItF7VObqX_ZU1Ufpmh6AkVY91fwEstO4ouDsfWLWWfZk. Maybe this summoner is not ingame currently? Retrying. error=GenericError: Request failed with status code 404
+2024-03-30T11:04:27.121Z [error] plugin-webapi: Failed to get spectator game information for summoner=undefined, encryptedId=5UOItF7VObqX_ZU1Ufpmh6AkVY91fwEstO4ouDsfWLWWfZk, after retries.
+2024-03-30T11:04:27.123Z [error] module-league-state: Loading livegame failed for summoner=undefined
+2024-03-30T11:05:13.478Z [info] module-league-state: Flow: champselect - inactive
+2024-03-30T13:02:40.135Z [info] module-league-state: Flow: lobby - active
+2024-03-30T13:02:40.677Z [info] module-league-state: Flow: champselect - active
+2024-03-30T13:02:44.337Z [info] module-league-state: Flow: champselect - reset summoners to not show
+2024-03-30T13:02:56.827Z [info] module-league-state: Flow: lobby - inactive
+2024-03-30T13:02:56.827Z [info] module-league-state: Flow: champselect - inactive
+2024-03-30T13:20:39.790Z [info] module-league-state: Flow: lobby - active
+2024-03-30T13:33:15.611Z [info] module-league-state: Flow: champselect - active
+2024-03-30T13:39:15.174Z [info] module-league-state: Flow: champselect - game started (spectator delay)
+2024-03-30T13:39:15.181Z [info] plugin-webapi: Fetching livegame data for summoner=Shaaaw
+2024-03-30T13:39:15.374Z [info] plugin-webapi: Fetched livegame for summoner=Shaaaw, gameId=6878234189
+2024-03-30T13:42:03.606Z [info] module-league-state: Flow: lobby - inactive
+2024-03-30T13:42:04.463Z [info] module-league-state: Flow: champselect - inactive
+2024-03-30T14:04:14.144Z [info] plugin-webapi: Fetching match data for matchid=EUW1_6878234189
+2024-03-30T14:04:14.461Z [info] plugin-webapi: Fetched match for matchId=EUW1_6878234189, gameId=6878234189
+2024-03-30T15:25:19.553Z [info] module-league-state: Flow: lobby - active
+2024-03-30T15:33:46.455Z [info] module-league-state: Flow: champselect - active
+2024-03-30T15:33:46.719Z [info] module-league-state: Flow: champselect - reset summoners to not show
+2024-03-30T15:39:51.300Z [info] module-league-state: Flow: champselect - game started (spectator delay)
+2024-03-30T15:39:51.307Z [info] plugin-webapi: Fetching livegame data for summoner=Seminol
+2024-03-30T15:39:51.508Z [warn] plugin-webapi: Failed to get spectator game information for summoner=Seminol, encryptedId=JSFjaTuAia18jvFC4Uzy7ZJwfeUrbR8C37qfUCWGLCqd3p8. Maybe this summoner is not ingame currently? Retrying. error=GenericError: Request failed with status code 404
+2024-03-30T15:39:53.509Z [error] plugin-webapi: Failed to get spectator game information for summoner=Seminol, encryptedId=JSFjaTuAia18jvFC4Uzy7ZJwfeUrbR8C37qfUCWGLCqd3p8, after retries.
+2024-03-30T15:39:53.511Z [error] module-league-state: Loading livegame failed for summoner=Seminol
+2024-03-30T15:42:16.967Z [info] module-league-state: Flow: lobby - inactive
+2024-03-30T15:42:40.596Z [info] module-league-state: Flow: champselect - inactive
+2024-03-30T16:18:05.471Z [info] plugin-webapi: Fetching match data for matchid=EUW1_6878398500
+2024-03-30T16:18:05.756Z [info] plugin-webapi: Fetched match for matchId=EUW1_6878398500, gameId=6878398500
+2024-03-30T16:46:56.760Z [info] module-league-state: Flow: lobby - active
+2024-03-30T16:54:02.188Z [info] module-league-state: Flow: champselect - active
+2024-03-30T16:54:02.476Z [info] module-league-state: Flow: champselect - reset summoners to not show
+2024-03-30T17:01:35.039Z [info] module-league-state: Flow: champselect - game started (spectator delay)
+2024-03-30T17:01:35.044Z [info] plugin-webapi: Fetching livegame data for summoner=PI Tobi
+2024-03-30T17:01:35.391Z [info] plugin-webapi: Fetched livegame for summoner=PI Tobi, gameId=6878497043
+2024-03-30T17:03:43.384Z [info] module-league-state: Flow: lobby - inactive
+2024-03-30T17:03:44.670Z [info] module-league-state: Flow: champselect - inactive
+2024-03-30T17:29:59.457Z [info] plugin-webapi: Fetching match data for matchid=EUW1_6878497043
+2024-03-30T17:29:59.766Z [info] plugin-webapi: Fetched match for matchId=EUW1_6878497043, gameId=6878497043
+2024-03-30T17:33:20.780Z [info] plugin-webapi: Fetching match data for matchid=EUW1_6878497043
+2024-03-30T17:33:21.116Z [info] plugin-webapi: Fetched match for matchId=EUW1_6878497043, gameId=6878497043
+2024-03-30T18:21:36.188Z [info] module-league-state: Flow: lobby - active
+2024-03-30T18:23:23.243Z [info] module-league-state: Flow: champselect - active
+2024-03-30T18:23:23.515Z [info] module-league-state: Flow: champselect - reset summoners to not show
+2024-03-30T18:29:17.489Z [info] module-league-state: Flow: champselect - game started (spectator delay)
+2024-03-30T18:29:17.497Z [info] plugin-webapi: Fetching livegame data for summoner=Dralí
+2024-03-30T18:29:17.901Z [info] plugin-webapi: Fetched livegame for summoner=Dralí, gameId=6878622692
+2024-03-30T18:32:07.556Z [info] module-league-state: Flow: lobby - inactive
+2024-03-30T18:32:08.754Z [info] module-league-state: Flow: champselect - inactive
+2024-03-30T18:53:47.471Z [info] plugin-webapi: Fetching match data for matchid=EUW1_6878622692
+2024-03-30T18:53:47.773Z [info] plugin-webapi: Fetched match for matchId=EUW1_6878622692, gameId=6878622692
+2024-03-30T19:49:21.645Z [info] module-league-state: Flow: lobby - active
+2024-03-30T20:02:12.049Z [info] module-league-state: Flow: champselect - active
+2024-03-30T20:02:12.288Z [info] module-league-state: Flow: champselect - reset summoners to not show
+2024-03-30T20:09:51.217Z [info] module-league-state: Flow: champselect - game started (spectator delay)
+2024-03-30T20:09:51.223Z [info] plugin-webapi: Fetching livegame data for summoner=Kinder Soupir
+2024-03-30T20:09:51.400Z [info] plugin-webapi: Fetched livegame for summoner=Kinder Soupir, gameId=6878742524
+2024-03-30T20:12:16.570Z [info] module-league-state: Flow: lobby - inactive
+2024-03-30T20:12:17.880Z [info] module-league-state: Flow: champselect - inactive
+2024-03-30T20:38:55.947Z [info] plugin-webapi: Fetching match data for matchid=EUW1_6878742524
+2024-03-30T20:38:56.261Z [info] plugin-webapi: Fetched match for matchId=EUW1_6878742524, gameId=6878742524
+2024-03-30T21:18:05.964Z [info] module-league-state: Flow: lobby - active
+2024-03-30T21:22:32.132Z [info] module-league-state: Flow: champselect - active
+2024-03-30T21:22:32.411Z [info] module-league-state: Flow: champselect - reset summoners to not show
+2024-03-30T21:28:34.474Z [info] module-league-state: Flow: champselect - game started (spectator delay)
+2024-03-30T21:28:34.483Z [info] plugin-webapi: Fetching livegame data for summoner=Mr Cotton
+2024-03-30T21:28:34.723Z [info] plugin-webapi: Fetched livegame for summoner=Mr Cotton, gameId=6878884142
+2024-03-30T21:30:42.995Z [info] module-league-state: Flow: lobby - inactive
+2024-03-30T21:30:44.467Z [info] module-league-state: Flow: champselect - inactive
+2024-03-30T21:56:35.517Z [info] plugin-webapi: Fetching match data for matchid=EUW1_6878884142
+2024-03-30T21:56:35.840Z [info] plugin-webapi: Fetched match for matchId=EUW1_6878884142, gameId=6878884142

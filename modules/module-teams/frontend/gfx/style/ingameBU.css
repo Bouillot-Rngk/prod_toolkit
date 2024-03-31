@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.module-teams-ingame-gfx {
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  position: relative;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 40px;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: italic;
+  font-variation-settings:
+    "wdth" 81.2,
+    "YTLC" 500;
+  font-weight: 700;
+  color: var(--text-color);
+  font-size: 50px;
+
+}
+
+.blue {
+  color: white;
+  filter: drop-shadow(4px 4px 3px rgba(0,0,0,0.5));
+
+}
+
+.red {
+  color: white;
+  filter: drop-shadow(4px 4px 3px rgba(0,0,0,0.5));
+
+}
+
+#tag-container {
+  position: absolute;
+  line-height: 1;
+  text-transform: uppercase;
+  background-position: center top;
+  width: 70%;
+  height: 100%;
+  left:300px;
+  top: -28px;
+  display: unset;
+  justify-content: center;
+  text-align: center;
+  z-index: 2;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 25px;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: italic;
+  font-variation-settings:
+    "wdth" 75,
+    "YTLC" 500;
+}
+
+#blue-tag,
+#red-tag {
+  z-index: 10;
+  position: absolute;
+  width: 100px;
+  height: 61px;
+  top:25px;
+  display: flex;
+  align-items: center;
+}
+
+#blue-tag {
+  left: 85px;
+  text-align: center;
+}
+
+#red-tag {
+  right: 45px;
+  text-align: center;
+}
+
+.bg-image {
+  z-index: 0;
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
+}
+
+
+#name-container {
+  position: absolute;
+  text-transform: uppercase;
+  line-height: 0.7;
+  width: 100%;
+  height: 6%;
+  font-size: 40px;
+  top: -5px;
+  margin-top: -2px;
+  justify-content: center;
+  text-align: center;
+  z-index: 10;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 45px;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: italic;
+  font-variation-settings:
+    "wdth" 81.2,
+    "YTLC" 500;
+  align-items: center;
+  overflow: '...';
+}
+
+#logo-container {
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  left:300px;
+  top:-8px;
+  z-index: 6;
+}
+.logo {
+  width: 45px;
+  height: 45px;
+  position: inherit;
+  top: 12px;
+}
+#logo-blue{
+  right: 12px
+}
+#logo-red{
+  left: 12px
+}
+
+#blue-name,
+#red-name {
+  z-index: 10;
+  padding-top: 15px;
+  font-size: 25px;
+}
+
+#blue-name {
+  transform: translateX(-560px);
+  margin-top: 0px;
+  width: 16%;
+  height: 30px;
+  text-align: left;
+}
+
+#red-name {
+  transform: translateX(560px);
+  margin-top: 0px;
+  width: 16%;
+  height: 30px;
+  text-align: right;
+}
+
+.points-team {
+  z-index: 15;
+  width: 800px;
+  height: 20%;
+  position: absolute;
+  top:62px;
+  display: flex;
+}
+
+.points-blue{
+  position: absolute;
+  left: 287px;
+}
+.points-red{
+  flex-direction: row-reverse;
+  position: absolute;
+  right:260px;
+}
+.point {
+  display: block;
+  width: 48px;
+  height: 5px;
+  margin-right: 3px;
+  border-radius: 20px 5px 20px 5px;
+}
+.point-red{
+  border-radius: 5px 20px 5px 20px ;
+}

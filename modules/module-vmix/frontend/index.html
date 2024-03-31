@@ -1,0 +1,75 @@
+<h1>vMix</h1>
+
+<table class="table mb-3 mt-5">
+  <thead>
+    <tr>
+      <th scope="col">Namespace</th>
+      <th scope="col">Listener</th>
+      <th scope="col">Function</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody id="functions"></tbody>
+</table>
+
+<form id="addFunction">
+  <div class="d-flex">
+    <div class="form-group w-50">
+      <label for="namespace">Namespace</label>
+      <input
+        type="text"
+        id="namespace"
+        placeholder="Namespace"
+        class="form-control"
+        required
+      />
+    </div>
+    <div class="form-group w-50">
+      <label for="listener">Listener</label>
+      <input
+        type="text"
+        id="listener"
+        placeholder="Listener"
+        class="form-control"
+        required
+      />
+    </div>
+    <div class="form-group w-50">
+      <label for="function">Function</label>
+      <input
+        type="text"
+        id="function"
+        placeholder="Function"
+        class="form-control"
+        required
+      />
+    </div>
+  </div>
+  <button class="btn btn-success btn-block">Add Function</button>
+</form>
+
+<form id="settings" class="mt-5">
+  <h2>Settings</h2>
+  <div class="form-group">
+    <label for="ip">IP</label>
+    <input type="text" class="form-control" id="ip" placeholder="IP" />
+  </div>
+  <div class="form-group">
+    <label for="port">Port</label>
+    <input
+      type="number"
+      min="1"
+      step="1"
+      class="form-control"
+      id="port"
+      placeholder="Port"
+    />
+  </div>
+  <div class="d-flex">
+    <div class="form-group mr-3">
+      <button type="submit" class="btn btn-primary">Save Settings</button>
+    </div>
+  </div>
+</form>
+
+<script src="/pages/op-module-vmix/frontend.js"></script>
