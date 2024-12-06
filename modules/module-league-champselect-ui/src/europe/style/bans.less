@@ -1,0 +1,76 @@
+
+.Bans {
+  position: absolute;
+  bottom: 0;
+  width: 200px;
+  height: calc(4*var(--box-ban-height));
+  display: flex;
+  flex-direction: column-reverse;
+
+  .BansContainer{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: -15px;
+  
+  .Ban {
+    display: block;
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      width: 110%;
+      height: 110%;
+      object-fit: cover;
+      object-position: calc(-1 * var(--ban-image-crop)) calc(-1 * var(--ban-image-crop) + 1px);
+      overflow: hidden;
+    }
+
+    .BanImage.Active::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 89%;
+      opacity: 0.5;
+      animation: pulsate-ban 1.5s infinite;
+    }
+  }
+  }
+
+  .Spacing {
+    width: var(--box-ban-spacer);
+  }
+}
+
+&.TeamBlue .BansBox {
+  flex-direction: column;
+}
+
+&.TeamRed .BansContainer{
+  flex-direction: row-reverse;
+}
+
+.BansWrapper {
+  overflow: hidden;
+}
+
+.BansBox {
+  display: flex;
+  flex-direction: column;
+}
+
+
+@keyframes pulsate-ban {
+  0% {
+    opacity: 1; // 0.7
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1; // 0.7
+  }
+}

@@ -1,0 +1,62 @@
+2024-11-23T14:59:32.230Z [error] plugin-webapi: Failed to get information for summoner=KEYÆ. Maybe this summoner does not exist? error=GenericError: Request failed with status code 400
+2024-11-23T14:59:32.234Z [error] module-league-state: Loading livegame failed for summoner=KEYÆ
+2024-11-23T15:38:22.410Z [error] plugin-webapi: Failed to get information for summoner=KEYÆ. Maybe this summoner does not exist? error=GenericError: Request failed with status code 400
+2024-11-23T15:38:22.413Z [error] module-league-state: Loading livegame failed for summoner=KEYÆ
+2024-11-23T16:08:43.721Z [error] plugin-webapi: Failed to get information for summoner=YoRHa Unit . Maybe this summoner does not exist? error=GenericError: Request failed with status code 400
+2024-11-23T16:08:43.725Z [error] module-league-state: Loading livegame failed for summoner=YoRHa Unit 
+2024-11-23T16:43:35.150Z [error] lpte-svc: Request timed out after 5000ms. Request meta={"channelType":"REQUEST","namespace":"plugin-webapi","type":"fetch-match","version":1,"sender":{"name":"module-league-state","version":"4.13.1","mode":"PLUGIN","path":"D:\\AssetsStream\\Nantarena\\ProdToolkit\\prod_toolkit_ki_mqrche\\modules\\module-league-state"},"reply":"fetch-match-4uvm1lvom3ueg546"}
+2024-11-23T16:43:35.150Z [error] module-league-state: Loading match failed for gameId=7197956479
+2024-11-23T16:46:30.346Z [error] plugin-webapi: Failed to get match information for matchId=EUW1_7197956479. Maybe the match is not over yet? error=GenericError: read ECONNRESET
+2024-11-23T17:16:52.324Z [error] plugin-webapi: Failed to get match information for matchId=EUW1_7197956479. Maybe the match is not over yet? error=GenericError: Request failed with status code 404
+2024-11-23T17:16:52.326Z [error] module-league-state: Loading match failed for gameId=7197956479
+2024-11-23T17:49:57.720Z [error] plugin-webapi: Failed to get information for summoner=DN KiritSuGou. Maybe this summoner does not exist? error=GenericError: Request failed with status code 400
+2024-11-23T17:49:57.723Z [error] module-league-state: Loading livegame failed for summoner=DN KiritSuGou
+2024-11-23T18:19:33.028Z [error] plugin-webapi: Failed to get match information for matchId=EUW1_7198148592. Maybe the match is not over yet? error=GenericError: Request failed with status code 404
+2024-11-23T18:19:33.032Z [error] module-league-state: Loading match failed for gameId=7198148592
+2024-11-23T19:21:58.325Z [error] plugin-webapi: Failed to get information for summoner=AKT LAITCHO. Maybe this summoner does not exist? error=GenericError: Request failed with status code 400
+2024-11-23T19:21:58.328Z [error] module-league-state: Loading livegame failed for summoner=AKT LAITCHO
+2024-11-23T19:50:03.097Z [error] plugin-webapi: Failed to get match information for matchId=EUW1_7198305665. Maybe the match is not over yet? error=GenericError: Request failed with status code 404
+2024-11-23T19:50:03.101Z [error] module-league-state: Loading match failed for gameId=7198305665
+2024-11-23T21:16:00.936Z [error] plugin-webapi: Failed to get information for summoner=Lelariva. Maybe this summoner does not exist? error=GenericError: Request failed with status code 400
+2024-11-23T21:16:00.937Z [error] module-league-state: Loading livegame failed for summoner=Lelariva
+2024-11-23T21:56:10.568Z [error] plugin-webapi: Failed to get match information for matchId=EUW1_7198494266. Maybe the match is not over yet? error=GenericError: Request failed with status code 404
+2024-11-23T21:56:10.571Z [error] module-league-state: Loading match failed for gameId=7198494266
+2024-11-23T23:14:23.210Z [error] lpte-svc: Request timed out after 5000ms. Request meta={"channelType":"REQUEST","namespace":"plugin-webapi","type":"fetch-livegame","version":1,"sender":{"name":"module-league-state","version":"4.13.1","mode":"PLUGIN","path":"D:\\AssetsStream\\Nantarena\\ProdToolkit\\prod_toolkit_ki_mqrche\\modules\\module-league-state"},"reply":"fetch-livegame-4uvm1kgcm3usepr4"}
+2024-11-23T23:14:23.213Z [error] module-league-state: Loading livegame failed for summoner=Lelariva
+2024-11-23T23:17:28.374Z [error] plugin-webapi: Failed to get information for summoner=Lelariva. Maybe this summoner does not exist? error=GenericError: read ECONNRESET
+2024-11-24T07:25:50.573Z [error] plugin-webapi: Failed to get information for summoner=Nalfeinn. Maybe this summoner does not exist? error=GenericError: Request failed with status code 400
+2024-11-24T07:25:50.574Z [error] module-league-state: Loading livegame failed for summoner=Nalfeinn
+2024-11-24T07:34:58.336Z [error] plugin-webapi: Failed to get match information for matchId=EUW1_7199040693. Maybe the match is not over yet? error=GenericError: Request failed with status code 404
+2024-11-24T07:34:58.339Z [error] module-league-state: Loading match failed for gameId=7199040693
+2024-11-24T08:36:51.522Z [error] plugin-webapi: Failed to get information for summoner=SwanniOo. Maybe this summoner does not exist? error=GenericError: Request failed with status code 400
+2024-11-24T08:36:51.524Z [error] module-league-state: Loading livegame failed for summoner=SwanniOo
+2024-11-24T09:04:29.043Z [error] plugin-webapi: Failed to get match information for matchId=EUW1_7199055252. Maybe the match is not over yet? error=GenericError: Request failed with status code 404
+2024-11-24T09:04:29.048Z [error] module-league-state: Loading match failed for gameId=7199055252
+2024-11-24T09:19:14.554Z [error] lpte-svc: Request timed out after 5000ms. Request meta={"channelType":"REQUEST","namespace":"plugin-webapi","type":"fetch-match","version":1,"sender":{"name":"module-league-state","version":"4.13.1","mode":"PLUGIN","path":"D:\\AssetsStream\\Nantarena\\ProdToolkit\\prod_toolkit_ki_mqrche\\modules\\module-league-state"},"reply":"fetch-match-4uvm1i2gm3ve0kc1"}
+2024-11-24T09:19:14.555Z [error] module-league-state: Loading match failed for gameId=7199069218
+2024-11-24T09:19:40.513Z [error] plugin-webapi: Failed to get match information for matchId=EUW1_7199069218. Maybe the match is not over yet? error=GenericError: Request failed with status code 404
+2024-11-24T09:52:34.650Z [error] plugin-webapi: Failed to get information for summoner=McFlyShow. Maybe this summoner does not exist? error=GenericError: Request failed with status code 400
+2024-11-24T09:52:34.654Z [error] module-league-state: Loading livegame failed for summoner=McFlyShow
+2024-11-24T10:20:19.656Z [error] plugin-webapi: Failed to get match information for matchId=EUW1_7199096647. Maybe the match is not over yet? error=GenericError: Request failed with status code 404
+2024-11-24T10:20:19.659Z [error] module-league-state: Loading match failed for gameId=7199096647
+2024-11-24T10:44:03.075Z [error] plugin-webapi: Failed to get information for summoner=McFlyShow. Maybe this summoner does not exist? error=GenericError: Request failed with status code 400
+2024-11-24T10:44:03.078Z [error] module-league-state: Loading livegame failed for summoner=McFlyShow
+2024-11-24T11:13:11.948Z [error] plugin-webapi: Failed to get match information for matchId=EUW1_7199158576. Maybe the match is not over yet? error=GenericError: Request failed with status code 404
+2024-11-24T11:13:11.950Z [error] module-league-state: Loading match failed for gameId=7199158576
+2024-11-24T12:31:56.033Z [error] lpte-svc: Request timed out after 5000ms. Request meta={"channelType":"REQUEST","namespace":"plugin-webapi","type":"fetch-livegame","version":1,"sender":{"name":"module-league-state","version":"4.13.1","mode":"PLUGIN","path":"D:\\AssetsStream\\Nantarena\\ProdToolkit\\prod_toolkit_ki_mqrche\\modules\\module-league-state"},"reply":"fetch-livegame-4uvm1i2gm3vkwd89"}
+2024-11-24T12:31:56.033Z [error] module-league-state: Loading livegame failed for summoner=Bewbiou
+2024-11-24T12:34:51.246Z [error] plugin-webapi: Failed to get information for summoner=Bewbiou. Maybe this summoner does not exist? error=GenericError: read ECONNRESET
+2024-11-24T13:00:08.956Z [error] plugin-webapi: Failed to get match information for matchId=EUW1_7199275884. Maybe the match is not over yet? error=GenericError: Request failed with status code 404
+2024-11-24T13:00:08.959Z [error] module-league-state: Loading match failed for gameId=7199275884
+2024-11-24T13:22:37.799Z [error] plugin-webapi: Failed to get information for summoner=Bewbiou. Maybe this summoner does not exist? error=GenericError: Request failed with status code 400
+2024-11-24T13:22:37.803Z [error] module-league-state: Loading livegame failed for summoner=Bewbiou
+2024-11-24T13:58:03.685Z [error] plugin-webapi: Failed to get match information for matchId=EUW1_7199374029. Maybe the match is not over yet? error=GenericError: Request failed with status code 404
+2024-11-24T13:58:03.688Z [error] module-league-state: Loading match failed for gameId=7199374029
+2024-11-24T14:32:01.289Z [error] plugin-webapi: Failed to get information for summoner=Kinder Soupir. Maybe this summoner does not exist? error=GenericError: Request failed with status code 400
+2024-11-24T14:32:01.291Z [error] module-league-state: Loading livegame failed for summoner=Kinder Soupir
+2024-11-24T15:07:39.122Z [error] plugin-webapi: Failed to get match information for matchId=EUW1_7199480229. Maybe the match is not over yet? error=GenericError: Request failed with status code 404
+2024-11-24T15:07:39.125Z [error] module-league-state: Loading match failed for gameId=7199480229
+2024-11-24T15:32:18.775Z [error] plugin-webapi: Failed to get information for summoner=Kinder Soupir. Maybe this summoner does not exist? error=GenericError: Request failed with status code 400
+2024-11-24T15:32:18.777Z [error] module-league-state: Loading livegame failed for summoner=Kinder Soupir
+2024-11-24T16:06:51.382Z [error] plugin-webapi: Failed to get match information for matchId=EUW1_7199599283. Maybe the match is not over yet? error=GenericError: Request failed with status code 404
+2024-11-24T16:06:51.384Z [error] module-league-state: Loading match failed for gameId=7199599283
