@@ -1,0 +1,283 @@
+body {
+  height: 1080px;
+  width: 1920px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 25px;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: italic;
+  font-variation-settings:
+    "wdth" 81.2,
+    "YTLC" 500;
+
+}
+
+#teamStats {
+  width: 710px;
+  height: 70%;
+  left: 100px;
+  top: 220px;
+  grid-column: 1 / 1;
+  grid-row: 1 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  color:white;
+}
+
+.titre {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: -50px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 40px;;
+  filter: drop-shadow(4px 4px 3px rgba(0,0,0,0.5));
+}
+
+#goldDiff {
+  transform: translateY(-5px);
+}
+
+#time {
+  top:32px;
+  font-size: 20px;
+}
+
+#timePlayed {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 60px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 40px;;
+  filter: drop-shadow(4px 4px 3px rgba(0,0,0,0.5));
+}
+
+.border {
+  position: absolute;
+  border :solid;
+  padding: 8px 100px;
+  border-width: 8px;
+  border-radius: 10px;
+  border-color: #c5279c;
+  background-color: #09a4d8;
+  filter: drop-shadow(4px 4px 2px rgba(0,0,0,0.5));
+
+}
+
+.statsContainer {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  margin-bottom: 40px;
+  filter: drop-shadow(4px 4px 2px rgba(0,0,0,0.5));
+
+}
+
+.bg-image {
+  z-index: 0;
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
+  left:0;
+  top:0;
+}
+
+
+.statsContainer:last-child {
+  margin-bottom: 0px;
+}
+
+.label {
+  font-family: var(--secondary-font-family);
+  text-transform: uppercase;
+  font-size: 25px;
+  color: var(--accent-color);
+  margin: 0 35px;
+  width: 225px;
+  font-weight: 800;
+}
+
+#drakes .label{
+  position: absolute;
+}
+
+.stat {
+  font-size: 30px;
+  width: 300px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 27px;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 75,
+    "YTLC" 540;
+}
+
+.stat.blue {
+  color: white;
+  text-align: center;
+}
+
+.stat.red {
+  margin-right: auto;
+  color: var(--red-team);
+  text-align: center;
+}
+#kda {
+  margin-top: 6px;
+}
+
+#kda .stat {
+  width: 350px;
+}
+.dragon {
+  width: 43px;
+  height: 30px;
+  object-fit: contain;
+  transform: translateX(15px);
+}
+
+.stat.blue .dragon:not(:last-child) {
+  margin-left: 10px;
+}
+
+#drakes .stat,
+#bans .stat {
+  display: flex;
+  justify-content: center;
+}
+
+#drakes .stat.blue {
+  flex-direction: row-reverse;
+  transform: translateX(-65px);
+}
+
+#drakes .stat.red{
+  transform: translateX(40px);
+}
+
+.stat.red .dragon:not(:last-child) {
+  margin-right: 10px;
+}
+
+.ban {
+  width: 45px;
+}
+
+.stat.blue .ban:not(:first-child) {
+  margin-left: 12px;
+}
+
+.stat.red .ban:not(:last-child) {
+  margin-right: 12px;
+}
+
+
+#goldGraph {
+  width: 700px;
+  position: absolute;
+  right: 90px;
+  top: 220px;
+  border :solid;
+  border-width: 8px;
+  border-radius: 10px;  
+  border-color: #c5279c;
+  background-color: #09a4d8;
+  filter: drop-shadow(4px 4px 2px rgba(0,0,0,0.5));
+}
+
+#damageGraph {
+  width: 100%;
+  height: 100%;
+  display: none;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  position: absolute;
+}
+
+#damageGraph .team {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#damageGraph .container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+#damageGraph .red {
+  margin-left: auto;
+}
+
+#damageGraph .red .container,
+#damageGraph .red .container .dmgContainer {
+  flex-direction: row-reverse;
+}
+
+.champImg {
+  width: 45px;
+  height: 45px;
+}
+
+.blue .champImg {
+  margin-right: 20px;
+}
+
+.red .champImg {
+  margin-left: 20px;
+}
+
+.dmgContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.dmgContainer h3 {
+  color: var(--accent-color);
+  animation: fade-in 0.25s;
+}
+
+#redTeam .dmgContainer {
+  justify-content: flex-end;
+}
+
+.dmgContainer .dmgBar {
+  height: 35px;
+  width: var(--bar-width);
+  animation: scale 0.5s ease;
+}
+
+.blue .dmgBar {
+  background-color: var(--blue-team);
+  transform-origin: left;
+  margin-right: 1rem;
+}
+
+.red .dmgBar {
+  background-color: var(--red-team);
+  transform-origin: right;
+  margin-left: 1rem;
+}
+
+@keyframes scale {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: var(--bar-width);
+  }
+}

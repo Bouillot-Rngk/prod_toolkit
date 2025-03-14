@@ -1,0 +1,4 @@
+**/node_modules/
+!/**/build/**
+**/module_league_state/frontend/
+modules/module-league-static/frontend/img
