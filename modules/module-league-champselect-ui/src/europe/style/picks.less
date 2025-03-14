@@ -1,0 +1,204 @@
+@keyframes open_player_text {
+  0%{
+    height: 30px;
+  }
+  100%{
+    height: 60px;
+  }
+}
+
+
+.Picks {
+  width: 100%;
+  height: var(--box-pick-height);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  .Pick {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #0a0a0a;
+    border: solid var(--border-between-color) 5px;
+    border-top: none;
+
+    &:first-child{
+      border: solid var(--border-between-color) 5px;
+    }
+
+    &.Active {
+      .PlayerName {
+        position: absolute;
+        bottom: -20px;
+        margin-top: calc(-1 * var(--pick-name-height));
+        line-height: calc(2 * var(--pick-name-height));
+        .textInfos{
+          position: absolute;
+          bottom: 0;
+          animation: open_player_text ease-in-out 0.5s forwards;
+          line-height: 0.9;
+          white-space: no-wrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          word-break: break-all;
+        }
+        .textInfos::after{
+          animation: open_player_text ease-in-out 0.5s backwards;
+        }
+      }
+
+      animation: open_player ease-in-out 0.5s forwards;
+      animation-delay: 1s;
+    }
+
+    .PlayerName {
+      position: absolute;
+      bottom: 10px;
+      text-transform: uppercase;
+      transition: height 1s, font-size 1s, margin-top 1s, background-color 0.3s, color 0.3s;
+      height: var(--pick-name-height);
+      color: white;
+      background-color: transparent;
+      text-align: center;
+      font-size: calc(0.8 * var(--pick-name-height));
+      line-height: var(--pick-name-height);
+      display: block;
+
+      .textInfos{
+        position: absolute;
+        width: 350px;
+        height: 30px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        word-wrap: break-word;
+        filter:drop-shadow(2px 2px 4px rgb(0,0,0))
+      }
+    }
+
+    .ChampionName{
+      position: absolute;
+      top:0;
+      text-transform: uppercase;
+      transition: height 1s, font-size 1s, margin-top 1s, background-color 0.3s, color 0.3s;
+      height: var(--pick-name-height);
+      color: white;
+      background-color: transparent;
+      text-align: center;
+      font-size: calc(0.5 * var(--pick-name-height));
+      line-height: var(--pick-name-height);
+      .textInfos{
+        width: 350px;
+        filter:drop-shadow(0px 0px 4px rgb(0,0,0))
+      }
+
+    }
+
+    .SummonerSpells {
+      position: absolute;
+      top: calc(var(--box-pick-height) - 30px - var(--summoner-spell-size));
+      right: 0;
+      z-index: 10;
+
+      img {
+        height: var(--summoner-spell-size);
+        width: var(--summoner-spell-size);
+      }
+    }
+
+    .PickImage {
+      position: relative;
+      height: 100% ;
+
+      img {
+        width: calc(100% + calc(2 * var(--pick-image-crop)));
+        height: 100%;
+        object-fit: cover;
+        object-position: calc(-1 * var(--pick-image-crop)) calc(-1 * var(--pick-image-crop));
+      }
+
+      &.Active::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        // height: calc(100% - var(--pick-name-height));
+        height: calc(100% + var(--pick-name-height));
+        opacity: 0.5;
+        animation: pulsate-pick 1.5s infinite;
+        transition: height 1s;
+
+        // z-index: 20;
+      }
+    }
+  }
+}
+
+&.TeamBlue .Picks .Pick {
+  &.Active {
+    .ChampionName,
+    .PlayerName {
+      background-color: rgba(0,0,0,0.2);
+      color: white;
+    }
+  }
+  .ChampionName,
+  .PlayerName{
+    text-align: right;
+  }
+
+}
+&.TeamRed .Picks .Pick {
+  &.Active {
+    .ChampionName,
+    .PlayerName {
+      position: relative;
+      background-color: rgba(0,0,0,0.2);
+      color: white;
+      .textInfos{
+        transform: translate(3px, -28px);
+      }
+    }  
+  }
+    .ChampionName, 
+    .PlayerName {
+      .textInfos{
+        text-align: left;
+        transform: translateX(3px);
+      }
+  
+    }
+}
+
+@keyframes pulsate-pick {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@keyframes open_player {
+  0%{
+      height: 100%;
+  }
+  100%{
+      height: 150%;
+  }
+}
+
+@keyframes close_player {
+  0%{
+      height: 150%;
+  }
+  100%{
+      height: 100%;
+  }
+}
+
