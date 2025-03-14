@@ -3,3 +3,5 @@
 **/module_league_state/frontend/
 modules/module-league-static/frontend/img
 modules_temp
+**/logs
+logs
