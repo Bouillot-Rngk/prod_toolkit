@@ -1,0 +1,404 @@
+@font-face {
+  font-family: 'Futura';
+  src: url(./fonts/Futura.ttf);
+  font-weight: 300;
+  font-optical-sizing: auto;
+  font-variation-settings: 
+  "wdth" 81.5,
+  "YTLC" 500;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/background.png");
+  font-family: 'Futura', "Nunito Sans", sans-serif;
+  font-weight: 800;
+  font-optical-sizing: auto;
+  font-variation-settings: 
+  "wdth" 81.5,
+  "YTLC" 500;
+
+  color: white;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+#pageContent {
+  display: flex;
+  flex-direction: column;
+  width: 1920px;
+  height: 1080px;
+}
+
+#matchInfo {
+  width: 100%;
+  height: 135px;
+}
+
+#matchHeader {
+  width: 50%;
+  height: 135px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-family: 'Futura', "Nunito Sans", sans-serif;
+  font-weight: 1000;
+}
+
+.team.logo {
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+}
+
+/* Logos */
+.team.logo img {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+}
+
+/* Name + tag wrapper */
+.name-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-width: 150px;
+  padding: 0 8px;
+}
+
+.team.blue.name-info {
+  align-items: flex-start;
+  text-align: left;
+}
+
+/* Align red to right */
+.team.red.name-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;}
+#red-name{
+  text-align: right;
+}
+/* Name */
+.team.name {
+  font-size: 24px;
+  font-weight: 800;
+  color: white;
+  white-space: nowrap;
+  line-height: 1.2;
+  width: 100%; 
+  
+}
+
+/* Tag */
+.team.tag {
+  font-size: 16px;
+  font-style: italic;
+  color: var(--accent-color, #F9B233);
+  font-weight: 600;
+  opacity: 0.8;
+  white-space: nowrap;
+}
+
+/* Score */
+.team.score {
+  font-size: 30px;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  width: 60px;
+}
+.team.red.score {
+  font-size: 30px;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  width: 60px;
+}
+
+/* Game time section */
+.game-time-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  min-width: 260px;
+}
+
+.game-time-header {
+  font-size: 20px;
+  color: #aaa;
+  letter-spacing: 0.05em;
+}
+
+.game-time {
+  font-size: 20px;
+  color:  #ffffff;
+  font-weight: bold;
+}
+/* Partner bar at bottom */
+#partnerArea {
+  height: 135px;
+  width: 100%;
+}
+
+/* Main area above partner bar */
+#mainContent {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  width: 80%;
+  left:8%;
+  top: 135px;
+  height: 810px;
+  padding: 10px 50px 0 50px;
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-radius: 12px;  z-index: 10;
+  gap: 40px;
+}
+
+/* Left side: Stats + Draft */
+#leftColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}
+#leftBorder{
+  position: absolute;
+  width: 30%;
+  height: 70%;
+  left: 10%;
+  top:160px;
+  border: 4px solid;
+  border-image: linear-gradient(135deg, #F7EC6C 0%, #CB890F 30%, #FBD745 75%, #BF6617 100%);
+  border-image-slice: 1;
+  border-radius: 12px;
+  z-index: 99;
+}
+
+/* Right side: Damage + Gold */
+#rightColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  width: 50%;
+  gap: 20px
+}
+
+/* GOLD GRAPH WRAPPER */
+#goldGraphWrapper {
+  position: relative;
+  width: 800px;
+  height: 300px;
+  right: 50px;
+}
+#goldGraph {
+  width: 100%;
+  height: 100%;
+}
+#eventOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* DAMAGE GRAPH */
+#damageGraph {
+  width: 910px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.team {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 8px;
+}
+
+/* One container per player */
+/* Shared container for each player */
+.container {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  gap: 8px;
+}
+
+/* Champion icon stays full height */
+.champImg {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Damage container is centered vertically with shorter bar height */
+.dmgContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 140%; /* 👈 shorter bar */
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+  overflow: hidden;
+  justify-content: flex-start;
+}
+
+/* Damage bar itself */
+.dmgBar {
+  position: absolute;
+  left: 0;
+  height: 70%;
+  width: var(--bar-width, 50%);
+  background: linear-gradient(to left, #30D5C8 10%, #08648f 40%, #010e14 100%);
+  border-radius: 3px;
+  z-index: 1;
+  transition: width 0.7s ease-out;
+}
+
+/* Text value on top of the bar */
+.dmgContainer h3 {
+  margin: 0;
+  padding-left: 0.5rem;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  z-index: 2;
+  line-height: 1;
+}
+
+.team.red .container {
+  flex-direction: row-reverse;
+}
+.team.red .dmgContainer {
+  justify-content: flex-end;
+  background: rgba(255, 255, 255, 0.05);
+  position: relative;
+}
+
+.team.red .dmgBar {
+  right: 0;
+  left: unset;
+  width: var(--bar-width, 50%);
+  border-radius: 3px;
+  background:linear-gradient(to left, rgba(255, 51, 102, 0.6), #FF3366);
+  position: absolute;
+}
+
+
+/* END GAME STATS FLEX ROW */
+#teamStats {
+  height: 600px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 6px;
+  padding: 10px 0;
+  font-family: "Futura", "Nunito Sans", sans-serif;
+  font-weight: 800;
+  font-optical-sizing: auto;
+  font-variation-settings: 
+  "wdth" 81.5,
+  "YTLC" 500;
+
+}
+
+.statRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  gap: 5px;
+}
+
+/* Standard text stats */
+.stat {
+  width: 30%;
+  text-align: center;
+  font-size: 20px;
+  filter : drop-shadow(0px 2px 4px rgba(0, 0, 28, 1));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Stat label column */
+.label {
+  flex: 1;
+  text-align: center;
+  color: #fff;
+  filter : drop-shadow(0px 2px 4px rgba(0, 0, 28, 1));
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+/* Dragon icons */
+.dragon-icons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+}
+
+.dragon-icons.blue{
+  transform: translateX(62.5%);
+}
+
+.dragon-icons.red{
+  transform: translateX(-62.5%);
+}
+
+.dragon-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.5));
+}
+
+/* Icons + value (Herald, Void Grubs, Atakhan) */
+.icon-count {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  justify-content: center;
+}
+.icon-count .icon {
+  width: 35px;
+  height: 35px;
+}
+
+.icon-count span {
+  font-size: 18px;
+}

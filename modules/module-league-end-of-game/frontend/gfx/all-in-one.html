@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All in One | League</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/all-in-one.css" />
+    <!-- <link rel="stylesheet" href="css/end-of-game.css" /> -->
+    <link rel="stylesheet" href="/pages/op-plugin-theming/active/index.css" />
+
+    <script src="/static/main-bundle.js"></script>
+    <script src="js/Chart.bundle.min.js"></script>
+  </head>
+  <body class="module-league-end-of-game-all-in-one-gfx">
+    <div id="pageContent">
+      <div id="matchInfo">
+        <div id="matchHeader">
+            <div class="team blue logo">
+              <img id="logo-blue" src="./img/baron.png" />
+            </div>
+            <div class="team blue name-info">
+              <div class="team blue name" id="blue-name">Feur</div>
+              <div class="team blue tag" id="blue-tag">FR</div>
+            </div>
+            <div class="team blue score" id="blue-score">0</div>
+
+            <div class="game-time-info">
+              <div class="game-time" id="game-time-header">TEMPS DE JEU</div>
+              <div class="game-time" id="game-time">20:50</div>
+            </div>
+            
+            <div class="team red score" id="red-score">0</div>
+            <div class="team red name-info">
+              <div class="team red name" id="red-name">Coubeh</div>
+              <div class="team red tag" id="red-tag">CB</div>
+            </div>
+            <div class="team red logo">
+              <img id="logo-red" src="./img/herald.png" />
+            </div>        
+        </div>
+      </div>
+      <div id="leftBorder"></div>
+      <div id="mainContent">
+        <div id="leftColumn">
+          <div id="leftTop">
+            <div id="teamStats" class="statsWrapper">
+              <div id="kda" class="statRow">
+                <p class="stat blue"></p>
+                <p class="label">K/D/A</p>
+                <p class="stat red"></p>
+              </div>
+              <div id="gold" class="statRow">
+                <p class="stat blue"></p>
+                <p class="label">GOLD</p>
+                <p class="stat red"></p>
+              </div>
+              <div id="tower" class="statRow">
+                <p class="stat blue"></p>
+                <p class="label">TOURS</p>
+                <p class="stat red"></p>
+              </div>
+              <div id="drakes" class="statRow">
+                <div class="stat blue dragon-icons"></div>
+                <p class="label">DRAGONS</p>
+                <div class="stat red dragon-icons"></div>
+              </div>
+              <div id="elders" class="statRow">
+                <div class="stat blue icon-count"><img class="icon" src="./img/elderLarge.png"><span>3</span></div>
+                <p class="label">ELDER DRAGONS</p>
+                <div class="stat red icon-count"><img class="icon" src="./img/elderLarge.png"><span>0</span></div>
+              </div>
+              <div id="barons" class="statRow">
+                <div class="stat blue icon-count"><img class="icon" src="./img/baron.png" style="width: 25px; height: 25px; margin-right: 10px;"><span>0</span></div>
+                <p class="label">BARON</p>
+                <div class="stat red icon-count"><img class="icon" src="./img/baron.png" style="width: 25px; height: 25px; margin-right: 10px;"><span>0</span></div>
+              </div>
+              <div class="statRow" id="herald">
+                <div class="stat blue"></div>
+                <p class="label">HERALD</p>
+                <div class="stat red"></div>
+              </div>              
+              <div id="horde" class="statRow">
+                <div class="stat blue icon-count"><img class="icon" src="./img/horde.png"><span>3</span></div>
+                <p class="label">VOID GUBS</p>
+                <div class="stat red icon-count"><img class="icon" src="./img/horde.png"><span>0</span></div>
+              </div>
+              <div class="statRow" id="atakhan">
+                <div class="stat blue"></div>
+                <p class="label">ATAKHAN</p>
+                <div class="stat red"></div>
+              </div>
+            </div>          
+          </div>
+          <div id="leftBottom">
+            <div id="draftRecap"></div>
+          </div>
+        </div>
+        
+        <div id="rightColumn">
+          <div id="rightTop">
+            <div id="damageGraph">
+              <div class="team blue"></div>
+              <div class="team red"></div>      
+            </div>
+          </div>
+          <div id="rightBottom">
+            <div id="goldGraphWrapper" style="position: relative; width: 1920px; height: 1000px;">
+              <div id="goldGraph"></div>
+              <div id="eventOverlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;"></div>
+            </div>    
+          </div>
+        </div>
+      </div>
+      <div id="partnerArea"></div>
+    </div>
+
+    <script src="js/all-in-one/main.js" defer></script>
+    <script src="js/all-in-one/teamStats.js" defer></script>
+    <script src="js/all-in-one/damage.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="js/all-in-one/gold.js" defer></script>
+    
+  </body>
+</html>
