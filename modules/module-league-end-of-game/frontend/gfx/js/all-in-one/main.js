@@ -28,13 +28,20 @@ function displayData(emdOfGameData) {
 
   const teams = state.teams
   displayTeamStats(teams)
-
   const frames = state.goldFrames
   const timeline = state.eventTimeline
   displayGoldGraph(frames, timeline)
 
   const participants = state.participants
   displayDamageGraph(participants)
+  displayGameTime(state.gameDuration)
+  if (state.featTeamId !== 300){
+    displayFeat(state.featTeamId)
+  } else {
+    const feat = document.getElementById("feat")
+    feat.style.display = "none"
+  }
+
 }
 
 const themeBlue = document
@@ -44,6 +51,16 @@ const themeRed = document
   .querySelector(':root')
   .style.getPropertyValue('--red-team')
 
+function MinSec(sec) {
+  var minutes = Math.floor(sec / 60)
+  var seconds = (sec % 60)
+  return minutes + ':' + seconds 
+}
+
+
+function displayGameTime(gameDuration) {
+  document.getElementById('game-time').textContent = MinSec(gameDuration) || '00:00';
+}
 function updateHeaderFromTeamData(data) {
   if (!data?.teams || !data.teams.blueTeam || !data.teams.redTeam) return;
 
@@ -122,4 +139,18 @@ LPTE.onready(async () => {
   displayData(emdOfGameData)
 
   LPTE.on(namespace, 'update', displayData)
+
+  const leagueState = await LPTE.request({
+    meta: {
+      namespace: 'module-league-state',
+      type: 'request',
+      version: 1
+    }
+  })
+  displayPUBOrder(leagueState.state.lcu.champselect.order)
+
+  LPTE.on('module-league-state', 'champselect-update', (e) => {
+    displayPUBOrder(e.order)
+  })
+
 })

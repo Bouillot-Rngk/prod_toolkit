@@ -9,13 +9,11 @@ const eldersDiv = teamStats.querySelector('#elders')
 const baronsDiv = teamStats.querySelector('#barons')
 const bansDiv = teamStats.querySelector('#bans')
 
-console.log(kdaDiv)
 
 function displayTeamStats(teams) {
   // KDA
   const blueTeamKDA = `${teams[100].stats.kills} / ${teams[100].stats.deaths} / ${teams[100].stats.assists}`
   kdaDiv.querySelector('.stat.blue').innerHTML = blueTeamKDA
-  console.log(kdaDiv.querySelector('.stat.blue'))
 
   const redTeamKDA = `${teams[200].stats.kills} / ${teams[200].stats.deaths} / ${teams[200].stats.assists}`
   kdaDiv.querySelector('.stat.red').innerHTML = redTeamKDA
@@ -127,4 +125,12 @@ function displayBans(teams) {
 
     bansDiv.querySelector('.stat.red').appendChild(banImg)
   }
+}
+
+function displayFeat(teamId){
+  const blueteamScore = teamId === 100 ? 1 : 0
+  const redteamScore = teamId === 200 ? 1 : 0
+  const color = teamId === 100 ? "blue" : "red"
+  const todisplay = `./img/feat_${color}.png`
+  setUniqueObjectiveIcon('feat', blueteamScore, redteamScore, todisplay);
 }

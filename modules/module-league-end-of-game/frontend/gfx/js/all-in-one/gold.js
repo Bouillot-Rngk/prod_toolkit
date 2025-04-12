@@ -162,13 +162,46 @@ async function displayGoldGraph(frames, timeline) {
   document.getElementById("goldGraph").innerHTML = ""
   const Chart = new ApexCharts(document.getElementById("goldGraph"), options);
   Chart.render().then(()=>{
-    const path = document.querySelector('.apexcharts-series path.apexcharts-line');
-    if (path) {
-      path.style.animation = 'pulseStroke 5s ease-in-out infinite';
+    const goldValues = Object.values(frames);
+    const minGold = (Math.min(...goldValues, 0) / 1000).toFixed(3)*1000;
+    const maxGold = (Math.max(...goldValues, 0)/ 1000).toFixed(3)*1000;
+    const yRange = maxGold - minGold;
+
+    // function getYPositionFromValue(value, graphHeight, minGold, maxGold, teamId) {
+    //   const middlePercent = ( Math.abs(minGold)) / (Math.abs(maxGold) + Math.abs(minGold)); // 0g line
+    //   const middleY = graphHeight * (1 - middlePercent);
+    //   const percent = (value - minGold) / (maxGold - minGold);
+    //   // Apply special offset rules
+    //   if (value < 1500  && teamId === 100) {
+    //     return middleY -20 -30 ;
+    //   }
+    //   if (value > -1500 && teamId === 200) {
+    //     return middleY -20 + 10 ;
+    //   }
+    
+    //   // Default behavior: scale relative to value
+    //   let offset = teamId === 100 ? -30 : 30
+    //   return graphHeight * (1.05 - percent) + offset;
+    // }
+    function getYPositionFromValue(value, graphHeight, minGold, maxGold, teamId) {
+      const middlePercent = ( Math.abs(minGold)) / (Math.abs(maxGold) + Math.abs(minGold)); // 0g line
+      const middleY = graphHeight * (1 - middlePercent);
+      const percent = (value - minGold) / (maxGold - minGold);
+      // Apply special offset rules
+      if (teamId === 100) {
+        return middleY - 40 ;
+      }
+      if (teamId === 200) {
+        return middleY + 40;
+      }
     }
-    const fill = document.querySelector('.apexcharts-area');
-    if (fill) {
-      fill.style.animation = 'areaPulse 8s ease-in-out infinite';
+
+    function findClosestGoldValue(eventTimestamp, goldFrames) {
+      const timestamps = Object.keys(goldFrames).map(Number);
+      const closest = timestamps.reduce((prev, curr) =>
+        Math.abs(curr - eventTimestamp) < Math.abs(prev - eventTimestamp) ? curr : prev
+      );
+      return goldFrames[closest];
     }
 
     const overlay = document.getElementById('eventOverlay');
@@ -180,12 +213,16 @@ async function displayGoldGraph(frames, timeline) {
   
     const minTime = 0;
     const maxTime = labels[labels.length - 1];
+    const graphHeight = 190; 
   
     Object.entries(eventTimeline).forEach(([timestamp, [teamId, type, subType]]) => {
       const minutes = parseInt(timestamp) / 60000;
       const xPercent = (minutes - minTime) / (maxTime - minTime);
       const x = plotLeft + xPercent * plotWidth; // ✅ Now correctly inside the graph area
-  
+
+      const goldValue = findClosestGoldValue(Number(timestamp), frames);
+      const y = getYPositionFromValue(goldValue, graphHeight, minGold, maxGold, teamId); // offset above line
+      
       const icon = document.createElement('img');
       if  ((type !== 'OUTER_TURRET' && type !== 'INNER_TURRET') && (teamId === 100 || teamId === 200) ) {
         img = getIcon(type, subType);
@@ -200,7 +237,7 @@ async function displayGoldGraph(frames, timeline) {
           } 
           icon.style.position = 'absolute';
           icon.style.left = `${x}px`;
-          icon.style.top = teamId === 100 ? '80px' : '140px';
+          icon.style.top = `${y}px`;
           icon.style.maxWidth = '20px';
           icon.style.maxHeight = '20px';
           icon.style.pointerEvents = 'none';

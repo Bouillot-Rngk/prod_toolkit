@@ -44,3 +44,23 @@
 2025-04-09T12:59:46.077Z [error] lpte-svc: Uncaught error in handler:  Cannot read properties of undefined (reading '0')
 2025-04-09T13:00:51.783Z [error] lpte-svc: Uncaught error in handler:  Cannot read properties of undefined (reading '0')
 2025-04-09T13:05:24.975Z [error] lpte-svc: Uncaught error in handler:  this.matchData.info.teams[0].feats is not iterable
+2025-04-10T19:11:52.866Z [error] module-league-end-of-game: Uncaught error in module-league-end-of-game:  gameDuration is not defined
+2025-04-10T19:12:12.317Z [error] lpte-svc: Request timed out after 5000ms. Request meta={"namespace":"module-league-end-of-game","type":"request","version":1,"reply":"request-71bf191d","channelType":"REQUEST"}
+2025-04-10T19:13:20.976Z [error] module-league-end-of-game: Uncaught error in module-league-end-of-game:  gameDuration is not defined
+2025-04-10T19:15:02.760Z [error] module-league-end-of-game: Uncaught error in module-league-end-of-game:  gameDuration is not defined
+2025-04-10T19:15:33.628Z [error] module-league-end-of-game: Uncaught error in module-league-end-of-game:  gameDuration is not defined
+2025-04-10T19:15:57.559Z [error] module-league-end-of-game: Uncaught error in module-league-end-of-game:  gameDuration is not defined
+2025-04-10T20:17:53.199Z [error] plugin-webapi: Failed to get information for summoner=undefined. Maybe this summoner does not exist? error=GenericError: Request failed with status code 404
+2025-04-10T20:17:53.201Z [error] module-league-state: Loading livegame failed for summoner=undefined
+2025-04-10T20:21:25.995Z [error] plugin-webapi: Failed to get information for summoner=undefined. Maybe this summoner does not exist? error=GenericError: Request failed with status code 404
+2025-04-10T20:21:25.997Z [error] module-league-state: Loading livegame failed for summoner=undefined
+2025-04-12T09:49:08.072Z [error] lpte-svc: Request timed out after 5000ms. Request meta={"channelType":"REQUEST","type":"request","namespace":"plugin-config","version":1,"sender":{"name":"plugin-webapi","version":"2.2.3","mode":"PLUGIN","path":"D:\\bouil\\Documents\\0.Dossiers\\Stream\\GAFE2025\\ProdToolKit\\modules\\plugin-webapi"},"reply":"request-5prh5cqjom9e1aebz"}
+2025-04-12T12:08:37.004Z [error] plugin-webapi: Failed to get match information for matchId=EUW1_7366047798. Maybe the match is not over yet? error=GenericError: Request failed with status code 403
+2025-04-12T12:08:37.008Z [error] module-league-state: Loading match failed for gameId=7366047798
+2025-04-12T12:08:37.012Z [error] lpte-svc: Uncaught error in handler:  Cannot convert undefined or null to object
+2025-04-12T12:58:20.734Z [error] plugin-webapi: Failed to get information for summoner=. Maybe this summoner does not exist? error=GenericError: Request failed with status code 404
+2025-04-12T12:58:20.735Z [error] module-league-state: Loading livegame failed for summoner=
+2025-04-12T13:02:15.530Z [error] plugin-webapi: Failed to get information for summoner=. Maybe this summoner does not exist? error=GenericError: Request failed with status code 404
+2025-04-12T13:02:15.532Z [error] module-league-state: Loading livegame failed for summoner=
+2025-04-12T13:39:10.367Z [error] plugin-webapi: Failed to get information for summoner=. Maybe this summoner does not exist? error=GenericError: Request failed with status code 404
+2025-04-12T13:39:10.372Z [error] module-league-state: Loading livegame failed for summoner=

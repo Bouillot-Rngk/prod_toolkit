@@ -7,6 +7,24 @@
  */
 let teams = []
 
+
+document.getElementById('screenshot-btn').addEventListener('click', () => {
+  const iframe = document.getElementById('eog-gfx');
+  const target = iframe.contentDocument.querySelector('.module-league-end-of-game-all-in-one-gfx');
+  html2canvas(target, {
+    width: 1920,
+    height: 1080,
+    backgroundColor: null, // transparent bg if needed
+    scale: 1 // avoid doubling size
+  }).then(canvas => {
+    const link = document.createElement('a');
+    link.download = 'endgame-recap.png';
+    link.href = canvas.toDataURL('image/png');
+    link.click();
+  });
+});
+
+
 document.querySelector('#team-form').addEventListener('submit', (e) => {
   e.preventDefault()
 

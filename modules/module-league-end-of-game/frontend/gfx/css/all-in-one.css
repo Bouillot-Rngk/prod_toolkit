@@ -50,6 +50,7 @@ html, body {
   font-weight: 1000;
 }
 
+
 .team.logo {
   width: 65px;
   height: 65px;
@@ -240,6 +241,7 @@ html, body {
 /* Shared container for each player */
 .container {
   display: flex;
+  width: 90%;
   align-items: center;
   height: 40px;
   gap: 8px;
@@ -311,7 +313,7 @@ html, body {
 
 /* END GAME STATS FLEX ROW */
 #teamStats {
-  height: 600px;
+  height: 630px;
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -401,4 +403,101 @@ html, body {
 
 .icon-count span {
   font-size: 18px;
+}
+
+/* PICK ET BAN RECAP */
+
+#draftRecap {
+  width: fit-content;
+  height: 130px;
+  width: 820px;
+  transform: translateX(-16%) translateY(-20%);
+  background-color: var(--background-color);
+  display: flex;
+  box-shadow: 3px 2px 9px 0px rgba(0, 0, 0, 0.25);
+  transform-origin: center bottom;
+  animation: in 0.5s;
+}
+.ban {
+  width: 15%;
+  height: 130px;
+  padding: 0 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.pick-teams {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+}
+
+.pick-team {
+  width: 100%;
+  height: 75px;
+}
+
+#blueTeamPicks {
+  background-image: linear-gradient(to left, #30D5C8 , #08648f);;
+}
+
+#redTeamPicks {
+  background-image: linear-gradient(to right, rgba(255, 51, 102, 0.6), #FF3366);
+}
+
+#blueBan {
+  background: linear-gradient(to right, #30D5C8 10%, #08648f 40%, #010e14 100%);
+}
+#redBan {
+  background: linear-gradient(to left, #FF3366 10%, rgba(255, 51, 102, 0.6) 40%, #010e14 100%);
+}
+
+.ban-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 42px);
+  grid-template-rows: repeat(2, 42px);
+  gap: 6px 12px;
+  padding: 8px 16px;
+  width: fit-content;
+  place-items: center;
+  justify-content: center;
+  align-content: center;
+}
+#redBan{
+  grid: right;
+}
+.ban-grid img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.6);
+}
+.pick-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 4px;
+  height: 65px;
+  width: 100%;
+  padding: 0 16px;
+}
+
+#blueTeamPicks {
+  background: linear-gradient(to left, #30D5C8, #08648f);
+}
+
+#redTeamPicks {
+  background: linear-gradient(to right, rgba(255, 51, 102, 0.6), #FF3366);
+}
+
+.pick-grid img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  justify-self: center;
+  align-self: center;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
 }

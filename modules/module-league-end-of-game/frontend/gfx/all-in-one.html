@@ -38,10 +38,10 @@
             </div>
             <div class="team red logo">
               <img id="logo-red" src="./img/herald.png" />
-            </div>        
+            </div>
         </div>
       </div>
-      <div id="leftBorder"></div>
+      <!-- <div id="leftBorder"></div> -->
       <div id="mainContent">
         <div id="leftColumn">
           <div id="leftTop">
@@ -91,10 +91,22 @@
                 <p class="label">ATAKHAN</p>
                 <div class="stat red"></div>
               </div>
+              <div class="statRow" id="feat">
+                <div class="stat blue"></div>
+                <p class="label">EXPLOIT DE FORCE</p>
+                <div class="stat red"></div>
+              </div>
             </div>          
           </div>
           <div id="leftBottom">
-            <div id="draftRecap"></div>
+            <div id="draftRecap">
+              <div class="ban-grid" id="blueBan"></div>
+              <div class="pick-teams">
+                <div class="pick-grid blue-grid" id="blueTeamPicks"></div>
+                <div class="pick-grid red-grid" id="redTeamPicks"></div>
+              </div>
+              <div class="ban-grid" id="redBan"></div>      
+            </div>
           </div>
         </div>
         
@@ -119,6 +131,7 @@
     <script src="js/all-in-one/main.js" defer></script>
     <script src="js/all-in-one/teamStats.js" defer></script>
     <script src="js/all-in-one/damage.js" defer></script>
+    <script src="js/all-in-one/pub-order.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="js/all-in-one/gold.js" defer></script>
     
