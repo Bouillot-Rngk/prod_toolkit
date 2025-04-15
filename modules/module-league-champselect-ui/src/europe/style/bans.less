@@ -1,14 +1,16 @@
 
 .Bans {
   position: absolute;
-  bottom: 15px;
-  width: 300px;
-  height: var(--box-ban-height);
+  bottom: 0;
+  width: 260px;
+  height: calc(2*var(--box-ban-height));
+  display: flex;
 
   .BansContainer{
+    // position: absolute;
+    // bottom: 100px;
     display: flex;
     flex-direction: row;
-    gap:5px;
     margin-bottom: -15px;
   
   .Ban {
@@ -32,7 +34,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 89%;
+      height: 91%;
       opacity: 0.5;
       animation: pulsate-ban 1.5s infinite;
     }
@@ -46,7 +48,17 @@
 
 &.TeamRed .BansContainer{
   flex-direction: row-reverse;
+  // bottom: 0;
 }
+
+.BansWrapper {
+  overflow: hidden;
+}
+
+.BansBox {
+  display: flex;
+}
+
 
 @keyframes pulsate-ban {
   0% {

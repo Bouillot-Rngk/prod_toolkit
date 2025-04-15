@@ -16,6 +16,7 @@ body {
   width: 1920px;
   height: 1080px;
   overflow: hidden;
+  /* background-color: #000; */
 }
 
 h1 {
@@ -101,6 +102,13 @@ h1 {
 .slide.active {
   animation: slide-in-up 1.5s ease forwards;
   z-index: 1;
+}
+
+.slide.solo {
+  opacity: 1;
+  z-index: 1;
+  animation: none !important;
+  transform: translateY(-100%);
 }
 
 .slide.exit-up {

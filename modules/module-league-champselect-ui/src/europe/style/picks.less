@@ -25,19 +25,24 @@
     border: solid var(--border-between-color) 5px;
     border-top: none;
 
+    transition: height 0.4s ease, transform 0.4s ease;
+    transform: scale(1);
+    overflow: hidden;
+  
     &:first-child{
       border: solid var(--border-between-color) 5px;
     }
 
     &.Active {
+      height: 150%; // or whatever height you want
       .PlayerName {
-        bottom: 10px;
-        left: 10px;
         position: absolute;
+        bottom: -20px;
         margin-top: calc(-1 * var(--pick-name-height));
         line-height: calc(2 * var(--pick-name-height));
         .textInfos{
-          width: 350px;
+          position: absolute;
+          bottom: 0;
           animation: open_player_text ease-in-out 0.5s forwards;
           line-height: 0.9;
           white-space: no-wrap;
@@ -49,16 +54,13 @@
           animation: open_player_text ease-in-out 0.5s backwards;
         }
       }
-
-      animation: open_player ease-in-out 0.5s forwards;
-      animation-delay: 1s;
+      // animation: open_player ease-in-out 0.5s forwards;
+      // animation-delay: 1s;
     }
 
     .PlayerName {
-      bottom: 10px;
-      left: 10px;
       position: absolute;
-      text-align: center;
+      bottom: 10px;
       text-transform: uppercase;
       transition: height 1s, font-size 1s, margin-top 1s, background-color 0.3s, color 0.3s;
       height: var(--pick-name-height);
@@ -70,6 +72,7 @@
       display: block;
 
       .textInfos{
+        position: absolute;
         width: 350px;
         height: 30px;
         text-overflow: ellipsis;
@@ -156,21 +159,16 @@
   &.Active {
     .ChampionName,
     .PlayerName {
-      position: relative;
       background-color: rgba(0,0,0,0.2);
       color: white;
-      .textInfos{
-        transform: translate(3px, -28px);
-      }
+      text-align: left;
+      margin-left: 5px;
     }  
   }
     .ChampionName, 
     .PlayerName {
-      .textInfos{
-        text-align: left;
-        transform: translateX(3px);
-      }
-  
+      text-align: left;
+      margin-left: 5px;  
     }
 }
 
@@ -203,3 +201,10 @@
   }
 }
 
+.animateIn {
+  animation: in 0.5s ease-out forwards;
+}
+
+.animateOut {
+  animation: out 0.5s ease-in forwards;
+}

@@ -1,16 +1,13 @@
 .Timer {
   position: absolute;
-  width: 300px;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
   // height: var(--box-timer-height);
   font-size: 50px;
   text-align: center;
   overflow: hidden;
+  
   height: 338px;
   margin-top: -260px;
-  justify-content: center;
-  align-items: center;
 
   &::after {
     content: "";
@@ -34,11 +31,11 @@
   .TimerCharsBlue {
     position: absolute;
     display: flex;
-    justify-content: left;
-    left:0;
-    width: 50%;
-    height: 100%;
-    top: 273px;
+    justify-content: center;
+
+    top: 270px;
+    width: 300px;
+    left: 280px;
 
     .TimerChar {
       font-size: 40px;
@@ -47,15 +44,15 @@
     }
   }    
 
+
   .TimerCharsRed {
     position: absolute;
     display: flex;
-    justify-content: right;
-    right: 0;
+    justify-content: center;
 
-    width: 50%;
-    height: 100%;
-    top: 275px;
+    top: 270px;
+    width: 300px;
+    right: 270px;
 
     .TimerChar {
       font-size: 40px;

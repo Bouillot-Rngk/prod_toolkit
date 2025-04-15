@@ -5,7 +5,6 @@ import Pick from './Pick'
 import css from './style/index.less'
 import Ban from './Ban'
 
-
 export default class Overlay extends React.Component {
   state = {
     currentAnimationState: css.TheAbsoluteVoid,
@@ -67,27 +66,29 @@ export default class Overlay extends React.Component {
             />
           ))}
         </div>
-        <div
-          className={cx(css.Bans, {
-            [css.WithScore]: config.frontend.scoreEnabled
-          })}
-        >
-          {teamName === css.TeamBlue && config.frontend.scoreEnabled && (
-            <div className={css.TeamScore}>{teamConfig.score}</div>
-          )}
-          {teamName === css.TeamRed && renderBans(teamState)}
-          {/* <div className={cx(css.TeamName, {[css.WithoutCoaches]: !config.frontend.coachesEnabled})}>
-                          {teamConfig.name}
-                          {config.frontend.coachesEnabled && <div className={css.CoachName}>
-                              Coach: {teamConfig.coach}
-                          </div>}
-      </div> */}
-          {teamName === css.TeamBlue && renderBans(teamState)}
-          {teamName === css.TeamRed && config.frontend.scoreEnabled && (
-            <div className={css.TeamScore}>{teamConfig.score}</div>
-          )}
+        <div className={css.BansWrapper}>
+          <div
+            className={cx(css.Bans, {
+              [css.WithScore]: config.frontend.scoreEnabled
+            })}
+          >
+            {teamName === css.TeamBlue && config.frontend.scoreEnabled && (
+              <div className={css.TeamScore}>{teamConfig.score}</div>
+            )}
+            {teamName === css.TeamRed && renderBans(teamState)}
+            {/* <div className={cx(css.TeamName, {[css.WithoutCoaches]: !config.frontend.coachesEnabled})}>
+                            {teamConfig.name}
+                            {config.frontend.coachesEnabled && <div className={css.CoachName}>
+                                Coach: {teamConfig.coach}
+                            </div>}
+        </div> */}
+            {teamName === css.TeamBlue && renderBans(teamState)}
+            {teamName === css.TeamRed && config.frontend.scoreEnabled && (
+              <div className={css.TeamScore}>{teamConfig.score}</div>
+            )}
+          </div>
+        </div>
       </div>
-    </div>
     )
 
     return (

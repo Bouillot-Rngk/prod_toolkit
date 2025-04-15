@@ -2,12 +2,27 @@ import React, { useEffect, useState } from 'react'
 import Overlay from './europe/Overlay'
 import convertState from './convertState'
 
+async function initUi() {
+  const server = await window.constants.getWebServerPort()
+  const apiKey = await window.constants.getApiKey()
+
+  const location = `http://${server}/pages/op-module-teams/gfx`
+
+  document.querySelector(
+    '#draft'
+  ).value = `${location}/draft-gfx.html${
+    apiKey !== null ? '?apikey=' + apiKey : ''
+  }`
+}
+
+
 function App() {
+  initUi()
   const [globalState, setGlobalState] = useState({})
   const [config, setConfig] = useState({
     frontend: {
       scoreEnabled: false,
-      spellsEnabled: true,
+      spellsEnabled: false,
       coachesEnabled: false,
       blueTeam: {
         name: 'Team Blue',
@@ -30,6 +45,7 @@ function App() {
         e.data.isActive = e.isActive
         e.data.isActive = true
         setGlobalState(e.data)
+        console.log(e.data)
       })
 
       window.LPTE.on('module-teams', 'update', changeColors)

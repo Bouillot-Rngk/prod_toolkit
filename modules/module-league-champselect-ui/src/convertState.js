@@ -20,7 +20,7 @@ const pickSplashes = [topSplash, jungSplash, midSplash, botSplash, supSplash]
 
 // const getSummonerSpellFromKey = (key, )
 
-const putPlaceholders = (team, backendUrl) => {
+const putPlaceholders = (team, forceNames, teamNames) => {
   for (let i = 0; i < 5; i++) {
     // Picks
     // Check if exists
@@ -48,10 +48,15 @@ const putPlaceholders = (team, backendUrl) => {
       if (pick.spell2) {
         pick.spell2.icon = pick.spell2.icon
       }
+
       pick.champion.loadingImg = pick.champion.loadingImg
       pick.champion.splashImg = pick.champion.splashImg
       pick.champion.squareImg = pick.champion.squareImg
       pick.champion.splashCenteredImg = pick.champion.splashCenteredImg
+    }
+
+    if (forceNames) {
+      team.picks[i].displayName = teamNames[i]
     }
 
     // Bans
@@ -75,10 +80,13 @@ const putPlaceholders = (team, backendUrl) => {
   }
 }
 
+const blueNames = ["Cool Bot 1", "Cool Bot 2", "Cool Bot 3", "Cool Bot 4", "Cool Bot 5"]
+const redNames = ["Cool Bot 1", "Cool Bot 2", "Cool Bot 3", "Cool Bot 4", "Cool Bot 5"]
+
 export default (state) => {
   if (Object.keys(state).length !== 0) {
-    putPlaceholders(state.blueTeam)
-    putPlaceholders(state.redTeam)
+    putPlaceholders(state.blueTeam, true, blueNames)
+    putPlaceholders(state.redTeam,true, redNames)
   }
   return state
 }

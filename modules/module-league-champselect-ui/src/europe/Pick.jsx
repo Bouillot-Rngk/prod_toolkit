@@ -4,6 +4,7 @@ import cx from 'classnames'
 import css from './style/index.less'
 
 export default (props) => (
+
   <div className={cx(css.Pick, { [css.Active]: props.isActive })}>
     {props.spell1 &&
       props.spell2 &&
@@ -22,8 +23,12 @@ export default (props) => (
     >
       <img src={props.champion.splashCenteredImg} alt="" />
     </div>
+    <div className={cx(css.ChampionName)}>
+            <div className={cx(css.textInfos)}>{props.champion.name}</div>
+        </div>
+
     <div className={cx(css.PlayerName)}>
-      <span>{props.displayName}</span>
+      {<span className={cx(css.textInfos)}>{props.displayName}</span>}
     </div>
   </div>
 )

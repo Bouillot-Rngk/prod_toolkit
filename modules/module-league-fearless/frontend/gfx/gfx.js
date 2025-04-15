@@ -39,13 +39,7 @@ function setState(e) {
   })
 
   const slides = document.querySelectorAll(".slide");
-  if (slides.length > 0){
-    if (slides.length === 1){
-      slides[0].add('active')
-    } else {
-      initSlideShow(slides);
-    }
-  };
+  initSlideShow(slides);
 }
 
 LPTE.onready(async () => {
@@ -64,43 +58,49 @@ LPTE.onready(async () => {
 
 const observer = new MutationObserver((mutations, obs) => {
   const slides = document.querySelectorAll(".slide");
-  if (slides.length > 0){
     initSlideShow(slides);
-    obs.disconnect();
-  }
-})
+    obs.disconnect();}
+  )
 
 let slideshowStarted = false;
 function initSlideShow(slides) {
   if (slideshowStarted) return; // ✅ Don't start twice
   slideshowStarted = true;
-
+  
+  const slideCount = slides.length
+  if (slideCount === 0){
+    return
+  }
+  if (slideCount === 1){
+    slides[0].classList.add('solo');
+    return
+  }
   let currentIndex = 0;
   const delay = 15000;
 
-  slides[0].classList.add('active');
-  function showNextSlide() {
-    const currentSlide = slides[currentIndex];
-    currentSlide.classList.remove('active');
-    currentSlide.classList.add('exit-up');
+  slides[currentIndex].classList.add('active');
+  slides[currentIndex+1].classList.add('active');
+  setInterval(() => {
+    const current = slides[currentIndex];
+    const nextIndex = (currentIndex + 1) % slideCount;
+    const next = slides[nextIndex];
 
-    // Préparer le slide suivant
-    currentIndex = (currentIndex + 1) % slides.length;
-    const nextSlide = slides[currentIndex];
+    // Slide out current
+    current.classList.remove("active");
+    current.classList.add("exit-up");
 
-    // Réinitialiser la position de l’ancien après transition
+    // Reset current after animation
     setTimeout(() => {
-      currentSlide.classList.remove('exit-up');
-      currentSlide.style.top = '100%';
-    }, 1500);
+      current.classList.remove("exit-up");
+      current.style.top = "100%";
+    }, 1000);
 
-    // Afficher le nouveau slide
+    // Slide in next
     setTimeout(() => {
-      nextSlide.classList.add('active');
-      nextSlide.style.top = '0';
-    }, 10);
-  }
+      next.classList.add("active");
+      next.style.top = "0";
+    }, 100);
 
-// Initialisation
-  setInterval(showNextSlide, delay);
+    currentIndex = nextIndex;
+  }, delay);
 }
