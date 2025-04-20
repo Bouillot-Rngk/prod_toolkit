@@ -128,10 +128,16 @@ class EndOfGameData {
             const barons = team.objectives.baron.kills;
             const inhibitors = team.objectives.inhibitor.kills;
             const towers = team.objectives.tower.kills;
-            const horde = team.objectives.horde.kills
-            const atakhan = team.objectives.atakhan.kills
-            const riftHerald = team.objectives.riftHerald.kills
-
+            let horde = 0 
+            let atakhan = 0
+            let riftHerald = 0
+            try { horde = team.objectives.horde.kills}
+            catch { horde = 0}
+            try { atakhan = team.objectives.atakhan.kills}
+            catch { atakhan = 0}
+            try { riftHerald = team.objectives.riftHerald.kills}
+            catch { riftHerald = 0}
+            
             this.teams[teamId] = {
                 teamId,
                 participants: [],

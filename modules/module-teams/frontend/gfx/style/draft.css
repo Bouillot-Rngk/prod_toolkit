@@ -57,7 +57,7 @@
 
 .team {
   display: none;
-  width: 960px;
+  width: 950px;
   align-items: top;
   position: absolute;
   top: 5px;
@@ -91,9 +91,16 @@
   align-self: top;
   text-align: center;
   margin-top: 45px;
-  width: 45px;
+  width: 40px;
   font-size: 40px;
   color: white;
+}
+
+#blue-score {
+  transform: translateX(-30px);
+}
+#red-score {
+  transform: translateX(30px);
 }
 
 .tag.outline {

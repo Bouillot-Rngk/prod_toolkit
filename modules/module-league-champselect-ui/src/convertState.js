@@ -85,8 +85,8 @@ const redNames = ["Cool Bot 1", "Cool Bot 2", "Cool Bot 3", "Cool Bot 4", "Cool 
 
 export default (state) => {
   if (Object.keys(state).length !== 0) {
-    putPlaceholders(state.blueTeam, true, blueNames)
-    putPlaceholders(state.redTeam,true, redNames)
+    putPlaceholders(state.blueTeam, false, blueNames)
+    putPlaceholders(state.redTeam,false, redNames)
   }
   return state
 }
