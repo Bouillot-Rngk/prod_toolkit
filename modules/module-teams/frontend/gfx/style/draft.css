@@ -8,19 +8,23 @@
   font-family: 'Futura-bold';
   src: url(./fonts/Futura-Bold.ttf);
 }
+@font-face{
+  font-family: 'Roc Grotesk';
+  src:url(./fonts/rocgroteskcomp-extrabold.otf);
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roc Grotesk';
 }
 
 .module-teams-talk-gfx {
   width: 1920px;
   height: 1080px;
   overflow: hidden;
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 40px;
+  font-size: 15px;
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
@@ -62,9 +66,9 @@
   position: absolute;
   top: 5px;
   filter: drop-shadow(4px 4px 3px rgba(0,0,0,0.5));
-  font-family: "Nunito", sans-serif;
-  /* font-size: 84px; */
-  font-optical-sizing: auto;
+  
+  font-size: 30px;
+  /* font-optical-sizing: auto; */
   font-weight: 800;
   font-style: normal;
   /* font-variation-settings:
@@ -140,9 +144,8 @@
   /* line-height: 1; */
   text-transform: uppercase;
   align-self: center;
-  font-family: 'Nunito-Sans', sans-serif;
   font-style: bold;
-  font-size: 50px;
+  font-size: 70px;
   width: 559px;
   max-height: 150px;
   overflow: hidden;

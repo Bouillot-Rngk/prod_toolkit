@@ -6,15 +6,9 @@ module.exports = async (ctx) => {
     let state = {
         status: 'NO_GAME',
         displayState: 'ITEMS',
-        featTeamId: 300,
-        winnerTeamId: 300,
-        gameDuration: 0,
         teams: {},
         participants: {},
-        goldFrames: {},
-        eventTimeline: {},
-        timelineData: {},
-        matchData: {}
+        goldFrames: {}
     };
     // Register new UI page
     ctx.LPTE.emit({
@@ -50,13 +44,6 @@ module.exports = async (ctx) => {
         const timelineData = e.state.web.timeline;
         const emdOfGameData = new handleData_1.EndOfGameData(matchData, timelineData);
         emdOfGameData.onReady(() => {
-            state.matchData = emdOfGameData.matchData
-            console.log(emdOfGameData.gameDuration)
-            state.gameDuration = emdOfGameData.gameDuration
-            state.timelineData = emdOfGameData.timelineData
-            state.winnerTeamId = emdOfGameData.winnerTeamId
-            state.featTeamId = emdOfGameData.featTeamId
-            state.eventTimeline = emdOfGameData.eventTimeline
             state.status = 'GAME_LOADED';
             state.teams = emdOfGameData.teams;
             state.participants = emdOfGameData.participants;

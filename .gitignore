@@ -2,3 +2,4 @@ node_modules
 modules/module-league-static/frontend/data/*
 modules/module-league-static/frontend/img/*
 logs
+*/dist/*

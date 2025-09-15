@@ -1,16 +1,16 @@
 {
   "plugin-webapi": {
-    "apiKey": "RGAPI-723ce056-2b76-43d0-9121-67f72ae8335c",
+    "apiKey": "RGAPI-SECRETKEY",
     "server": "EUW1"
   },
   "module-league-champselect-ui": {
     "backend": "ws://localhost:8999"
   },
   "module-league-static": {
-    "last-downloaded-version": "15.8.1"
+    "last-downloaded-version": "15.17.1"
   },
   "module-league-state": {
-    "recordChampselect": false
+    "recordChampselect": true
   },
   "plugin-database": {
     "user": "root",
@@ -26,9 +26,9 @@
     "showNicknames": false
   },
   "auth": {
-    "enabled": true,
-    "secreteKey": "d1b21a892bfd09e55a1b0cfa1a4bba761e860413ebb8b68546730bad163f180ba06c6b336314611db66200a3ed49a789",
-    "super-api-key": "RCVPT-E34PM5D-YFE4BGM-M3AQX5H-9HB69WM"
+    "enabled": false,
+    "secreteKey": "",
+    "super-api-key": ""
   },
   "module-twitch": {
     "appId": "",
