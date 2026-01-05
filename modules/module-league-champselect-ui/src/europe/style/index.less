@@ -22,7 +22,7 @@ body {
 
 @import "./variables";
 @import "./animation";
-
+  
 .Europe {
     border:0;
     .MiddleBox {
@@ -73,3 +73,37 @@ body {
     @import "./timer";
     @import "./team";
 }
+
+/* Assure une hauteur stable pour les positions absolues */
+html, body {
+    margin: 0;
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+  }
+  
+  /* Ton root overlay (CSS Modules => classe générée, mais le nom .Overlay existe côté less) */
+  .Overlay {
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+  }
+  
+  /* Le conteneur qui englobe Blue+Red (c’est lui le meilleur repère) */
+  .ChampSelect {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Chaque team doit occuper la hauteur complète (sinon les enfants abs se perdent) */
+  .Team {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Optionnel : si tu as TeamBlue / TeamRed en plus */
+  .TeamBlue { left: 0; }
+  .TeamRed  { right: 0; }
