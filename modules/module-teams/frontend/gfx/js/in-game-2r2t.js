@@ -61,7 +61,7 @@ function displayTeams(teams, bestOf) {
       if (teamData.score >= point) {
         // Point scored, make visible
         selector.style.display = 'flex'
-        selector.style.backgroundImage = 'linear-gradient(45deg, #000 0%, #AAA 30%, #000 75%, #AAA 100%)';
+        selector.style.backgroundImage = 'linear-gradient(45deg, #F7EC6C 0%, #CB890F 30%, #FBD745 75%, #BF6617 100%)';
         selector.classList.remove('empty')
       } else {
         // is this point possible to make?
@@ -74,7 +74,7 @@ function displayTeams(teams, bestOf) {
           // yes, only soft hide
           // selector.style.visibility = 'hidden'
           selector.style.display = 'flex'
-          selector.style.backgroundImage = 'linear-gradient(45deg, #FFF 0%, #AAA 30%, #FFF 75%, #AAA 100%)';
+          selector.style.backgroundColor = "white"
           selector.classList.add('empty')
         }
       }

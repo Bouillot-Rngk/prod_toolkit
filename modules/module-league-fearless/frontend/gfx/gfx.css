@@ -5,7 +5,21 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+@font-face {
+  font-family: "Coconat Bold";
+  src: url("./fonts/Coconat-BoldExt.woff"),
+       url("./fonts/Coconat-BoldExt.woff2");
+}
+@font-face {
+  font-family: "Coconat Regular";
+  src: url("./fonts/Coconat-Regular.woff"),
+       url("./fonts/Coconat-Regular.woff2");
+}
+@font-face {
+  font-family: "Murmure";
+  src: url("./fonts/LeMurmure-Regular.woff"),
+       url("./fonts/LeMurmure-Regular.woff2");
+}
 @font-face {
   font-family: 'Futura';
   src: url('./fonts/Futura.ttf');
@@ -21,7 +35,7 @@ body {
 
 h1 {
   margin-top: auto;  
-  color: #FFFFFF;
+  color: black;
   /* background: linear-gradient(
     45deg,
     #F7EC6C 0%,
@@ -33,7 +47,7 @@ h1 {
   -webkit-background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent; */
-  font-family: 'Futura';
+  font-family: 'Coconat Regular';
   font-size: 12px;
   margin-bottom: 10px;
 }

@@ -50,6 +50,18 @@ window.LPTE.onready(() => {
   window.LPTE.on(namespace, 'update', update)
 })
 
+function updatePips(team, score){
+  const pips = document.querySelectorAll(`#${team}-pips .pip`);
+
+  pips.forEach((pip, i) => {
+    if (i < score) {
+      pip.classList.add("filled");
+    } else {
+      pip.classList.remove("filled");
+    }
+  });
+}
+
 function displayTeams(teams, bestOf) {
   teamsContainer.forEach((t) => {
     t.style.display = 'flex'
@@ -57,11 +69,13 @@ function displayTeams(teams, bestOf) {
 
   blueName.innerHTML = teams.blueTeam.name
   blueScore.innerHTML = teams.blueTeam.score
+  updatePips("blue", teams.blueTeam.score)
   blueLogo.src = "../img/" + teams.blueTeam.logo
   // resizeText(blueName)
 
   redName.innerHTML = teams.redTeam.name
   redScore.innerHTML = teams.redTeam.score
+  updatePips("red", teams.redTeam.score)
   redLogo.src = "../img/" + teams.redTeam.logo
   // resizeText(redName)
 
