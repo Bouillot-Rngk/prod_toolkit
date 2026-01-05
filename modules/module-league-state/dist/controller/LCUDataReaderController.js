@@ -126,7 +126,7 @@ class LCUDataReaderController extends Controller_1.Controller {
                     ...player,
                     lcuPosition,
                     sortedPosition: i,
-                    elo: team[i].elo
+                    elo: 0
                 };
             }
             else {
@@ -135,7 +135,7 @@ class LCUDataReaderController extends Controller_1.Controller {
                     ...player,
                     lcuPosition,
                     sortedPosition: LeagueState_1.state.lcu.lobby.playerOrder.get(player.summonerName)[2],
-                    elo: team[i].elo
+                    elo: 0
                 };
             }
         }
@@ -150,7 +150,7 @@ class LCUDataReaderController extends Controller_1.Controller {
                 ...player,
                 lcuPosition,
                 sortedPosition: lcuPosition,
-                elo: team[i].elo
+                elo: 0
             };
         }
     }

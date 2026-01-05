@@ -99,7 +99,7 @@
 .topbar-gap{
   width: var(--gapMid);
   height: 100px;
-  outline: 2px solid yellowgreen; 
+  /* outline: 2px solid yellowgreen;  */
 }
 /* ====== PANELS ====== */
 .team-panel{
@@ -149,14 +149,21 @@
 .standing{
   width: var(--standingW);
   flex: 0 0 var(--standingW);
-  padding-left: var(--g3);
-
   font-family: "Neue Haas Grotesk Display Pro 75 Bold", Helvetica, Arial, sans-serif;
   font-weight: 500;  font-size: 28px;
   line-height: 1;
 
   color: var(--inkDark);
-  text-align: center;
+}
+
+.panel-left .standing {
+  text-align: left;
+  padding-left: var(--g3);
+}
+&
+.panel-right .standing {
+  text-align: right;
+  padding-right: var(--g3);
 }
 /* ====== NAME (largeur “cible”, mais flexible si besoin) ======
    Tu m’as donné “team name (145)”, mais sinon ça va être trop court
@@ -166,7 +173,6 @@
 */
 .team-name{
   height: var(--nameH);
-  padding-left: var(--g1);
   display: flex;
   align-items: flex-start;
 
@@ -184,6 +190,13 @@
 
   max-width: 145px;
   flex: 1 1 auto;
+}
+
+.panel-left .team-name {
+  padding-left: var(--g1);
+}
+.panel-right .team-name {
+  padding-right: var(--g1);
 }
 /* Align texte selon côté */
 .team-line--blue .team-name{ text-align: left; }
@@ -220,6 +233,6 @@
 }
 
 
-.topbar-inner { outline: 3px solid lime; }
+/* .topbar-inner { outline: 3px solid lime; }
 .panel-left { outline: 2px solid cyan; }
-.panel-right { outline: 2px solid magenta; }
+.panel-right { outline: 2px solid magenta; } */
