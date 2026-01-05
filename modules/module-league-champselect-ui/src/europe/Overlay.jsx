@@ -49,9 +49,24 @@ export default class Overlay extends React.Component {
     }
 
     const renderBans = (teamState) =>{
-      const list =  teamState.bans.map((ban, idx) => <Ban key={`ban-${idx}`} {...ban} />);
-      return (
-        <p className={cx(css.BansContainer)}>{list}</p>
+      const BAN_GAPS = [5, 7, 49, 7];
+
+      const list = [];
+      teamState.bans.forEach((ban, idx) => {
+        list.push(
+          <div key={`ban-slot-${idx}`} className={css.BanSlot}>
+            <div className={css.BanSkewMask}>
+              <Ban {...ban} />
+            </div>
+          </div>
+        );
+      
+        if (idx < teamState.bans.length - 1) {
+          const w = BAN_GAPS[idx];
+          list.push(<div key={`ban-gap-${idx}`} className={css.BanGap} style={{ width: w }} />);
+        }
+      });      return (
+        <div className={cx(css.BansContainer)}>{list}</div>
       )
   };
 

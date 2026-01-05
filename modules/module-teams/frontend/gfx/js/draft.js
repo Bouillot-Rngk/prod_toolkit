@@ -1,13 +1,15 @@
 const namespace = 'module-teams'
 
 const teamsContainer = document.querySelectorAll('.team')
-const blueScore = document.getElementById('blue-score')
+const blueScore = document.getElementById('blue-bo')
 const blueName = document.querySelector('#blue-name')
-const redScore = document.getElementById('red-score')
+const redScore = document.getElementById('red-bo')
 const redName = document.querySelector('#red-name')
-const pointContainer = document.querySelector('#point-container')
+// const pointContainer = document.querySelector('#point-container')
 const blueLogo = document.querySelector('#blue-logo')
 const redLogo = document.querySelector('#red-logo')
+const blueStanding = document.querySelector('#blue-standing')
+const redStanding = document.querySelector('#red-standing')
 const draft = document.getElementById("draft_iframe")
 // const score = document.querySelector('.score')
 

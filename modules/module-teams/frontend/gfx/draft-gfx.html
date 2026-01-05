@@ -30,18 +30,13 @@
       </div>
     </div>     -->
     <div class="topbar">
+      <div class="topbar-inner">
       <!-- LEFT / BLUE -->
       <div id="blue-team" class="team-panel panel-left">
+        <img id="blue-logo" class="team-logo" src="../img/Mandragora.png" alt="">
         <div id="blue-name" class="team-name"></div>
-        <div id="blue-score" class="score sr-only">1</div>
-        <div class="team-logo-block">
-          <div class="logo-circle">
-            <img id="blue-logo" class="logo" src="../img/Mandragora.png" alt="">
-          </div>
-          <div class="pips" id="blue-pips">
-            <span class="pip"></span><span class="pip"></span><span class="pip"></span>
-          </div>
-        </div>
+        <img id="blue-bo" class="bo-icon" src="./img/0-0.png" alt="">
+        <div id="blue-standing" class="standing">0-0</div>
       </div>
     
       <!-- MIDDLE GAP (timer/patch si besoin) -->
@@ -49,22 +44,18 @@
     
       <!-- RIGHT / RED -->
       <div id="red-team" class="team-panel panel-right">
-        <div class="team-logo-block">
-          <div class="logo-circle">
-            <img id="red-logo" class="logo" src="../img/Pandore.png" alt="">
-          </div>
-          <div class="pips" id="red-pips">
-            <span class="pip"></span><span class="pip"></span><span class="pip"></span>
-          </div>
-        </div>
-        <div id="red-name" class="team-name"></div>
-        <div id="red-score" class="score sr-only">2</div>
+        <div id="red-standing" class="standing">0-0</div>
+        <img id="red-bo" class="bo-icon" src="./img/0-0.png" alt="">
+        <div id="red-name" class="team-name">HUGE ESPORTS</div>
+        <img id="red-logo" class="team-logo" src="../img/Pandore.png" alt="">      
       </div>
+    </div>
     </div>
 
     <div id="draft" class="draft-overlay">
+      <img src="./img/Draft.png" style="z-index: 2;position: absolute; top: 0;"/>
       <iframe id="draft_iframe" title="draft_overlay" width="1920" height="1080" 
-      src =""></iframe>
+      src ="" style="z-index: 0;"></iframe>
     </div>
 
     <!-- <img src="./img/Screenshot 2025-09-22 13-47-38.png" alt="" id="staticSB" style="position: absolute;z-index: -1;overflow: hidden; top: 0;"> -->
