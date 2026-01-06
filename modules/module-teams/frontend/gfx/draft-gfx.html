@@ -35,7 +35,7 @@
       <div id="blue-team" class="team-panel panel-left">
         <img id="blue-logo" class="team-logo" src="../img/Mandragora.png" alt="">
         <div id="blue-name" class="team-name"></div>
-        <img id="blue-bo" class="bo-icon" src="./img/0-0.png" alt="">
+        <img id="blue-bo" class="bo-icon" src="./img/left_0.png" alt="">
         <div id="blue-standing" class="standing">0-0</div>
       </div>
     
@@ -45,7 +45,7 @@
       <!-- RIGHT / RED -->
       <div id="red-team" class="team-panel panel-right">
         <div id="red-standing" class="standing">0-0</div>
-        <img id="red-bo" class="bo-icon" src="./img/0-0.png" alt="">
+        <img id="red-bo" class="bo-icon" src="./img/right_0.png" alt="">
         <div id="red-name" class="team-name">HUGE ESPORTS</div>
         <img id="red-logo" class="team-logo" src="../img/Pandore.png" alt="">      
       </div>
@@ -61,33 +61,5 @@
     <!-- <img src="./img/Screenshot 2025-09-22 13-47-38.png" alt="" id="staticSB" style="position: absolute;z-index: -1;overflow: hidden; top: 0;"> -->
 
     <script src="js/draft.js" defer></script>
-    <script>
-      function updatePips(team) {
-        const scoreEl = document.getElementById(`${team}-score`);
-        const pips = document.querySelectorAll(`#${team}-pips .pip`);
-        if (!scoreEl) return;
-      
-        const score = parseInt(scoreEl.textContent.trim(), 10) || 0;
-      
-        pips.forEach((pip, i) => {
-          if (i < score) {
-            pip.classList.add("filled");
-          } else {
-            pip.classList.remove("filled");
-          }
-        });
-      }
-      
-      // maj des 2 équipes
-      function refreshAllPips() {
-        updatePips("blue");
-        updatePips("red");
-      }
-      
-      // premier rendu
-      refreshAllPips();
-      
-      // si tes scores changent via JS, rappelle refreshAllPips()
-      </script>  
     </body>
 </html>

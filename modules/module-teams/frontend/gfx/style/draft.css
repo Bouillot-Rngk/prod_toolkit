@@ -64,7 +64,7 @@
   --teamFontScale: 1.6; /* 160% */
 
   /* gaps internes (cibles que tu as données) */
-  --g1: 60px;  /* logo -> name */
+  --g1: 40px;  /* logo -> name */
   --g2: 21px;  /* name -> bo */
   --g3: 26px;  /* bo -> standings */
   --gEnd: 25px;/* padding côté extérieur (si tu veux respirer) */
@@ -143,6 +143,13 @@
   object-fit: contain;
   display: block;
   flex: 0 0 auto;
+}
+
+.panel-left .bo-icon{
+  padding-left: var(--g2);
+}
+.panel-right .bo-icon{
+  padding-right: var(--g2);
 }
 
 /* ====== STANDING ====== */

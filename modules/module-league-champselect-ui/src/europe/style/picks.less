@@ -8,6 +8,25 @@
 }
 
 @import "./fonts";
+@font-face {
+  font-family: "Acumin Pro Condensed Black";
+  src: url("https://db.onlinewebfonts.com/t/2ad888075d277e8d11de6c816762be5e.eot");
+  src: url("https://db.onlinewebfonts.com/t/2ad888075d277e8d11de6c816762be5e.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/2ad888075d277e8d11de6c816762be5e.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/2ad888075d277e8d11de6c816762be5e.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/2ad888075d277e8d11de6c816762be5e.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/2ad888075d277e8d11de6c816762be5e.svg#Acumin Pro Condensed Black")format("svg");
+}
+
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro 75 Bold";
+  src: url("https://db.onlinewebfonts.com/t/0209bfe594ed24b75ee2aac06529e4f9.eot");
+  src: url("https://db.onlinewebfonts.com/t/0209bfe594ed24b75ee2aac06529e4f9.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/0209bfe594ed24b75ee2aac06529e4f9.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/0209bfe594ed24b75ee2aac06529e4f9.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/0209bfe594ed24b75ee2aac06529e4f9.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/0209bfe594ed24b75ee2aac06529e4f9.svg#Neue Haas Grotesk Display Pro 75 Bold")format("svg");
+}
 
 .Picks {
   width: 100%;
@@ -36,7 +55,7 @@
     // }
 
     &.Active {
-      height: 100%; // or whatever height you want
+      // height: 100%; // or whatever height you want
       .PlayerName {
         position: absolute;
         bottom: -20px;
@@ -69,7 +88,8 @@
       color: white;
       background-color: transparent;
       text-align: center;
-      font-family: "Murmure";
+      font-family: "Acumin Pro Condensed Black";
+      font-style: italic;
       font-size: calc(0.8 * var(--pick-name-height));
       line-height: var(--pick-name-height);
       display: block;
@@ -94,11 +114,13 @@
       color: white;
       background-color: transparent;
       text-align: center;
-      font-family: "Murmure";
+      font-family: "Acumin Pro Condensed Black";
+      font-style: italic;
       font-size: calc(0.5 * var(--pick-name-height));
       line-height: var(--pick-name-height);
       .textInfos{
-        width: 350px;
+        width: 376px;
+        padding: 0 15px;
         filter:drop-shadow(0px 0px 4px rgb(0,0,0))
       }
 

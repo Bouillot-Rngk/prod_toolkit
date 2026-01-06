@@ -62,15 +62,15 @@ function displayTeams(teams, bestOf) {
   })
 
   blueStanding.innerHTML = teams.blueTeam.standing
-  blueName.innerHTML = teams.blueTeam.name
-  blueScore.innerHTML = teams.blueTeam.score
+  blueName.innerHTML = teams.blueTeam.tag
+  // blueScore.innerHTML = teams.blueTeam.score
   // updatePips("blue", teams.blueTeam.score)
   blueLogo.src = "../img/" + teams.blueTeam.logo
   // resizeText(blueName)
 
   redStanding.innerHTML = teams.redTeam.standing
-  redName.innerHTML = teams.redTeam.name
-  redScore.innerHTML = teams.redTeam.score
+  redName.innerHTML = teams.redTeam.tag
+  // redScore.innerHTML = teams.redTeam.score
   // updatePips("red", teams.redTeam.score)
   redLogo.src = "../img/" + teams.redTeam.logo
   // resizeText(redName)
@@ -81,10 +81,30 @@ function displayTeams(teams, bestOf) {
   if (bestOf > 1) {
     blueScore.style.display = 'block'
     redScore.style.display = 'block'
+    setBoImage(blueScore, 'left', teams.blueTeam.score);
+    setBoImage(redScore, 'right', teams.redTeam.score);
+  
   } else {
     blueScore.style.display = 'none'
     redScore.style.display = 'none'
   }
+}
+
+function setBoImage(imgEl, side, score) {
+  // side = "left" | "right"
+  const file = `${side}_${score}.png`;
+
+  // même logique que tes logos: dossier img servi avec la page
+  const url = `../img/${file}`;
+
+  imgEl.src = url;
+
+  // debug utile si ça 404
+  imgEl.onerror = () => {
+    console.warn(`[BO IMG] not found: ${url}`);
+    imgEl.onerror = null;
+    imgEl.src = `../img/${side}_0.png`; // fallback
+  };
 }
 
 const isOverflown = ({ clientWidth, scrollWidth }) => scrollWidth > clientWidth
