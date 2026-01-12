@@ -1,0 +1,185 @@
+/* ====== FONTS ====== */
+@font-face {
+  font-family: "Acumin VF";
+  src: url("./fonts/Acumin\ VF\ Default.ttf") format("truetype");
+  font-weight: 100 900;
+  font-stretch: 25% 125%;
+  font-style: normal italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Acumin Black";
+  src: url("./fonts/Acumin_Pro_ExtraCondensed_Black_Italic.otf");
+  font-weight: 100 900;
+  font-stretch: 25% 125%;
+  font-style: normal italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro 75 Bold";
+  src: url("https://db.onlinewebfonts.com/t/0209bfe594ed24b75ee2aac06529e4f9.woff2") format("woff2"),
+       url("https://db.onlinewebfonts.com/t/0209bfe594ed24b75ee2aac06529e4f9.ttf") format("truetype");
+}
+
+:root {
+  /* Layout global */
+  --canvasW: 1920px;
+  --topbarY: 2px;
+  --sideMargin: 28px;
+  --panelW: 590px;
+  --gapMid: 684px;
+
+  /* Tailles internes */
+  --logoSize: 160px;
+  --nameH: 90px;
+  --boW: 90px;
+  --boH: 90px;
+  --standingW: 60px;
+
+  /* Couleurs */
+  --inkDark: #2d2e2e;
+  /* Note : Les couleurs des timers sont maintenant gérées dans le module React (timer.less) */
+
+  /* Gaps internes */
+  --g1: 40px;   /* logo <-> name */
+  --g2: 21px;   /* name <-> bo */
+  --g3: 26px;   /* bo <-> standings */
+}
+
+/* Reset de base */
+body { margin: 0; padding: 0; background: transparent; overflow: hidden; }
+
+/* ====== TOPBAR LAYOUT ====== */
+.topbar {
+  position: absolute;
+  top: var(--topbarY);
+  left: 0;
+  width: var(--canvasW);
+  z-index: 100;
+}
+
+.topbar-inner {
+  position: relative;
+  height: 160px;
+  margin: 0 var(--sideMargin);
+  display: grid;
+  grid-template-columns: var(--panelW) var(--gapMid) var(--panelW);
+  align-items: center;
+}
+
+/* ====== ZONE CENTRALE (GAP) ====== */
+/* Juste une zone vide pour maintenir l'espacement de la grille */
+.topbar-gap {
+  width: var(--gapMid);
+  height: 100px;
+  /* Vide : les timers sont affichés par l'iframe en dessous */
+}
+
+/* ====== PANELS (LEFT & RIGHT) ====== */
+.team-panel {
+  width: var(--panelW);
+  height: var(--nameH);
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.panel-left { justify-content: flex-start; }
+.panel-right { justify-content: flex-end; }
+
+/* ====== LOGO ====== */
+.team-logo {
+  width: var(--logoSize);
+  height: var(--logoSize);
+  object-fit: contain;
+  padding: 10px;
+  flex: 0 0 auto;
+}
+
+/* ====== NAME ====== */
+.team-name {
+  height: var(--nameH);
+  display: flex;
+  align-items: center;
+  font-family: "Acumin Black", sans-serif;
+  font-size: 90px;
+  color: var(--inkDark);
+  text-transform: uppercase;
+  
+  /* Padding horizontal pour éviter que l'italique ne soit coupé */
+  padding: 0 12px; 
+  
+  flex: 1 1 auto; /* Prend tout l'espace disponible */
+  min-width: 0;
+}
+
+/* Gestion de l'ellipsis sur le span interne */
+.team-name span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+/* --- Marges Miroir --- */
+/* GAUCHE : Logo [gap] Nom */
+.panel-left .team-name {
+  text-align: left;
+  justify-content: flex-start;
+  margin-left: calc(var(--g1) - 12px); 
+}
+
+/* DROITE : Nom [gap] Logo */
+.panel-right .team-name {
+  text-align: right;
+  justify-content: flex-end;
+  margin-right: calc(var(--g1) - 12px); 
+}
+
+/* ====== BO ICON ====== */
+.bo-icon {
+  width: var(--boW);
+  height: var(--boH);
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
+/* GAUCHE : Nom [gap] BO */
+.panel-left .bo-icon { margin-left: var(--g2); }
+
+/* DROITE : BO [gap] Nom */
+.panel-right .bo-icon { margin-right: var(--g2); }
+
+/* ====== STANDING ====== */
+.standing {
+  width: var(--standingW);
+  flex: 0 0 var(--standingW);
+  font-family: "Neue Haas Grotesk Display Pro 75 Bold", Helvetica, Arial, sans-serif;
+  font-size: 28px;
+  line-height: 1;
+  color: var(--inkDark);
+}
+
+/* GAUCHE : BO [gap] Standing */
+.panel-left .standing { 
+  margin-left: var(--g3);
+  text-align: left;
+}
+
+/* DROITE : Standing [gap] BO */
+.panel-right .standing { 
+  margin-right: var(--g3);
+  text-align: right;
+}
+
+/* ====== DRAFT IFRAME ====== */
+.draft-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 50;
+    pointer-events: none;
+}
+
+.draft-overlay img {
+    pointer-events: auto;
+}

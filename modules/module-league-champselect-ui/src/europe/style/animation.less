@@ -1,0 +1,165 @@
+.TheAbsoluteVoid {
+  * {
+    display: none;
+  }
+}
+
+.AnimationHidden {
+  .Timer {
+    position: relative;
+    /* bottom: -130px; */
+    opacity: 0;
+    animation: timer 0.25s forwards;
+
+    .Blue, .Red {
+      opacity: 0;
+    }
+  }
+  .Team {
+    opacity: 0;
+  }
+  .Logo, .Patch {
+    opacity: 0;
+  }
+}
+
+@keyframes timer {
+  100% {
+    opacity: 1;
+  }
+}
+
+.AnimationTimer {
+  .Timer {
+    .Blue {
+      left: 100% !important;
+      transition: none !important;
+      animation: timer-colors 0.5s forwards;
+      animation-timing-function: ease-in;
+    }
+    .Red {
+      left: -100% !important;
+      transition: none !important;
+      animation: timer-colors 0.5s forwards;
+      animation-timing-function: ease-in;
+    }
+  }
+  .Team {
+    &.TeamBlue {
+      .Bans {
+        opacity: 0;
+        animation: bans-fadein 0.5s forwards;
+        animation-delay: 2s;
+      }
+    }
+
+    &.TeamRed {
+      .Bans {
+        opacity: 0;
+        animation: bans-fadein 0.5s forwards;
+        animation-delay: 2s;
+      }
+    }
+  }
+}
+
+@keyframes timer-colors {
+  100% {
+    left: 0;
+  }
+}
+@keyframes bans-blue-fadein {
+  100% {
+    left: 368px;
+  }
+}
+@keyframes bans-fadein {
+  100% {
+    opacity:1;
+  }
+}
+
+.AnimationBansPick {
+  --animation-initial-delay: 0.4s;
+  --animation-progress: 0.1745s;
+
+  .TeamBlue .Pick {
+    animation: pick-move-right 0.7s forwards;
+    left: 100%;
+  }
+  .TeamRed .Pick {
+    animation: pick-move-left 0.7s forwards;
+    right: 100%;
+  }
+  .TeamBlue .Pick {
+    &:nth-child(1) {
+      animation-delay: calc(var(--animation-initial-delay) + calc(var(--animation-progress) * 1));
+    }
+    &:nth-child(2) {
+      animation-delay: calc(var(--animation-initial-delay) + calc(var(--animation-progress) * 2));
+    }
+    &:nth-child(3) {
+      animation-delay: calc(var(--animation-initial-delay) + calc(var(--animation-progress) * 3));
+    }
+    &:nth-child(4) {
+      animation-delay: calc(var(--animation-initial-delay) + calc(var(--animation-progress) * 4));
+    }
+    &:nth-child(5) {
+      animation-delay: calc(var(--animation-initial-delay) + calc(var(--animation-progress) * 5));
+    }
+  }
+  .TeamRed .Pick {
+    &:nth-child(1) {
+      animation-delay: calc(var(--animation-initial-delay) + calc(var(--animation-progress) * 1));
+    }
+    &:nth-child(2) {
+      animation-delay: calc(var(--animation-initial-delay) + calc(var(--animation-progress) * 2));
+    }
+    &:nth-child(3) {
+      animation-delay: calc(var(--animation-initial-delay) + calc(var(--animation-progress) * 3));
+    }
+    &:nth-child(4) {
+      animation-delay: calc(var(--animation-initial-delay) + calc(var(--animation-progress) * 4));
+    }
+    &:nth-child(5) {
+      animation-delay: calc(var(--animation-initial-delay) + calc(var(--animation-progress) * 5));
+    }
+  }
+  .Logo, .Patch {
+    position: relative;
+    top: 100%;
+    z-index: -20;
+    animation: pick-move-down 0.7s forwards;
+  }
+}
+
+.AnimationBansPickOnly {
+  .Timer {
+    .Blue {
+      left: 0 !important;
+    }
+    .Red {
+      left: 0 !important;
+    }
+  }
+}
+
+@keyframes pick-move-down {
+  100% {
+    bottom: 0;
+  }
+}
+@keyframes pick-move-right {
+  100% {
+    left: 0;
+  }
+}
+@keyframes pick-move-left {
+  100% {
+    right: 0;
+  }
+}
+
+.AnimationPigs {
+  // EPIC gamer moment
+}

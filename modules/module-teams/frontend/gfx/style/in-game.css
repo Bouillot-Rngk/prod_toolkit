@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Coconat Bold";
+  src: url("./fonts/Coconat-BoldExt.woff"),
+       url("./fonts/Coconat-BoldExt.woff2");
+}
+@font-face {
+  font-family: "Coconat Regular";
+  src: url("./fonts/Coconat-Regular.woff"),
+       url("./fonts/Coconat-Regular.woff2");
+}
+@font-face {
+  font-family: "Murmure";
+  src: url("./fonts/LeMurmure-Regular.woff"),
+       url("./fonts/LeMurmure-Regular.woff2");
+}
+.module-teams-ingame-gfx {
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  position: relative;
+  font-family: "Coconat Bold", sans-serif;
+  font-size: 40px;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-variation-settings:
+    "wdth" 81.2;
+  font-weight: 700;
+  color: var(--text-color);
+  font-size: 50px;
+
+}
+
+.blue {
+  color: white;
+  filter: drop-shadow(4px 4px 3px rgba(0,0,0,0.5));
+
+}
+
+.red {
+  color: white;
+  filter: drop-shadow(4px 4px 3px rgba(0,0,0,0.5));
+
+}
+
+.team-containers {
+  width: 100%;
+  display: flex;
+}
+
+.team-block {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  width: 50%;
+  gap: 7px;
+  max-height: 75px;
+}
+
+.team-block.red {
+  right:0;
+  flex-direction: row-reverse;
+}
+
+.team-block.red .info-column {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.team-block.red .tag {
+  text-align: right;
+}
+
+.logo-container {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  max-width: 65px;
+  max-height: 65px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.info-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 75px;
+  margin-top: 7px;
+}
+
+/* Common font + overflow settings */
+.name, .tag {
+  text-transform:uppercase;
+  font-family: "Coconat Bold", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  /* font-style: italic; */
+  font-variation-settings: "wdth" 81.2;
+  align-items: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+
+/* Team name */
+.name {
+  height: 44px;
+  line-height: 1;
+  max-width: 250px;
+  font-size: 18px;
+  color: black;
+
+  display: flex;
+  align-items: center; /* <-- vertical centering */
+  text-align: left;
+}
+
+/* Team tag */
+.tag {
+  height: 24px;
+  line-height: 24px;
+  max-width: 100px;
+  padding: 0 6px;
+  font-size: 24px;
+  color: black;
+}
+
+.red{
+  text-align: right;
+}
+
+.points-team {
+  z-index: 15;
+  width: 1920px;
+  height: 20%;
+  position: absolute;
+  top:81px;
+  display: flex;
+}
+
+.points-blue{
+  position: absolute;
+  left: 8px;
+}
+.points-red{
+  flex-direction: row-reverse;
+  position: absolute;
+  right:-2px;
+}
+.point {
+  display: block;
+  width: 47px;
+  height: 7px;
+  margin-right: 10px;
+  border-radius: 30px 5px 30px 5px;
+}
+.point-red{
+  border-radius: 5px 30px 5px 30px ;
+}

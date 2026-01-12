@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Draft GFX</title>
+    
+    <script src="/static/main-bundle.js"></script>
+    <link rel="stylesheet" href="style/draft.css" />
+    <link rel="stylesheet" href="/pages/op-plugin-theming/active/index.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+  
+  <body class="module-teams-draft-gfx">
+    
+    <div class="topbar">
+      <div class="topbar-inner">
+        
+        <div id="blue-team" class="team-panel panel-left">
+          <img id="blue-logo" class="team-logo" src="../img/Mandragora.png" alt="Blue Logo">
+          <div id="blue-name" class="team-name"><span>BLUE TAG</span></div>
+          <img id="blue-bo" class="bo-icon" src="./img/left_0.png" alt="">
+          <div id="blue-standing" class="standing">0-0</div>
+        </div>
+    
+        <div class="topbar-gap"></div>
+    
+        <div id="red-team" class="team-panel panel-right">
+          <div id="red-standing" class="standing">0-0</div>
+          <img id="red-bo" class="bo-icon" src="./img/right_0.png" alt="">
+          <div id="red-name" class="team-name"><span>RED TAG</span></div>
+          <img id="red-logo" class="team-logo" src="../img/Pandore.png" alt="Red Logo">      
+        </div>
+
+      </div>
+    </div>
+
+    <div id="draft" class="draft-overlay">
+      <img src="./img/Draft.png" style="z-index: 2; position: absolute; top: 0;" alt="Overlay Frame"/>
+      
+      <iframe id="draft_iframe" title="draft_overlay" width="1920" height="1080" src="" style="z-index: 10;"></iframe>
+    </div>
+
+    <script src="js/draft.js" defer></script>
+  </body>
+</html>
