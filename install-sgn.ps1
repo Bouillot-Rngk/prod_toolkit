@@ -2,15 +2,16 @@
 $ToolkitPath = Get-Location
 $ModulePath = Join-Path $ToolkitPath "modules"
 $TempBackup = Join-Path $ToolkitPath "temp_modules_backup"
+
 $ModulesToRestore = @(
-    "module-teams", 
+    "module-teams",
     "module-league-champselect-ui",
-    "module-league-ingame",
+    "module-league-in-game",
     "module-league-fearless",
     "module-league-end-of-game",
     "module-league-runes",
     "module-league-caster-cockpit",
-    "module-league-state",
+    "module-league-state"
 )
 
 Write-Host "----------------- Prod ToolKit SGN -----------------" -ForegroundColor Cyan
@@ -23,8 +24,9 @@ if (!(Test-Path $TempBackup)) { New-Item -ItemType Directory -Path $TempBackup }
 foreach ($mod in $ModulesToRestore) {
     $currentModPath = Join-Path $ModulePath $mod
     if (Test-Path $currentModPath) {
-        Copy-Item -Path $currentModPath -Destination $TempBackup -Recurse -Force
-        Write-Host "Sauvegarde de $mod effectuée."
+        $target = Join-Path $TempBackup $mod
+        Copy-Item -Path $currentModPath -Destination $target -Recurse -Force
+        Write-Host "Sauvegarde de $mod effectuee."
     }
 }
 
@@ -37,8 +39,11 @@ Write-Host "[3/6] Restauration des modifications aux modules..." -ForegroundColo
 foreach ($mod in $ModulesToRestore) {
     $savedMod = Join-Path $TempBackup $mod
     if (Test-Path $savedMod) {
-        Copy-Item -Path $savedMod -Destination $ModulePath -Recurse -Force
-        Write-Host "Restauration de $mod terminée."
+        $destMod = Join-Path $ModulePath $mod
+        # On s'assure que le dossier de destination est propre avant de restaurer
+        if (Test-Path $destMod) { Remove-Item -Path $destMod -Recurse -Force }
+        Copy-Item -Path $savedMod -Destination $destMod -Recurse -Force
+        Write-Host "Restauration de $mod terminee."
     }
 }
 
@@ -55,12 +60,15 @@ foreach ($target in @("module-league-champselect-ui", "module-teams")) {
 
 # 5. Build du module Champselect
 Write-Host "[5/6] Compilation de Champselect UI..." -ForegroundColor Yellow
-Set-Location (Join-Path $ModulePath "module-league-champselect-ui")
-npm run build
-Set-Location $ToolkitPath
+$csPath = Join-Path $ModulePath "module-league-champselect-ui"
+if (Test-Path $csPath) {
+    Set-Location $csPath
+    npm run build
+    Set-Location $ToolkitPath
+}
 
 # 6. Nettoyage et Lancement
-Remove-Item -Path $TempBackup -Recurse -Force
+if (Test-Path $TempBackup) { Remove-Item -Path $TempBackup -Recurse -Force }
 Write-Host "[6/6] Installation terminee. Lancement de run.bat..." -ForegroundColor Green
 
 Write-Host ""
@@ -68,4 +76,3 @@ Write-Host "Appuyez sur ENTREE pour lancer le Prod ToolKit et fermer cette fenet
 Read-Host
 
 Start-Process -FilePath "cmd.exe" -ArgumentList "/c run.bat"
-
